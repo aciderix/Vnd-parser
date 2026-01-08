@@ -284,6 +284,9 @@ class VndPolygonParser:
 
                 scene.hotspots.append(hotspot)
 
+            # Merge multiline hotspots (same X position, consecutive Y positions)
+            self._merge_multiline_hotspots(scene)
+
             # Look for scene-wide audio
             audio_pattern = r'([\w]+\.wav)'
             scene_audio_text = self.text_content[search_start:min(search_start + 500, search_end)]
@@ -294,6 +297,44 @@ class VndPolygonParser:
             scenes.append(scene)
 
         return scenes
+
+    def _merge_multiline_hotspots(self, scene: Scene):
+        """Merge hotspots that are part of the same multiline text"""
+        if not scene.hotspots:
+            return
+
+        merged = []
+        i = 0
+
+        while i < len(scene.hotspots):
+            current = scene.hotspots[i]
+
+            # Check if next hotspot(s) are continuations (same X, Y within 20 pixels)
+            continuation_texts = [current.text]
+            j = i + 1
+
+            while j < len(scene.hotspots):
+                next_hotspot = scene.hotspots[j]
+
+                # Same X position and Y within 20 pixels = multiline
+                if (current.text_x == next_hotspot.text_x and
+                    0 < next_hotspot.text_y - current.text_y <= 30):
+                    continuation_texts.append(next_hotspot.text)
+                    current.text_y = next_hotspot.text_y  # Update to last line Y
+                    j += 1
+                else:
+                    break
+
+            # Merge texts if multiple lines found
+            if len(continuation_texts) > 1:
+                current.text = '\n'.join(continuation_texts)
+                i = j  # Skip the merged hotspots
+            else:
+                i += 1
+
+            merged.append(current)
+
+        scene.hotspots = merged
 
     def _extract_hotspot_data(self, hotspot: Hotspot, start_offset: int, end_offset: int):
         """Extract all data associated with a hotspot (polygon, video, actions, etc.)"""
@@ -317,13 +358,23 @@ class VndPolygonParser:
             hotspot.video = video_match.group(1)
             break
 
-        # 3. Search for scene navigation (e.g., '51j', '1e')
+        # 3. Search for scene navigation (e.g., '1e', '51j')
+        # Navigation pattern appears AFTER polygon/text, before next hotspot
+        # Look in the binary region between hotspot and next hotspot
         nav_pattern = r'(?<!\d)(\d{1,3})([a-z])(?!\w)'
-        for nav_match in re.finditer(nav_pattern, region_text):
-            scene_id = int(nav_match.group(1))
+
+        # Search in full region including binary data
+        region_binary = self.data[start_offset:end_offset]
+        region_binary_text = region_binary.decode('latin-1', errors='replace')
+
+        # Find the LAST navigation pattern (most likely to be the goto)
+        nav_matches = list(re.finditer(nav_pattern, region_binary_text))
+        if nav_matches:
+            # Take the last one found (usually after polygon)
+            last_nav = nav_matches[-1]
+            scene_id = int(last_nav.group(1))
             if 1 <= scene_id <= 999:
                 hotspot.goto_scene = scene_id
-                break
 
         # 4. Extract actions and conditions
         region_text_full = self.text_content[start_offset:end_offset]

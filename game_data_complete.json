@@ -466,8 +466,7 @@
                 "x": 40,
                 "y": 350
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             },
             {
               "id": 9,
@@ -495,8 +494,7 @@
                 "x": 40,
                 "y": 350
               },
-              "layer": 0,
-              "goto_scene": 22
+              "layer": 0
             },
             {
               "id": 12,
@@ -594,16 +592,7 @@
             },
             {
               "id": 16,
-              "text": "Le livre des",
-              "text_position": {
-                "x": 380,
-                "y": 210
-              },
-              "layer": 0
-            },
-            {
-              "id": 17,
-              "text": "recettes d'Europej",
+              "text": "Le livre des\nrecettes d'Europej",
               "text_position": {
                 "x": 380,
                 "y": 225
@@ -651,7 +640,6 @@
                 "y": 290
               },
               "layer": 0,
-              "goto_scene": 16,
               "actions": [
                 "runprj ..\\biblio\\biblio.vnp 2"
               ],
@@ -661,22 +649,7 @@
             },
             {
               "id": 20,
-              "text": "Le petit atlas",
-              "text_position": {
-                "x": 385,
-                "y": 212
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp 10"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\biblio\\biblio.vnp 10"
-              ]
-            },
-            {
-              "id": 21,
-              "text": "d'Europe.j",
+              "text": "Le petit atlas\nd'Europe.j",
               "text_position": {
                 "x": 385,
                 "y": 232
@@ -691,22 +664,7 @@
             },
             {
               "id": 22,
-              "text": "Les Hymnes",
-              "text_position": {
-                "x": 120,
-                "y": 142
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\italie\\italie.vnp  27"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\italie\\italie.vnp  27"
-              ]
-            },
-            {
-              "id": 23,
-              "text": "nationauxj",
+              "text": "Les Hymnes\nnationauxj",
               "text_position": {
                 "x": 120,
                 "y": 162
@@ -721,22 +679,7 @@
             },
             {
               "id": 24,
-              "text": "Léonard",
-              "text_position": {
-                "x": 355,
-                "y": 22
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp  11"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\biblio\\biblio.vnp  11"
-              ]
-            },
-            {
-              "id": 25,
-              "text": "de Vincij",
+              "text": "Léonard\nde Vincij",
               "text_position": {
                 "x": 355,
                 "y": 42
@@ -760,25 +703,7 @@
             },
             {
               "id": 27,
-              "text": "Big",
-              "text_position": {
-                "x": 700,
-                "y": 12
-              },
-              "layer": 0,
-              "goto_scene": 59,
-              "actions": [
-                "runprj ..\\angl\\angleterre.vnp 59j",
-                "runprj ..\\allem\\allem.vnp 10"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\angl\\angleterre.vnp 59j",
-                "jeu = 1 then runprj ..\\allem\\allem.vnp 10"
-              ]
-            },
-            {
-              "id": 28,
-              "text": "Ben",
+              "text": "Big\nBen",
               "text_position": {
                 "x": 700,
                 "y": 32
@@ -796,16 +721,7 @@
             },
             {
               "id": 29,
-              "text": "Le mur de",
-              "text_position": {
-                "x": 740,
-                "y": 2
-              },
-              "layer": 0
-            },
-            {
-              "id": 30,
-              "text": "Berlinj",
+              "text": "Le mur de\nBerlinj",
               "text_position": {
                 "x": 740,
                 "y": 22
@@ -832,22 +748,7 @@
             },
             {
               "id": 32,
-              "text": "Les jeux",
-              "text_position": {
-                "x": 440,
-                "y": 22
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\ecosse\\ecosse.vnp 36"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\ecosse\\ecosse.vnp 36"
-              ]
-            },
-            {
-              "id": 33,
-              "text": "Olympiquesj",
+              "text": "Les jeux\nOlympiquesj",
               "text_position": {
                 "x": 440,
                 "y": 42
@@ -877,37 +778,7 @@
             },
             {
               "id": 35,
-              "text": "Les joyaux de",
-              "text_position": {
-                "x": 410,
-                "y": 330
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\france\\france.vnp 17"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 17"
-              ]
-            },
-            {
-              "id": 36,
-              "text": "la couronne",
-              "text_position": {
-                "x": 410,
-                "y": 345
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\france\\france.vnp 17"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 17"
-              ]
-            },
-            {
-              "id": 37,
-              "text": "d'Angleterrej",
+              "text": "Les joyaux de\nla couronne\nd'Angleterrej",
               "text_position": {
                 "x": 410,
                 "y": 360
@@ -937,22 +808,7 @@
             },
             {
               "id": 39,
-              "text": "L'exposition",
-              "text_position": {
-                "x": 600,
-                "y": 62
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\allem\\allem.vnp 6"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\allem\\allem.vnp 6"
-              ]
-            },
-            {
-              "id": 40,
-              "text": "universellej",
+              "text": "L'exposition\nuniversellej",
               "text_position": {
                 "x": 600,
                 "y": 82
@@ -967,37 +823,7 @@
             },
             {
               "id": 41,
-              "text": "Un livre sur",
-              "text_position": {
-                "x": 120,
-                "y": 322
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\belge\\belge.vnp 23"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\belge\\belge.vnp 23"
-              ]
-            },
-            {
-              "id": 42,
-              "text": "la fabrication",
-              "text_position": {
-                "x": 120,
-                "y": 342
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\belge\\belge.vnp 23"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\belge\\belge.vnp 23"
-              ]
-            },
-            {
-              "id": 43,
-              "text": "de la bièrej",
+              "text": "Un livre sur\nla fabrication\nde la bièrej",
               "text_position": {
                 "x": 120,
                 "y": 362
@@ -1012,22 +838,7 @@
             },
             {
               "id": 44,
-              "text": "L'histoire",
-              "text_position": {
-                "x": 950,
-                "y": 162
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\portu\\portu.vnp 14"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\portu\\portu.vnp 14"
-              ]
-            },
-            {
-              "id": 45,
-              "text": "du chocolatj",
+              "text": "L'histoire\ndu chocolatj",
               "text_position": {
                 "x": 950,
                 "y": 182
@@ -1087,16 +898,7 @@
             },
             {
               "id": 49,
-              "text": "Les grands",
-              "text_position": {
-                "x": 450,
-                "y": 262
-              },
-              "layer": 0
-            },
-            {
-              "id": 50,
-              "text": "navigateursj",
+              "text": "Les grands\nnavigateursj",
               "text_position": {
                 "x": 450,
                 "y": 282
@@ -1105,25 +907,7 @@
             },
             {
               "id": 51,
-              "text": "Louis",
-              "text_position": {
-                "x": 380,
-                "y": 150
-              },
-              "layer": 0,
-              "goto_scene": 15,
-              "actions": [
-                "runprj ..\\france\\france.vnp 15j",
-                "runprj ..\\italie\\italie.vnp  29"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 15j",
-                "jeu = 1 then runprj ..\\italie\\italie.vnp  29"
-              ]
-            },
-            {
-              "id": 52,
-              "text": "Pasteur",
+              "text": "Louis\nPasteur",
               "text_position": {
                 "x": 380,
                 "y": 165
@@ -1141,16 +925,7 @@
             },
             {
               "id": 53,
-              "text": "Balade à",
-              "text_position": {
-                "x": 395,
-                "y": 222
-              },
-              "layer": 0
-            },
-            {
-              "id": 54,
-              "text": "Venisej",
+              "text": "Balade à\nVenisej",
               "text_position": {
                 "x": 395,
                 "y": 242
@@ -1181,7 +956,7 @@
                 "y": 162
               },
               "layer": 0,
-              "goto_scene": 5,
+              "goto_scene": 57,
               "actions": [
                 "runprj ..\\angl\\angleterre.vnp 57j"
               ],
@@ -1220,7 +995,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54
+              "goto_scene": 1
             },
             {
               "id": 59,
@@ -1231,7 +1006,7 @@
               },
               "layer": 0,
               "video": "femme.avi",
-              "goto_scene": 1
+              "goto_scene": 2
             },
             {
               "id": 60,
@@ -1357,16 +1132,7 @@
             },
             {
               "id": 63,
-              "text": "Tu n'as pas le temps",
-              "text_position": {
-                "x": 800,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 64,
-              "text": "de te reposer.",
+              "text": "Tu n'as pas le temps\nde te reposer.",
               "text_position": {
                 "x": 800,
                 "y": 370
@@ -1384,16 +1150,7 @@
             },
             {
               "id": 66,
-              "text": "Un message est caché",
-              "text_position": {
-                "x": 380,
-                "y": 320
-              },
-              "layer": 0
-            },
-            {
-              "id": 67,
-              "text": "dans cette pièce, mais pas ici.d",
+              "text": "Un message est caché\ndans cette pièce, mais pas ici.d",
               "text_position": {
                 "x": 380,
                 "y": 340
@@ -1527,8 +1284,7 @@
                   "x": 458,
                   "y": 235
                 }
-              },
-              "goto_scene": 13
+              }
             },
             {
               "id": 72,
@@ -1539,7 +1295,7 @@
               },
               "layer": 0,
               "video": "pro1a.avi",
-              "goto_scene": 1
+              "goto_scene": 6
             },
             {
               "id": 73,
@@ -1717,25 +1473,7 @@
             },
             {
               "id": 80,
-              "text": "Le tableau de la légende.",
-              "text_position": {
-                "x": 760,
-                "y": 220
-              },
-              "layer": 0
-            },
-            {
-              "id": 81,
-              "text": "Clique dessus si tu veux",
-              "text_position": {
-                "x": 760,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 82,
-              "text": "revoir l'introduction.j",
+              "text": "Le tableau de la légende.\nClique dessus si tu veux\nrevoir l'introduction.j",
               "text_position": {
                 "x": 760,
                 "y": 260
@@ -1817,7 +1555,7 @@
                   "y": 252
                 }
               },
-              "goto_scene": 35,
+              "goto_scene": 49,
               "actions": [
                 "scene 35",
                 "playtext 1050 40 125 365 0 Tu as déjà répondu",
@@ -1900,34 +1638,7 @@
             },
             {
               "id": 87,
-              "text": "Il y a une autre",
-              "text_position": {
-                "x": 230,
-                "y": 50
-              },
-              "layer": 0
-            },
-            {
-              "id": 88,
-              "text": "bouteille en Europe",
-              "text_position": {
-                "x": 230,
-                "y": 70
-              },
-              "layer": 0
-            },
-            {
-              "id": 89,
-              "text": "elle te sera utile si tu",
-              "text_position": {
-                "x": 230,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 90,
-              "text": "la remplis d'eau.",
+              "text": "Il y a une autre\nbouteille en Europe\nelle te sera utile si tu\nla remplis d'eau.",
               "text_position": {
                 "x": 230,
                 "y": 110
@@ -1974,25 +1685,7 @@
             },
             {
               "id": 93,
-              "text": "Ces livres ne te",
-              "text_position": {
-                "x": 400,
-                "y": 340
-              },
-              "layer": 0
-            },
-            {
-              "id": 94,
-              "text": "seront d'aucune",
-              "text_position": {
-                "x": 400,
-                "y": 360
-              },
-              "layer": 0
-            },
-            {
-              "id": 95,
-              "text": "utilitéd",
+              "text": "Ces livres ne te\nseront d'aucune\nutilitéd",
               "text_position": {
                 "x": 400,
                 "y": 380
@@ -2749,7 +2442,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
+              "goto_scene": 3,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\france\\france.vnp 5",
@@ -3139,7 +2832,7 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
+              "goto_scene": 1,
               "actions": [
                 "scene 5",
                 "scene 7",
@@ -3179,7 +2872,7 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 1,
+              "goto_scene": 2,
               "actions": [
                 "scene 5",
                 "scene 7",
@@ -4729,7 +4422,7 @@
                   "y": 337
                 }
               },
-              "goto_scene": 46,
+              "goto_scene": 6,
               "actions": [
                 "scene 46",
                 "playtext 300 303 125 365 0 Si tu réponds juste, la somme",
@@ -4854,7 +4547,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54
+              "goto_scene": 5
             },
             {
               "id": 147,
@@ -4917,118 +4610,7 @@
           "hotspots": [
             {
               "id": 1,
-              "text": "Des informations",
-              "text_position": {
-                "x": 10,
-                "y": 340
-              },
-              "layer": 0,
-              "video": "moule1.avi",
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54j",
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54j",
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi moule1.avi 1 417 74 475 108",
-                "non = 1 then playavi moule99.avi 1 417 74 475 108"
-              ]
-            },
-            {
-              "id": 2,
-              "text": "sur la tour Eiffel.",
+              "text": "Des informations\nsur la tour Eiffel.",
               "text_position": {
                 "x": 10,
                 "y": 360
@@ -5324,17 +4906,7 @@
             },
             {
               "id": 8,
-              "text": "Il ne sait que sourire",
-              "text_position": {
-                "x": 280,
-                "y": 2
-              },
-              "layer": 0,
-              "video": "jap3.avi"
-            },
-            {
-              "id": 9,
-              "text": "et il n'a rien à te dire!!!l",
+              "text": "Il ne sait que sourire\net il n'a rien à te dire!!!l",
               "text_position": {
                 "x": 280,
                 "y": 22
@@ -5344,10 +4916,10 @@
             },
             {
               "id": 10,
-              "text": "Un autre touriste",
+              "text": "Un autre touriste\njaponais.l",
               "text_position": {
                 "x": 380,
-                "y": 2
+                "y": 22
               },
               "layer": 0,
               "video": "jap3.avi",
@@ -5361,35 +4933,8 @@
               ]
             },
             {
-              "id": 11,
-              "text": "japonais.l",
-              "text_position": {
-                "x": 380,
-                "y": 22
-              },
-              "layer": 0,
-              "video": "jap1.avi",
-              "actions": [
-                "playwav france.wav 2"
-              ],
-              "conditions": [
-                "ap_photo = 0 then closewav",
-                "ap_photo = 0 then playavi jap1.avi 1 30 80 85 133",
-                "ap_photo = 0 then playwav france.wav 2"
-              ]
-            },
-            {
               "id": 12,
-              "text": "Un touriste",
-              "text_position": {
-                "x": 120,
-                "y": 40
-              },
-              "layer": 0
-            },
-            {
-              "id": 13,
-              "text": "japonais.l",
+              "text": "Un touriste\njaponais.l",
               "text_position": {
                 "x": 120,
                 "y": 60
@@ -5468,7 +5013,6 @@
                 "y": 80
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "inc_var non 1"
               ],
@@ -5617,7 +5161,7 @@
                 }
               },
               "video": "coq.avi",
-              "goto_scene": 12
+              "goto_scene": 240
             }
           ]
         },
@@ -5656,118 +5200,7 @@
             },
             {
               "id": 20,
-              "text": "Un chef cuisinier",
-              "text_position": {
-                "x": 470,
-                "y": 350
-              },
-              "layer": 0,
-              "video": "chef1.avi",
-              "goto_scene": 54,
-              "actions": [
-                "scene 21",
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi chef1.avi 1 387 94 435 160",
-                "non = 1 then playavi chef99.avi 1 387 94 434 160",
-                "non = 0 then scene 21l"
-              ]
-            },
-            {
-              "id": 21,
-              "text": "tout malheureux !!",
+              "text": "Un chef cuisinier\ntout malheureux !!",
               "text_position": {
                 "x": 470,
                 "y": 370
@@ -5878,17 +5311,7 @@
             },
             {
               "id": 22,
-              "text": "Qui était",
-              "text_position": {
-                "x": 120,
-                "y": 160
-              },
-              "layer": 0,
-              "goto_scene": 21
-            },
-            {
-              "id": 23,
-              "text": "Louis Pasteur ?j",
+              "text": "Qui était\nLouis Pasteur ?j",
               "text_position": {
                 "x": 120,
                 "y": 180
@@ -5897,16 +5320,7 @@
             },
             {
               "id": 24,
-              "text": "Il était une fois",
-              "text_position": {
-                "x": 140,
-                "y": 140
-              },
-              "layer": 0
-            },
-            {
-              "id": 25,
-              "text": "les corsaires.j",
+              "text": "Il était une fois\nles corsaires.j",
               "text_position": {
                 "x": 140,
                 "y": 160
@@ -5929,7 +5343,7 @@
               },
               "layer": 0,
               "video": "helico1.avi",
-              "goto_scene": 54,
+              "goto_scene": 16,
               "actions": [
                 "scene 16",
                 "playwav helico.wav",
@@ -6036,18 +5450,7 @@
             },
             {
               "id": 27,
-              "text": "Un hélicoptère  un moyen",
-              "text_position": {
-                "x": 320,
-                "y": 140
-              },
-              "layer": 0,
-              "video": "helico2.avi",
-              "goto_scene": 16
-            },
-            {
-              "id": 28,
-              "text": "de transport idéald",
+              "text": "Un hélicoptère  un moyen\nde transport idéald",
               "text_position": {
                 "x": 320,
                 "y": 160
@@ -6074,17 +5477,7 @@
             },
             {
               "id": 30,
-              "text": "Le dernier étage est en réparation.",
-              "text_position": {
-                "x": 350,
-                "y": 40
-              },
-              "layer": 0,
-              "video": "asc2.avi"
-            },
-            {
-              "id": 31,
-              "text": "Impossible d'y accéder.i",
+              "text": "Le dernier étage est en réparation.\nImpossible d'y accéder.i",
               "text_position": {
                 "x": 350,
                 "y": 60
@@ -6094,92 +5487,17 @@
             },
             {
               "id": 32,
-              "text": "Le deuxième étage",
-              "text_position": {
-                "x": 350,
-                "y": 140
-              },
-              "layer": 0,
-              "video": "asc.avi"
-            },
-            {
-              "id": 33,
-              "text": "d'où on a une super",
-              "text_position": {
-                "x": 350,
-                "y": 160
-              },
-              "layer": 0,
-              "video": "asc1.avi"
-            },
-            {
-              "id": 34,
-              "text": "vue panoramique.i",
-              "text_position": {
-                "x": 350,
-                "y": 180
-              },
-              "layer": 0,
-              "video": "asc1.avi"
-            },
-            {
-              "id": 35,
-              "text": "Le premier étage",
-              "text_position": {
-                "x": 350,
-                "y": 200
-              },
-              "layer": 0,
-              "video": "asc.avi"
-            },
-            {
-              "id": 36,
-              "text": "où se trouve un restaurant",
-              "text_position": {
-                "x": 350,
-                "y": 220
-              },
-              "layer": 0
-            },
-            {
-              "id": 37,
-              "text": "de grand luxe.i",
+              "text": "Le deuxième étage\nd'où on a une super\nvue panoramique.i\nLe premier étage\noù se trouve un restaurant\nde grand luxe.i",
               "text_position": {
                 "x": 350,
                 "y": 240
               },
-              "layer": 0
+              "layer": 0,
+              "video": "asc.avi"
             },
             {
               "id": 38,
-              "text": "Il vous faudra",
-              "text_position": {
-                "x": 350,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 39,
-              "text": "prendre un autre",
-              "text_position": {
-                "x": 350,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 40,
-              "text": "billet si vous voulez",
-              "text_position": {
-                "x": 350,
-                "y": 280
-              },
-              "layer": 0
-            },
-            {
-              "id": 41,
-              "text": "remonter.i",
+              "text": "Il vous faudra\nprendre un autre\nbillet si vous voulez\nremonter.i",
               "text_position": {
                 "x": 350,
                 "y": 300
@@ -6313,8 +5631,7 @@
                 "x": 120,
                 "y": 360
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             }
           ]
         },
@@ -6603,7 +5920,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "scene 6",
                 "scene 2",
@@ -6721,8 +6037,7 @@
                   "x": 595,
                   "y": 345
                 }
-              },
-              "goto_scene": 54
+              }
             }
           ]
         },
@@ -6785,7 +6100,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\belge\\belge.vnp 6",
@@ -6878,7 +6192,6 @@
                 "y": 370
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "inc_var non 1"
               ],
@@ -7064,26 +6377,7 @@
           "hotspots": [
             {
               "id": 4,
-              "text": "Informations sur",
-              "text_position": {
-                "x": 700,
-                "y": 220
-              },
-              "layer": 0,
-              "actions": [
-                "scene 9",
-                "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "set_var bonus16 1"
-              ],
-              "conditions": [
-                "bonus16 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "bonus16 = 0 then set_var bonus16 1",
-                "bonus16 =  1 then scene 9"
-              ]
-            },
-            {
-              "id": 5,
-              "text": "le mur de Berlinj",
+              "text": "Informations sur\nle mur de Berlinj",
               "text_position": {
                 "x": 700,
                 "y": 240
@@ -7139,16 +6433,7 @@
             },
             {
               "id": 8,
-              "text": "Des informations sur la",
-              "text_position": {
-                "x": 310,
-                "y": 320
-              },
-              "layer": 0
-            },
-            {
-              "id": 9,
-              "text": "fabrication de la bière.j",
+              "text": "Des informations sur la\nfabrication de la bière.j",
               "text_position": {
                 "x": 310,
                 "y": 340
@@ -7256,18 +6541,7 @@
           "hotspots": [
             {
               "id": 12,
-              "text": "Pour partir en France.",
-              "text_position": {
-                "x": 200,
-                "y": 80
-              },
-              "layer": 0,
-              "video": "avion.avi",
-              "goto_scene": 8
-            },
-            {
-              "id": 13,
-              "text": "il suffit de cliquer ici .",
+              "text": "Pour partir en France.\nil suffit de cliquer ici .",
               "text_position": {
                 "x": 200,
                 "y": 100
@@ -7278,18 +6552,7 @@
             },
             {
               "id": 14,
-              "text": "Si tu désires aller en Italie.",
-              "text_position": {
-                "x": 200,
-                "y": 80
-              },
-              "layer": 0,
-              "video": "avion.avi",
-              "goto_scene": 18
-            },
-            {
-              "id": 15,
-              "text": "il suffit de cliquer ici .",
+              "text": "Si tu désires aller en Italie.\nil suffit de cliquer ici .",
               "text_position": {
                 "x": 200,
                 "y": 100
@@ -7300,16 +6563,7 @@
             },
             {
               "id": 16,
-              "text": "Pour aller en Irlande,",
-              "text_position": {
-                "x": 215,
-                "y": 80
-              },
-              "layer": 0
-            },
-            {
-              "id": 17,
-              "text": "il suffit de cliquer ici .i",
+              "text": "Pour aller en Irlande,\nil suffit de cliquer ici .i",
               "text_position": {
                 "x": 215,
                 "y": 100
@@ -7426,7 +6680,7 @@
               },
               "layer": 0,
               "video": "all.avi",
-              "goto_scene": 54,
+              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -7546,7 +6800,7 @@
                 "y": 110
               },
               "layer": 0,
-              "goto_scene": 1,
+              "goto_scene": 2,
               "actions": [
                 "set_var houblon 1",
                 "dec_var score 3"
@@ -8572,7 +7826,7 @@
                 }
               },
               "video": "waterloo1.avi",
-              "goto_scene": 54,
+              "goto_scene": 22,
               "actions": [
                 "scene 1"
               ],
@@ -8804,7 +8058,7 @@
                 "y": 280
               },
               "layer": 0,
-              "goto_scene": 53,
+              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54j"
               ],
@@ -8821,7 +8075,7 @@
               },
               "layer": 0,
               "video": "miss1.avi",
-              "goto_scene": 54,
+              "goto_scene": 159,
               "actions": [
                 "inc_var non 1"
               ],
@@ -8976,7 +8230,7 @@
                   "y": 288
                 }
               },
-              "goto_scene": 48,
+              "goto_scene": 22,
               "actions": [
                 "scene 80",
                 "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
@@ -9380,8 +8634,7 @@
                 "x": 200,
                 "y": 360
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             },
             {
               "id": 27,
@@ -9410,7 +8663,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 58,
+              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54l"
               ],
@@ -9466,8 +8719,7 @@
                   "x": 591,
                   "y": 281
                 }
-              },
-              "goto_scene": 26
+              }
             }
           ]
         },
@@ -9502,16 +8754,7 @@
           "hotspots": [
             {
               "id": 31,
-              "text": "Pour prendre un ticket",
-              "text_position": {
-                "x": 450,
-                "y": 74
-              },
-              "layer": 0
-            },
-            {
-              "id": 32,
-              "text": "clique sur l'appareil.",
+              "text": "Pour prendre un ticket\nclique sur l'appareil.",
               "text_position": {
                 "x": 450,
                 "y": 94
@@ -9757,7 +9000,6 @@
                 "y": 74
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "inc_var non 1"
               ],
@@ -9830,8 +9072,7 @@
                 "x": 50,
                 "y": 74
               },
-              "layer": 0,
-              "goto_scene": 60
+              "layer": 0
             }
           ]
         },
@@ -10516,7 +9757,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 28",
                 "scene 26",
@@ -10718,7 +9958,7 @@
                 "y": 335
               },
               "layer": 0,
-              "goto_scene": 1,
+              "goto_scene": 11,
               "actions": [
                 "addbmp sansviolon"
               ]
@@ -10863,7 +10103,7 @@
               },
               "layer": 0,
               "video": "violon1.avi",
-              "goto_scene": 1,
+              "goto_scene": 20,
               "actions": [
                 "delbmp sansviolon",
                 "scene 20",
@@ -10926,7 +10166,7 @@
               },
               "layer": 0,
               "video": "apicu99.avi",
-              "goto_scene": 54,
+              "goto_scene": 2,
               "actions": [
                 "scene 23",
                 "inc_var non 1",
@@ -11041,7 +10281,6 @@
                 "y": 225
               },
               "layer": 0,
-              "goto_scene": 2,
               "actions": [
                 "inc_var non 1"
               ],
@@ -11187,8 +10426,7 @@
                 "x": 60,
                 "y": 180
               },
-              "layer": 0,
-              "goto_scene": 338
+              "layer": 0
             },
             {
               "id": 15,
@@ -11746,7 +10984,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 1",
                 "scene 2",
@@ -11856,7 +11093,6 @@
               },
               "layer": 0,
               "video": "abeille1.avi",
-              "goto_scene": 294,
               "actions": [
                 "addbmp miel"
               ],
@@ -11883,7 +11119,6 @@
               },
               "layer": 0,
               "video": "abeille1.avi",
-              "goto_scene": 2,
               "conditions": [
                 "api = 2 then set_var api -1",
                 "api = 0 then playavi apicu2.avi 1 486 195 541 240",
@@ -12077,17 +11312,7 @@
             },
             {
               "id": 6,
-              "text": "Des informations",
-              "text_position": {
-                "x": 460,
-                "y": 90
-              },
-              "layer": 0,
-              "goto_scene": 54
-            },
-            {
-              "id": 7,
-              "text": "sur le chocolatj",
+              "text": "Des informations\nsur le chocolatj",
               "text_position": {
                 "x": 460,
                 "y": 110
@@ -12118,116 +11343,7 @@
             },
             {
               "id": 9,
-              "text": "Un vendeur de",
-              "text_position": {
-                "x": 90,
-                "y": 90
-              },
-              "layer": 0,
-              "video": "confise.avi",
-              "goto_scene": 182,
-              "actions": [
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi confise.avi 1 283 120 376 182",
-                "non = 1 then playavi confise99.avi 1 283 120 376 182l"
-              ]
-            },
-            {
-              "id": 10,
-              "text": "bonbons et de chocolats",
+              "text": "Un vendeur de\nbonbons et de chocolats",
               "text_position": {
                 "x": 90,
                 "y": 110
@@ -12336,19 +11452,7 @@
             },
             {
               "id": 11,
-              "text": "Attention manger trop",
-              "text_position": {
-                "x": 400,
-                "y": 100
-              },
-              "layer": 0,
-              "conditions": [
-                "chewing = 0 then playbmp"
-              ]
-            },
-            {
-              "id": 12,
-              "text": "de bonbons facilite les cariesd",
+              "text": "Attention manger trop\nde bonbons facilite les cariesd",
               "text_position": {
                 "x": 400,
                 "y": 120
@@ -12406,8 +11510,7 @@
                 "x": 220,
                 "y": 350
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             },
             {
               "id": 15,
@@ -12502,7 +11605,7 @@
               },
               "layer": 0,
               "video": "p_hist1.avi",
-              "goto_scene": 54,
+              "goto_scene": 9,
               "actions": [
                 "scene 9",
                 "inc_var non 1"
@@ -12606,26 +11709,7 @@
             },
             {
               "id": 21,
-              "text": "Des informations",
-              "text_position": {
-                "x": 480,
-                "y": 200
-              },
-              "layer": 0,
-              "goto_scene": 9
-            },
-            {
-              "id": 22,
-              "text": "sur le",
-              "text_position": {
-                "x": 480,
-                "y": 220
-              },
-              "layer": 0
-            },
-            {
-              "id": 23,
-              "text": "Manneken-pisj",
+              "text": "Des informations\nsur le\nManneken-pisj",
               "text_position": {
                 "x": 480,
                 "y": 240
@@ -12675,22 +11759,13 @@
           "hotspots": [
             {
               "id": 25,
-              "text": "Ton prof d'éducation physique",
-              "text_position": {
-                "x": 70,
-                "y": 100
-              },
-              "layer": 0,
-              "video": "gym99.avi"
-            },
-            {
-              "id": 26,
-              "text": "en plein effortl",
+              "text": "Ton prof d'éducation physique\nen plein effortl",
               "text_position": {
                 "x": 70,
                 "y": 120
               },
-              "layer": 0
+              "layer": 0,
+              "video": "gym99.avi"
             },
             {
               "id": 27,
@@ -12729,23 +11804,7 @@
           "hotspots": [
             {
               "id": 28,
-              "text": "Des informations",
-              "text_position": {
-                "x": 480,
-                "y": 140
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp 13"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\biblio\\biblio.vnp 13"
-              ]
-            },
-            {
-              "id": 29,
-              "text": "sur l'Atomiumj",
+              "text": "Des informations\nsur l'Atomiumj",
               "text_position": {
                 "x": 480,
                 "y": 160
@@ -12760,118 +11819,7 @@
             },
             {
               "id": 30,
-              "text": "La table des",
-              "text_position": {
-                "x": 480,
-                "y": 140
-              },
-              "layer": 0,
-              "video": "math3.avi",
-              "actions": [
-                "set_var non 2",
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "math = 1 then set_var non 2",
-                "non = 0 then playavi math3.avi 1 123 190 230 245",
-                "non = 1 then playavi math99.avi 1 123 190 230 245",
-                "non = 0 then rundll probleme.dll"
-              ]
-            },
-            {
-              "id": 31,
-              "text": "monnaies",
+              "text": "La table des\nmonnaies",
               "text_position": {
                 "x": 480,
                 "y": 160
@@ -12982,18 +11930,7 @@
             },
             {
               "id": 32,
-              "text": "Ta prof de",
-              "text_position": {
-                "x": 480,
-                "y": 140
-              },
-              "layer": 0,
-              "video": "math1.avi",
-              "goto_scene": 245
-            },
-            {
-              "id": 33,
-              "text": "mathématiquesl",
+              "text": "Ta prof de\nmathématiquesl",
               "text_position": {
                 "x": 480,
                 "y": 160
@@ -14096,7 +13033,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 6",
                 "scene 2",
@@ -14190,7 +13126,7 @@
               },
               "layer": 0,
               "video": "canard1.avi",
-              "goto_scene": 4
+              "goto_scene": 190
             }
           ]
         },
@@ -14223,26 +13159,7 @@
           "hotspots": [
             {
               "id": 3,
-              "text": "Des informations",
-              "text_position": {
-                "x": 270,
-                "y": 105
-              },
-              "layer": 0,
-              "video": "forge2.avi",
-              "actions": [
-                "addbmp hibou",
-                "playwav a_dan.wav 2",
-                "set_var chouette 1"
-              ],
-              "conditions": [
-                "chouette = 0 then set_var chouette 1",
-                "chouette != 0 then addbmp hibou"
-              ]
-            },
-            {
-              "id": 4,
-              "text": "sur les Vikingsj",
+              "text": "Des informations\nsur les Vikingsj",
               "text_position": {
                 "x": 270,
                 "y": 125
@@ -14280,7 +13197,6 @@
                 "y": 150
               },
               "layer": 0,
-              "goto_scene": 340,
               "actions": [
                 "inc_var non 1"
               ],
@@ -14465,16 +13381,7 @@
             },
             {
               "id": 7,
-              "text": "Des informations",
-              "text_position": {
-                "x": 470,
-                "y": 105
-              },
-              "layer": 0
-            },
-            {
-              "id": 8,
-              "text": "sur Andersenj",
+              "text": "Des informations\nsur Andersenj",
               "text_position": {
                 "x": 470,
                 "y": 125
@@ -14497,7 +13404,6 @@
               },
               "layer": 0,
               "video": "jeu.avi",
-              "goto_scene": 134,
               "actions": [
                 "addbmp locgagne",
                 "scene 13",
@@ -14888,8 +13794,7 @@
                 "x": 390,
                 "y": 320
               },
-              "layer": 0,
-              "goto_scene": 4
+              "layer": 0
             },
             {
               "id": 14,
@@ -14898,8 +13803,7 @@
                 "x": 280,
                 "y": 320
               },
-              "layer": 0,
-              "goto_scene": 3
+              "layer": 0
             },
             {
               "id": 15,
@@ -14908,39 +13812,11 @@
                 "x": 170,
                 "y": 320
               },
-              "layer": 0,
-              "goto_scene": 2
+              "layer": 0
             },
             {
               "id": 16,
-              "text": "Un bisou de sirène",
-              "text_position": {
-                "x": 20,
-                "y": 20
-              },
-              "layer": 0
-            },
-            {
-              "id": 17,
-              "text": "vaut bien une récompense !",
-              "text_position": {
-                "x": 20,
-                "y": 50
-              },
-              "layer": 0
-            },
-            {
-              "id": 18,
-              "text": "Tu peux gagner jusqu'à 50 euros.",
-              "text_position": {
-                "x": 20,
-                "y": 80
-              },
-              "layer": 0
-            },
-            {
-              "id": 19,
-              "text": "Clique sur une des bouches pour",
+              "text": "Un bisou de sirène\nvaut bien une récompense !\nTu peux gagner jusqu'à 50 euros.\nClique sur une des bouches pour",
               "text_position": {
                 "x": 20,
                 "y": 110
@@ -15007,7 +13883,7 @@
                   "y": 415
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 3,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -15223,7 +14099,7 @@
                   "y": 239
                 }
               },
-              "goto_scene": 17
+              "goto_scene": 18
             }
           ]
         },
@@ -15234,22 +14110,13 @@
           "hotspots": [
             {
               "id": 5,
-              "text": "Un adjudant d'infanterie",
-              "text_position": {
-                "x": 100,
-                "y": 103
-              },
-              "layer": 0,
-              "video": "adam99.avi"
-            },
-            {
-              "id": 6,
-              "text": "à la retraite.",
+              "text": "Un adjudant d'infanterie\nà la retraite.",
               "text_position": {
                 "x": 100,
                 "y": 123
               },
-              "layer": 0
+              "layer": 0,
+              "video": "adam99.avi"
             },
             {
               "id": 7,
@@ -15455,8 +14322,7 @@
                 "x": 40,
                 "y": 283
               },
-              "layer": 0,
-              "goto_scene": 2
+              "layer": 0
             },
             {
               "id": 14,
@@ -15498,7 +14364,6 @@
                 "y": 103
               },
               "layer": 0,
-              "goto_scene": 29,
               "actions": [
                 "addbmp ponpon",
                 "set_var ponpon 1"
@@ -15549,22 +14414,13 @@
           "hotspots": [
             {
               "id": 17,
-              "text": "Un joueur de",
-              "text_position": {
-                "x": 310,
-                "y": 163
-              },
-              "layer": 0,
-              "video": "hatta1.avi"
-            },
-            {
-              "id": 18,
-              "text": "rugby !!l",
+              "text": "Un joueur de\nrugby !!l",
               "text_position": {
                 "x": 310,
                 "y": 183
               },
-              "layer": 0
+              "layer": 0,
+              "video": "hatta1.avi"
             },
             {
               "id": 19,
@@ -15620,23 +14476,7 @@
           "hotspots": [
             {
               "id": 20,
-              "text": "Tout savoir",
-              "text_position": {
-                "x": 410,
-                "y": 173
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54j"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54j"
-              ]
-            },
-            {
-              "id": 21,
-              "text": "sur la cornemuse !?!!",
+              "text": "Tout savoir\nsur la cornemuse !?!!",
               "text_position": {
                 "x": 410,
                 "y": 183
@@ -15652,225 +14492,7 @@
             },
             {
               "id": 22,
-              "text": "Le plus mauvais  joueur",
-              "text_position": {
-                "x": 410,
-                "y": 168
-              },
-              "layer": 0,
-              "video": "hasquet.avi",
-              "goto_scene": 179,
-              "actions": [
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi hasquet.avi 1 246 55 343 179",
-                "non = 1 then playavi hasquet99.avi 1 246 55 343 179l"
-              ]
-            },
-            {
-              "id": 23,
-              "text": "de cornemuse de tout",
-              "text_position": {
-                "x": 410,
-                "y": 183
-              },
-              "layer": 0,
-              "video": "hasquet.avi",
-              "goto_scene": 179,
-              "actions": [
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi hasquet.avi 1 246 55 343 179",
-                "non = 1 then playavi hasquet99.avi 1 246 55 343 179l"
-              ]
-            },
-            {
-              "id": 24,
-              "text": "le pays.",
+              "text": "Le plus mauvais  joueur\nde cornemuse de tout\nle pays.",
               "text_position": {
                 "x": 410,
                 "y": 198
@@ -16002,7 +14624,7 @@
               },
               "layer": 0,
               "video": "harony.avi",
-              "goto_scene": 54,
+              "goto_scene": 6,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h",
                 "inc_var non 1"
@@ -16169,8 +14791,7 @@
                 "x": 63,
                 "y": 343
               },
-              "layer": 0,
-              "goto_scene": 16
+              "layer": 0
             },
             {
               "id": 31,
@@ -16224,26 +14845,7 @@
           "hotspots": [
             {
               "id": 35,
-              "text": "Désires-tu connaître",
-              "text_position": {
-                "x": 63,
-                "y": 243
-              },
-              "layer": 0,
-              "goto_scene": 64
-            },
-            {
-              "id": 36,
-              "text": "l'histoire de William",
-              "text_position": {
-                "x": 63,
-                "y": 263
-              },
-              "layer": 0
-            },
-            {
-              "id": 37,
-              "text": "Wallace?j",
+              "text": "Désires-tu connaître\nl'histoire de William\nWallace?j",
               "text_position": {
                 "x": 63,
                 "y": 283
@@ -16673,16 +15275,7 @@
           "hotspots": [
             {
               "id": 41,
-              "text": "Des informations sur",
-              "text_position": {
-                "x": 180,
-                "y": 298
-              },
-              "layer": 0
-            },
-            {
-              "id": 42,
-              "text": "le monstre du Loch Nessj",
+              "text": "Des informations sur\nle monstre du Loch Nessj",
               "text_position": {
                 "x": 180,
                 "y": 318
@@ -16730,7 +15323,7 @@
               },
               "layer": 0,
               "video": "nessie1.avi",
-              "goto_scene": 7,
+              "goto_scene": 300,
               "actions": [
                 "scene 41",
                 "playtext 450 100 125 365 0 Un appareil photo",
@@ -16891,7 +15484,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 6",
                 "playwav cling.wav 1",
@@ -17170,7 +15762,7 @@
                 }
               },
               "video": "ecosse.avi",
-              "goto_scene": 54,
+              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -17336,45 +15928,13 @@
           "hotspots": [
             {
               "id": 57,
-              "text": "Bravo!",
-              "text_position": {
-                "x": 10,
-                "y": 10
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
-            },
-            {
-              "id": 58,
-              "text": "Tu as réussi à",
-              "text_position": {
-                "x": 10,
-                "y": 30
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
-            },
-            {
-              "id": 59,
-              "text": "photographier Nessie !",
+              "text": "Bravo!\nTu as réussi à\nphotographier Nessie !",
               "text_position": {
                 "x": 10,
                 "y": 50
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 3,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -17740,7 +16300,7 @@
                 }
               },
               "video": "espa.avi",
-              "goto_scene": 54,
+              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -18020,7 +16580,7 @@
                   "y": 337
                 }
               },
-              "goto_scene": 17,
+              "goto_scene": 10,
               "actions": [
                 "set_var ingrok 1"
               ],
@@ -18118,7 +16678,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 2",
                 "scene 4",
@@ -19068,7 +17627,7 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 1,
+              "goto_scene": 3,
               "actions": [
                 "scene 3",
                 "scene 2",
@@ -19379,7 +17938,7 @@
                 "y": 10
               },
               "layer": 0,
-              "goto_scene": 24,
+              "goto_scene": 19,
               "actions": [
                 "delbmp sac"
               ],
@@ -19475,58 +18034,13 @@
             },
             {
               "id": 19,
-              "text": "Le meilleur",
-              "text_position": {
-                "x": 370,
-                "y": 105
-              },
-              "layer": 0,
-              "video": "me_holl.avi",
-              "actions": [
-                "addbmp hotte"
-              ],
-              "conditions": [
-                "hotte = 0 then addbmp hotte"
-              ]
-            },
-            {
-              "id": 20,
-              "text": "meunier",
-              "text_position": {
-                "x": 370,
-                "y": 125
-              },
-              "layer": 0,
-              "actions": [
-                "addbmp hotte"
-              ],
-              "conditions": [
-                "hotte = 0 then addbmp hotte"
-              ]
-            },
-            {
-              "id": 21,
-              "text": "de tout",
-              "text_position": {
-                "x": 370,
-                "y": 145
-              },
-              "layer": 0,
-              "actions": [
-                "addbmp hotte"
-              ],
-              "conditions": [
-                "hotte = 0 then addbmp hotte"
-              ]
-            },
-            {
-              "id": 22,
-              "text": "le paysl",
+              "text": "Le meilleur\nmeunier\nde tout\nle paysl",
               "text_position": {
                 "x": 370,
                 "y": 165
               },
               "layer": 0,
+              "video": "me_holl.avi",
               "actions": [
                 "addbmp hotte"
               ],
@@ -19649,22 +18163,7 @@
             },
             {
               "id": 29,
-              "text": "Non, c'est trop",
-              "text_position": {
-                "x": 85,
-                "y": 305
-              },
-              "layer": 0,
-              "actions": [
-                "addbmp farine"
-              ],
-              "conditions": [
-                "farine = 0 then addbmp farine"
-              ]
-            },
-            {
-              "id": 30,
-              "text": "lourd !d",
+              "text": "Non, c'est trop\nlourd !d",
               "text_position": {
                 "x": 85,
                 "y": 325
@@ -19849,25 +18348,7 @@
             },
             {
               "id": 43,
-              "text": "Informations sur",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0,
-              "video": "galerie1.avi",
-              "actions": [
-                "scene 12"
-              ],
-              "conditions": [
-                "palette = 0 then closewav",
-                "palette = 0 then playavi galerie1.avi 1 290 105 340 156",
-                "palette = 0 then scene 12"
-              ]
-            },
-            {
-              "id": 44,
-              "text": "Rembrandtj",
+              "text": "Informations sur\nRembrandtj",
               "text_position": {
                 "x": 40,
                 "y": 280
@@ -19885,16 +18366,7 @@
             },
             {
               "id": 45,
-              "text": "Le responsable de la",
-              "text_position": {
-                "x": 370,
-                "y": 20
-              },
-              "layer": 0
-            },
-            {
-              "id": 46,
-              "text": "galerie de peinturel",
+              "text": "Le responsable de la\ngalerie de peinturel",
               "text_position": {
                 "x": 370,
                 "y": 40
@@ -20652,25 +19124,7 @@
             },
             {
               "id": 56,
-              "text": "La valise à questions peut te faire gagner",
-              "text_position": {
-                "x": 100,
-                "y": 20
-              },
-              "layer": 0
-            },
-            {
-              "id": 57,
-              "text": "150 euros pour cela tu dois me dire dans quel",
-              "text_position": {
-                "x": 100,
-                "y": 40
-              },
-              "layer": 0
-            },
-            {
-              "id": 58,
-              "text": "panier l'oeuf à l'unité est le moins cher.",
+              "text": "La valise à questions peut te faire gagner\n150 euros pour cela tu dois me dire dans quel\npanier l'oeuf à l'unité est le moins cher.",
               "text_position": {
                 "x": 100,
                 "y": 60
@@ -20745,7 +19199,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "scene 1",
                 "scene 2",
@@ -20867,7 +19320,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 3",
                 "scene 7",
@@ -21427,7 +19879,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 54,
               "actions": [
                 "scene 7",
                 "scene 48",
@@ -21522,23 +19973,7 @@
           "hotspots": [
             {
               "id": 1,
-              "text": "La grande bibliothèque",
-              "text_position": {
-                "x": 850,
-                "y": 30
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
-            },
-            {
-              "id": 2,
-              "text": "de Venise",
+              "text": "La grande bibliothèque\nde Venise",
               "text_position": {
                 "x": 850,
                 "y": 50
@@ -21554,16 +19989,7 @@
             },
             {
               "id": 3,
-              "text": "Le plus grand",
-              "text_position": {
-                "x": 980,
-                "y": 30
-              },
-              "layer": 0
-            },
-            {
-              "id": 4,
-              "text": "couturier du mondef",
+              "text": "Le plus grand\ncouturier du mondef",
               "text_position": {
                 "x": 980,
                 "y": 50
@@ -21698,22 +20124,13 @@
             },
             {
               "id": 7,
-              "text": "Un loueur",
-              "text_position": {
-                "x": 690,
-                "y": 220
-              },
-              "layer": 0,
-              "video": "ves.avi"
-            },
-            {
-              "id": 8,
-              "text": "de scootersl",
+              "text": "Un loueur\nde scootersl",
               "text_position": {
                 "x": 690,
                 "y": 240
               },
-              "layer": 0
+              "layer": 0,
+              "video": "ves.avi"
             },
             {
               "id": 9,
@@ -21837,21 +20254,11 @@
                 "x": 200,
                 "y": 325
               },
-              "layer": 0,
-              "goto_scene": 5
-            },
-            {
-              "id": 11,
-              "text": "Indispensable pour passer",
-              "text_position": {
-                "x": 245,
-                "y": 285
-              },
               "layer": 0
             },
             {
-              "id": 12,
-              "text": "de l'autre coté de la rive.d",
+              "id": 11,
+              "text": "Indispensable pour passer\nde l'autre coté de la rive.d",
               "text_position": {
                 "x": 245,
                 "y": 305
@@ -21869,16 +20276,7 @@
             },
             {
               "id": 14,
-              "text": "Fermé pour cause",
-              "text_position": {
-                "x": 890,
-                "y": 30
-              },
-              "layer": 0
-            },
-            {
-              "id": 15,
-              "text": "d'inventaired",
+              "text": "Fermé pour cause\nd'inventaired",
               "text_position": {
                 "x": 890,
                 "y": 50
@@ -21915,8 +20313,7 @@
                 "x": 310,
                 "y": 365
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             },
             {
               "id": 18,
@@ -21972,225 +20369,7 @@
           "hotspots": [
             {
               "id": 23,
-              "text": "C'est lui,",
-              "text_position": {
-                "x": 120,
-                "y": 260
-              },
-              "layer": 0,
-              "video": "coutur1.avi",
-              "goto_scene": 54,
-              "actions": [
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi coutur1.avi 1 317 100 378 146",
-                "non = 1 then playavi coutur.avi 1 317 100 378 146l"
-              ]
-            },
-            {
-              "id": 24,
-              "text": "le plus grand couturier",
-              "text_position": {
-                "x": 120,
-                "y": 280
-              },
-              "layer": 0,
-              "video": "coutur1.avi",
-              "goto_scene": 146,
-              "actions": [
-                "inc_var non 1"
-              ],
-              "conditions": [
-                "clerouge = 2 then inc_var non 1",
-                "ballon1 = 2 then inc_var non 1",
-                "bouee = 2 then inc_var non 1",
-                "bout_plo = 2 then inc_var non 1",
-                "bus = 2 then inc_var non 1",
-                "castagnette = 2 then inc_var non 1",
-                "ciseau = 2 then inc_var non 1",
-                "clejaune = 2 then inc_var non 1",
-                "guitare = 2 then inc_var non 1",
-                "harpon = 2 then inc_var non 1",
-                "helice = 2 then inc_var non 1",
-                "loupe = 2 then inc_var non 1",
-                "masque = 2 then inc_var non 1",
-                "masse = 2 then inc_var non 1",
-                "pain = 2 then inc_var non 1",
-                "palme = 2 then inc_var non 1",
-                "photo = 2 then inc_var non 1",
-                "piece = 2 then inc_var non 1",
-                "pier_berlin = 2 then inc_var non 1",
-                "raquette = 2 then inc_var non 1",
-                "ressort  = 2 then inc_var non 1",
-                "cheval  = 2 then inc_var non 1",
-                "riz = 2 then inc_var non 1",
-                "ruban = 2 then inc_var non 1",
-                "sabot1 = 2 then inc_var non 1",
-                "sabot2 = 2 then inc_var non 1",
-                "scotch = 2 then inc_var non 1",
-                "taillepierre = 2 then inc_var non 1",
-                "ap_photo = 2 then inc_var non 1",
-                "houblon = 2 then inc_var non 1",
-                "chewing = 2 then inc_var non 1",
-                "cleverte = 2 then inc_var non 1",
-                "partition = 2 then inc_var non 1",
-                "laine = 2 then inc_var non 1",
-                "tondeuse = 2 then inc_var non 1",
-                "tournevis = 2 then inc_var non 1",
-                "cire = 2 then inc_var non 1",
-                "chianti = 2 then inc_var non 1",
-                "rouedent = 2 then inc_var non 1",
-                "pierreor = 2 then inc_var non 1",
-                "papiercado = 2 then inc_var non 1",
-                "hotte = 2 then inc_var non 1",
-                "levure = 2 then inc_var non 1",
-                "bouteille = 2 then inc_var non 1",
-                "parfum = 2 then inc_var non 1",
-                "rouge = 2 then inc_var non 1",
-                "bisous = 2 then inc_var non 1",
-                "api  = 2 then inc_var non 1",
-                "pince = 2 then inc_var non 1",
-                "tulipejaune = 2 then inc_var non 1",
-                "tulipeorange = 2 then inc_var non 1",
-                "tuliperouge = 2 then inc_var non 1",
-                "tulipeverte  = 2 then inc_var non 1",
-                "tulipeviolet = 2 then inc_var non 1",
-                "farine = 2 then inc_var non 1",
-                "saliere = 2 then inc_var non 1",
-                "bougie = 2 then inc_var non 1",
-                "seche = 2 then inc_var non 1",
-                "bout_eau = 2 then inc_var non 1",
-                "dorade = 2 then inc_var non 1",
-                "moule = 2 then inc_var non 1",
-                "ail = 2 then inc_var non 1",
-                "poivrouge = 2 then inc_var non 1",
-                "poivjaune = 2 then inc_var non 1",
-                "oignon  = 2 then inc_var non 1",
-                "olive = 2 then inc_var non 1",
-                "bouillon = 2 then inc_var non 1",
-                "violon = 2 then inc_var non 1",
-                "skate = 2 then inc_var non 1",
-                "champagne = 2 then inc_var non 1",
-                "fromage = 2 then inc_var non 1",
-                "bonnet = 2 then inc_var non 1",
-                "huile = 2 then inc_var non 1",
-                "orge = 2 then inc_var non 1",
-                "burette = 2 then inc_var non 1",
-                "allumette = 2 then inc_var non 1",
-                "chouetteor = 2 then inc_var non 1",
-                "chouette = 2 then inc_var non 1",
-                "sirop = 2 then inc_var non 1",
-                "fiolegrece = 2 then inc_var non 1",
-                "fiolegrece2 = 2 then inc_var non 1",
-                "fioleecosse = 2 then inc_var non 1",
-                "fioleirlande = 2 then inc_var non 1",
-                "fioleespagne = 2 then inc_var non 1",
-                "fiolesuede = 2 then inc_var non 1",
-                "fiolefinlande = 2 then inc_var non 1",
-                "fioleautriche = 2 then inc_var non 1",
-                "fiolepaysbas = 2 then inc_var non 1",
-                "fioleespagne2 = 2 then inc_var non 1",
-                "fioleitalie = 2 then inc_var non 1",
-                "fioleangleterre = 2 then inc_var non 1",
-                "non = 0 then playavi coutur1.avi 1 317 100 378 146",
-                "non = 1 then playavi coutur.avi 1 317 100 378 146l"
-              ]
-            },
-            {
-              "id": 25,
-              "text": "du Mooonde !",
+              "text": "C'est lui,\nle plus grand couturier\ndu Mooonde !",
               "text_position": {
                 "x": 120,
                 "y": 300
@@ -22367,7 +20546,7 @@
               },
               "layer": 0,
               "video": "pizz99.avi",
-              "goto_scene": 54,
+              "goto_scene": 2,
               "actions": [
                 "scene 18",
                 "playwav resto.wav 2l",
@@ -22498,17 +20677,7 @@
           "hotspots": [
             {
               "id": 31,
-              "text": "La tour de Pise.",
-              "text_position": {
-                "x": 305,
-                "y": 100
-              },
-              "layer": 0,
-              "goto_scene": 54
-            },
-            {
-              "id": 32,
-              "text": "Tiens, on dirait qu'elle penche !f",
+              "text": "La tour de Pise.\nTiens, on dirait qu'elle penche !f",
               "text_position": {
                 "x": 305,
                 "y": 120
@@ -22629,17 +20798,7 @@
             },
             {
               "id": 34,
-              "text": "Informations sur",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0,
-              "goto_scene": 2
-            },
-            {
-              "id": 35,
-              "text": "la Tour de Pise",
+              "text": "Informations sur\nla Tour de Pise",
               "text_position": {
                 "x": 490,
                 "y": 110
@@ -22716,7 +20875,7 @@
                 }
               },
               "video": "torche.avi",
-              "goto_scene": 54,
+              "goto_scene": 13,
               "actions": [
                 "scene 13"
               ],
@@ -22739,16 +20898,7 @@
           "hotspots": [
             {
               "id": 38,
-              "text": "Un coffre fort",
-              "text_position": {
-                "x": 135,
-                "y": 150
-              },
-              "layer": 0
-            },
-            {
-              "id": 39,
-              "text": "fermé à cléi",
+              "text": "Un coffre fort\nfermé à cléi",
               "text_position": {
                 "x": 135,
                 "y": 170
@@ -23277,7 +21427,7 @@
                 "y": 410
               },
               "layer": 0,
-              "goto_scene": 33
+              "goto_scene": 3
             }
           ]
         }
@@ -23780,7 +21930,7 @@
                 "y": 80
               },
               "layer": 0,
-              "goto_scene": 1
+              "goto_scene": 8
             },
             {
               "id": 9,
@@ -24102,8 +22252,7 @@
                 "x": 460,
                 "y": 80
               },
-              "layer": 0,
-              "goto_scene": 54
+              "layer": 0
             },
             {
               "id": 2,
@@ -24122,7 +22271,7 @@
                 "y": 60
               },
               "layer": 0,
-              "goto_scene": 7
+              "goto_scene": 3
             }
           ]
         },
@@ -24204,7 +22353,7 @@
               },
               "layer": 0,
               "video": "librair1.avi",
-              "goto_scene": 54,
+              "goto_scene": 196,
               "actions": [
                 "inc_var non 1"
               ],
@@ -24339,8 +22488,7 @@
                 "x": 310,
                 "y": 100
               },
-              "layer": 0,
-              "goto_scene": 343
+              "layer": 0
             }
           ]
         },
@@ -24517,7 +22665,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "inc_var non 1"
               ],
@@ -24603,39 +22750,7 @@
           "hotspots": [
             {
               "id": 15,
-              "text": "Un génie de la mécanique.",
-              "text_position": {
-                "x": 370,
-                "y": 15
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
-            },
-            {
-              "id": 16,
-              "text": "Sa passion la construction de",
-              "text_position": {
-                "x": 370,
-                "y": 35
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
-            },
-            {
-              "id": 17,
-              "text": "sous-marin de poche.",
+              "text": "Un génie de la mécanique.\nSa passion la construction de\nsous-marin de poche.",
               "text_position": {
                 "x": 370,
                 "y": 55
@@ -24658,7 +22773,7 @@
               },
               "layer": 0,
               "video": "radar.avi",
-              "goto_scene": 54
+              "goto_scene": 139
             }
           ]
         },
@@ -24785,7 +22900,7 @@
                 }
               },
               "video": "suede.avi",
-              "goto_scene": 54,
+              "goto_scene": 1,
               "actions": [
                 "addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400",
                 "addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400",
@@ -25292,8 +23407,7 @@
                 "x": 45,
                 "y": 430
               },
-              "layer": 0,
-              "goto_scene": 122
+              "layer": 0
             }
           ]
         },
@@ -25331,8 +23445,7 @@
                 "x": 45,
                 "y": 430
               },
-              "layer": 0,
-              "goto_scene": 100
+              "layer": 0
             }
           ]
         },
@@ -25348,8 +23461,7 @@
                 "x": 45,
                 "y": 430
               },
-              "layer": 0,
-              "goto_scene": 149
+              "layer": 0
             }
           ]
         },
@@ -25813,16 +23925,7 @@
             },
             {
               "id": 31,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 32,
-              "text": "\" 2 personnes\"",
+              "text": "Recette pour\n\" 2 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -25874,16 +23977,7 @@
           "hotspots": [
             {
               "id": 37,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 38,
-              "text": "Danoise",
+              "text": "Recette\nDanoise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -25926,16 +24020,7 @@
             },
             {
               "id": 42,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 43,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26048,16 +24133,7 @@
             },
             {
               "id": 54,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 55,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26109,16 +24185,7 @@
           "hotspots": [
             {
               "id": 60,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 61,
-              "text": "Portugaise",
+              "text": "Recette\nPortugaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -26134,16 +24201,7 @@
           "hotspots": [
             {
               "id": 62,
-              "text": "SOUPE DE",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 63,
-              "text": "POISSONS",
+              "text": "SOUPE DE\nPOISSONS",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -26161,16 +24219,7 @@
             },
             {
               "id": 65,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 66,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26188,16 +24237,7 @@
             },
             {
               "id": 68,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 69,
-              "text": "20 minutes",
+              "text": "Préparation\n20 minutes",
               "text_position": {
                 "x": 35,
                 "y": 260
@@ -26265,16 +24305,7 @@
           "hotspots": [
             {
               "id": 75,
-              "text": "FEUILLES",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 76,
-              "text": "DE VIGNE",
+              "text": "FEUILLES\nDE VIGNE",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -26292,16 +24323,7 @@
             },
             {
               "id": 78,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 79,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26396,16 +24418,7 @@
           "hotspots": [
             {
               "id": 88,
-              "text": "SOUPE AUX",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 89,
-              "text": "ANGUILLES",
+              "text": "SOUPE AUX\nANGUILLES",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -26423,16 +24436,7 @@
             },
             {
               "id": 91,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 92,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26536,16 +24540,7 @@
           "hotspots": [
             {
               "id": 102,
-              "text": "CREVETTES",
-              "text_position": {
-                "x": 30,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 103,
-              "text": "SAUCE ROSE",
+              "text": "CREVETTES\nSAUCE ROSE",
               "text_position": {
                 "x": 30,
                 "y": 150
@@ -26563,16 +24558,7 @@
             },
             {
               "id": 105,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 106,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26718,16 +24704,7 @@
             },
             {
               "id": 116,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 117,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26804,16 +24781,7 @@
           "hotspots": [
             {
               "id": 124,
-              "text": "IRISH",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 125,
-              "text": "CREAM",
+              "text": "IRISH\nCREAM",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -26831,16 +24799,7 @@
             },
             {
               "id": 127,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 128,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -26892,16 +24851,7 @@
           "hotspots": [
             {
               "id": 133,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 134,
-              "text": "Portugaise",
+              "text": "Recette\nPortugaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -26944,16 +24894,7 @@
             },
             {
               "id": 138,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 139,
-              "text": "\" 8 personnes\"",
+              "text": "Recette pour\n\" 8 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27023,16 +24964,7 @@
           "hotspots": [
             {
               "id": 146,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 147,
-              "text": "Sueduoise",
+              "text": "Recette\nSueduoise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -27179,16 +25111,7 @@
             },
             {
               "id": 161,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 162,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27240,16 +25163,7 @@
           "hotspots": [
             {
               "id": 167,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 168,
-              "text": "Sueduoise",
+              "text": "Recette\nSueduoise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -27265,16 +25179,7 @@
           "hotspots": [
             {
               "id": 169,
-              "text": "COMPÔTE",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 170,
-              "text": "DE FRUITS",
+              "text": "COMPÔTE\nDE FRUITS",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -27292,16 +25197,7 @@
             },
             {
               "id": 172,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 173,
-              "text": "\" 8 personnes\"",
+              "text": "Recette pour\n\" 8 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27548,16 +25444,7 @@
             },
             {
               "id": 185,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 186,
-              "text": "\" 8 personnes\"",
+              "text": "Recette pour\n\" 8 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27652,16 +25539,7 @@
           "hotspots": [
             {
               "id": 195,
-              "text": "CHOCOLAT",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 196,
-              "text": "VIENNOIS",
+              "text": "CHOCOLAT\nVIENNOIS",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -27679,16 +25557,7 @@
             },
             {
               "id": 198,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 199,
-              "text": "\" 10 personnes\"",
+              "text": "Recette pour\n\" 10 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27783,16 +25652,7 @@
             },
             {
               "id": 208,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 209,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -27887,16 +25747,7 @@
           "hotspots": [
             {
               "id": 218,
-              "text": "CHRISTMAS",
-              "text_position": {
-                "x": 25,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 219,
-              "text": "PUDDING",
+              "text": "CHRISTMAS\nPUDDING",
               "text_position": {
                 "x": 25,
                 "y": 150
@@ -27914,16 +25765,7 @@
             },
             {
               "id": 221,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 222,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -28018,16 +25860,7 @@
           "hotspots": [
             {
               "id": 231,
-              "text": "STRUDEL",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 232,
-              "text": "A LA CREME",
+              "text": "STRUDEL\nA LA CREME",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -28045,16 +25878,7 @@
             },
             {
               "id": 234,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 235,
-              "text": "\" 8 personnes\"",
+              "text": "Recette pour\n\" 8 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -28167,16 +25991,7 @@
             },
             {
               "id": 246,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 247,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -28467,8 +26282,7 @@
                 "x": 510,
                 "y": 450
               },
-              "layer": 0,
-              "goto_scene": 380
+              "layer": 0
             }
           ]
         },
@@ -28543,7 +26357,6 @@
                 "y": 420
               },
               "layer": 0,
-              "goto_scene": 15,
               "actions": [
                 "playwav tic1.wav"
               ],
@@ -28966,25 +26779,7 @@
             },
             {
               "id": 262,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 263,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 264,
-              "text": "1,95583 marks",
+              "text": "1 Euro\n\"    =\"\n1,95583 marks",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29025,16 +26820,7 @@
             },
             {
               "id": 267,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 268,
-              "text": "\"    =\"",
+              "text": "1 Euro\n\"    =\"",
               "text_position": {
                 "x": 490,
                 "y": 110
@@ -29068,25 +26854,7 @@
             },
             {
               "id": 271,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 272,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 273,
-              "text": "40,3399 francs",
+              "text": "1 Euro\n\"    =\"\n40,3399 francs",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29127,25 +26895,7 @@
             },
             {
               "id": 276,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 277,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 278,
-              "text": "166,386 pesetas",
+              "text": "1 Euro\n\"    =\"\n166,386 pesetas",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29170,25 +26920,7 @@
             },
             {
               "id": 280,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 281,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 282,
-              "text": "1936,27 lires",
+              "text": "1 Euro\n\"    =\"\n1936,27 lires",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29213,25 +26945,7 @@
             },
             {
               "id": 284,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 285,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 286,
-              "text": "5,94573 marks",
+              "text": "1 Euro\n\"    =\"\n5,94573 marks",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29256,25 +26970,7 @@
             },
             {
               "id": 288,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 289,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 290,
-              "text": "6,55957 francs",
+              "text": "1 Euro\n\"    =\"\n6,55957 francs",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29315,25 +27011,7 @@
             },
             {
               "id": 293,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 294,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 295,
-              "text": "40,3399 francs",
+              "text": "1 Euro\n\"    =\"\n40,3399 francs",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29358,25 +27036,7 @@
             },
             {
               "id": 297,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 298,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 299,
-              "text": "0,787564 livre",
+              "text": "1 Euro\n\"    =\"\n0,787564 livre",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29401,25 +27061,7 @@
             },
             {
               "id": 301,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 302,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 303,
-              "text": "200,482 escudos",
+              "text": "1 Euro\n\"    =\"\n200,482 escudos",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29444,25 +27086,7 @@
             },
             {
               "id": 305,
-              "text": "1 Euro",
-              "text_position": {
-                "x": 490,
-                "y": 90
-              },
-              "layer": 0
-            },
-            {
-              "id": 306,
-              "text": "\"    =\"",
-              "text_position": {
-                "x": 490,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
-              "id": 307,
-              "text": "2,20371 florins",
+              "text": "1 Euro\n\"    =\"\n2,20371 florins",
               "text_position": {
                 "x": 490,
                 "y": 140
@@ -29857,16 +27481,7 @@
           "hotspots": [
             {
               "id": 312,
-              "text": "Histoire",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 313,
-              "text": "portugaise",
+              "text": "Histoire\nportugaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -29875,22 +27490,7 @@
             },
             {
               "id": 314,
-              "text": "La marine",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\belge\\belge.vnp 14"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\belge\\belge.vnp 14"
-              ]
-            },
-            {
-              "id": 315,
-              "text": "portugaised",
+              "text": "La marine\nportugaised",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -29912,16 +27512,7 @@
           "hotspots": [
             {
               "id": 316,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 317,
-              "text": "belge",
+              "text": "Monument\nbelge",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -29952,16 +27543,7 @@
           "hotspots": [
             {
               "id": 319,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 320,
-              "text": "français",
+              "text": "Monument\nfrançais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30029,16 +27611,7 @@
           "hotspots": [
             {
               "id": 324,
-              "text": "Divers",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 325,
-              "text": "Pays-Bas",
+              "text": "Divers\nPays-Bas",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30047,22 +27620,7 @@
             },
             {
               "id": 326,
-              "text": "Le vélo",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\allem\\allem.vnp 5"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\allem\\allem.vnp 5"
-              ]
-            },
-            {
-              "id": 327,
-              "text": "en Hollanded",
+              "text": "Le vélo\nen Hollanded",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30084,16 +27642,7 @@
           "hotspots": [
             {
               "id": 328,
-              "text": "Musicien",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 329,
-              "text": "allemand",
+              "text": "Musicien\nallemand",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30102,16 +27651,7 @@
             },
             {
               "id": 330,
-              "text": "Ludwig Van",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0
-            },
-            {
-              "id": 331,
-              "text": "Beethovend",
+              "text": "Ludwig Van\nBeethovend",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30127,16 +27667,7 @@
           "hotspots": [
             {
               "id": 332,
-              "text": "Animaux",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 333,
-              "text": "finlandais",
+              "text": "Animaux\nfinlandais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30161,16 +27692,7 @@
           "hotspots": [
             {
               "id": 335,
-              "text": "Animaux",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 336,
-              "text": "finlandais",
+              "text": "Animaux\nfinlandais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30179,16 +27701,7 @@
             },
             {
               "id": 337,
-              "text": "Les chiens",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0
-            },
-            {
-              "id": 338,
-              "text": "de traîneaud",
+              "text": "Les chiens\nde traîneaud",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30204,16 +27717,7 @@
           "hotspots": [
             {
               "id": 339,
-              "text": "Mode",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 340,
-              "text": "française",
+              "text": "Mode\nfrançaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30238,16 +27742,7 @@
           "hotspots": [
             {
               "id": 342,
-              "text": "Histoire",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 343,
-              "text": "anglaise",
+              "text": "Histoire\nanglaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30256,22 +27751,7 @@
             },
             {
               "id": 344,
-              "text": "Les joyaux",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\autr\\autr.vnp 14"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\autr\\autr.vnp 14"
-              ]
-            },
-            {
-              "id": 345,
-              "text": "de la couronned",
+              "text": "Les joyaux\nde la couronned",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30293,16 +27773,7 @@
           "hotspots": [
             {
               "id": 346,
-              "text": "Inventeur",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 347,
-              "text": "français",
+              "text": "Inventeur\nfrançais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30311,22 +27782,7 @@
             },
             {
               "id": 348,
-              "text": "Les frères",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "scene 58"
-              ],
-              "conditions": [
-                "dico = 1 then scene 58"
-              ]
-            },
-            {
-              "id": 349,
-              "text": "Montgolfierd",
+              "text": "Les frères\nMontgolfierd",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30363,16 +27819,7 @@
           "hotspots": [
             {
               "id": 351,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 352,
-              "text": "anglais",
+              "text": "Monument\nanglais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30403,16 +27850,7 @@
           "hotspots": [
             {
               "id": 354,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 355,
-              "text": "écossais",
+              "text": "Monument\nécossais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30421,22 +27859,7 @@
             },
             {
               "id": 356,
-              "text": "Le château",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\allem\\allem.vnp 6"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\allem\\allem.vnp 6"
-              ]
-            },
-            {
-              "id": 357,
-              "text": "d'Edimbourgd",
+              "text": "Le château\nd'Edimbourgd",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30458,16 +27881,7 @@
           "hotspots": [
             {
               "id": 358,
-              "text": "Spécialité",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 359,
-              "text": "allemande",
+              "text": "Spécialité\nallemande",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30476,22 +27890,7 @@
             },
             {
               "id": 360,
-              "text": "La fabrication",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\suede\\suede.vnp 10"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\suede\\suede.vnp 10"
-              ]
-            },
-            {
-              "id": 361,
-              "text": "de la bièred",
+              "text": "La fabrication\nde la bièred",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30513,16 +27912,7 @@
           "hotspots": [
             {
               "id": 362,
-              "text": "Inventeur",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 363,
-              "text": "suédois",
+              "text": "Inventeur\nsuédois",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30553,16 +27943,7 @@
           "hotspots": [
             {
               "id": 365,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 366,
-              "text": "belge",
+              "text": "Monument\nbelge",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30593,16 +27974,7 @@
           "hotspots": [
             {
               "id": 368,
-              "text": "Héros",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 369,
-              "text": "écossais",
+              "text": "Héros\nécossais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30633,16 +28005,7 @@
           "hotspots": [
             {
               "id": 371,
-              "text": "Inventeur",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 372,
-              "text": "français",
+              "text": "Inventeur\nfrançais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30704,16 +28067,7 @@
           "hotspots": [
             {
               "id": 376,
-              "text": "Inventeur",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 377,
-              "text": "italien",
+              "text": "Inventeur\nitalien",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30722,22 +28076,7 @@
             },
             {
               "id": 378,
-              "text": "Léonard",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\portu\\portu.vnp 14"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\portu\\portu.vnp 14"
-              ]
-            },
-            {
-              "id": 379,
-              "text": "de Vincid",
+              "text": "Léonard\nde Vincid",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30759,16 +28098,7 @@
           "hotspots": [
             {
               "id": 380,
-              "text": "Coutume",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 381,
-              "text": "portugaise",
+              "text": "Coutume\nportugaise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30799,16 +28129,7 @@
           "hotspots": [
             {
               "id": 383,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 384,
-              "text": "anglais",
+              "text": "Monument\nanglais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30839,16 +28160,7 @@
           "hotspots": [
             {
               "id": 386,
-              "text": "Homme",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 387,
-              "text": "français",
+              "text": "Homme\nfrançais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30857,22 +28169,7 @@
             },
             {
               "id": 388,
-              "text": "Coubertin et les",
-              "text_position": {
-                "x": 15,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\holl\\holl.vnp 8"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\holl\\holl.vnp 8"
-              ]
-            },
-            {
-              "id": 389,
-              "text": "jeux olympiquesd",
+              "text": "Coubertin et les\njeux olympiquesd",
               "text_position": {
                 "x": 15,
                 "y": 155
@@ -30894,16 +28191,7 @@
           "hotspots": [
             {
               "id": 390,
-              "text": "Peintre",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 391,
-              "text": "hollandais",
+              "text": "Peintre\nhollandais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30934,16 +28222,7 @@
           "hotspots": [
             {
               "id": 393,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 394,
-              "text": "allemand",
+              "text": "Monument\nallemand",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -30952,22 +28231,7 @@
             },
             {
               "id": 395,
-              "text": "Le mur de",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\angl\\angleterre.vnp 70"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\angl\\angleterre.vnp 70"
-              ]
-            },
-            {
-              "id": 396,
-              "text": "Berlind",
+              "text": "Le mur de\nBerlind",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -30989,16 +28253,7 @@
           "hotspots": [
             {
               "id": 397,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 398,
-              "text": "anglais",
+              "text": "Monument\nanglais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31007,22 +28262,7 @@
             },
             {
               "id": 399,
-              "text": "La tour de",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\holl\\holl.vnp 9"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\holl\\holl.vnp 9"
-              ]
-            },
-            {
-              "id": 400,
-              "text": "Londresd",
+              "text": "La tour de\nLondresd",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -31053,16 +28293,7 @@
           "hotspots": [
             {
               "id": 402,
-              "text": "Géographie",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 403,
-              "text": "Pays-Basd",
+              "text": "Géographie\nPays-Basd",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31078,16 +28309,7 @@
           "hotspots": [
             {
               "id": 404,
-              "text": "Les corsaires",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 405,
-              "text": "français",
+              "text": "Les corsaires\nfrançais",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31118,16 +28340,7 @@
           "hotspots": [
             {
               "id": 407,
-              "text": "Divers",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 408,
-              "text": "Finlande",
+              "text": "Divers\nFinlande",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31158,16 +28371,7 @@
           "hotspots": [
             {
               "id": 410,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 411,
-              "text": "espagnol",
+              "text": "Monument\nespagnol",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31176,22 +28380,7 @@
             },
             {
               "id": 412,
-              "text": "La Sagrada",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\angl\\angleterre.vnp 72"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\angl\\angleterre.vnp 72"
-              ]
-            },
-            {
-              "id": 413,
-              "text": "Familiad",
+              "text": "La Sagrada\nFamiliad",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -31244,16 +28433,7 @@
           "hotspots": [
             {
               "id": 416,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 417,
-              "text": "italien",
+              "text": "Monument\nitalien",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31284,16 +28464,7 @@
           "hotspots": [
             {
               "id": 419,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 420,
-              "text": "italien",
+              "text": "Monument\nitalien",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31324,16 +28495,7 @@
           "hotspots": [
             {
               "id": 422,
-              "text": "Histoire",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 423,
-              "text": "d'Italie",
+              "text": "Histoire\nd'Italie",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31342,22 +28504,7 @@
             },
             {
               "id": 424,
-              "text": "La légende",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\italie\\italie.vnp 29"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\italie\\italie.vnp 29"
-              ]
-            },
-            {
-              "id": 425,
-              "text": "de Romed",
+              "text": "La légende\nde Romed",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -31419,16 +28566,7 @@
           "hotspots": [
             {
               "id": 429,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 430,
-              "text": "italien",
+              "text": "Monument\nitalien",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -31437,22 +28575,7 @@
             },
             {
               "id": 431,
-              "text": "La colonne",
-              "text_position": {
-                "x": 20,
-                "y": 135
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\espa\\espa.vnp 11"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\espa\\espa.vnp 11"
-              ]
-            },
-            {
-              "id": 432,
-              "text": "Trajaned",
+              "text": "La colonne\nTrajaned",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -31474,16 +28597,7 @@
           "hotspots": [
             {
               "id": 433,
-              "text": "Monument",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 434,
-              "text": "espagnol",
+              "text": "Monument\nespagnol",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -33620,16 +30734,7 @@
           "hotspots": [
             {
               "id": 456,
-              "text": "OEUFS AUX",
-              "text_position": {
-                "x": 20,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 457,
-              "text": "LARDS ET",
+              "text": "OEUFS AUX\nLARDS ET",
               "text_position": {
                 "x": 20,
                 "y": 150
@@ -33656,16 +30761,7 @@
             },
             {
               "id": 460,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 461,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 220
@@ -33742,16 +30838,7 @@
           "hotspots": [
             {
               "id": 468,
-              "text": "MOULES",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 469,
-              "text": "FRITES",
+              "text": "MOULES\nFRITES",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -33769,16 +30856,7 @@
             },
             {
               "id": 471,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 472,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -33882,16 +30960,7 @@
             },
             {
               "id": 482,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 483,
-              "text": "12 personnes",
+              "text": "Recette pour\n12 personnes",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34004,16 +31073,7 @@
             },
             {
               "id": 494,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 495,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34135,16 +31195,7 @@
             },
             {
               "id": 507,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 508,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34394,16 +31445,7 @@
             },
             {
               "id": 528,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 529,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34500,16 +31542,7 @@
           "hotspots": [
             {
               "id": 538,
-              "text": "PÂTE A",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 539,
-              "text": "PIZZA",
+              "text": "PÂTE A\nPIZZA",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -34527,16 +31560,7 @@
             },
             {
               "id": 541,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 542,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34649,16 +31673,7 @@
             },
             {
               "id": 553,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 554,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34771,16 +31786,7 @@
             },
             {
               "id": 565,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 566,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34893,16 +31899,7 @@
             },
             {
               "id": 577,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 578,
-              "text": "\" 6 personnes\"",
+              "text": "Recette pour\n\" 6 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
@@ -34972,16 +31969,7 @@
           "hotspots": [
             {
               "id": 585,
-              "text": "Recette",
-              "text_position": {
-                "x": 35,
-                "y": 420
-              },
-              "layer": 0
-            },
-            {
-              "id": 586,
-              "text": "Danoise",
+              "text": "Recette\nDanoise",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -34997,16 +31985,7 @@
           "hotspots": [
             {
               "id": 587,
-              "text": "BOULETTES",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 588,
-              "text": "DE VIANDES",
+              "text": "BOULETTES\nDE VIANDES",
               "text_position": {
                 "x": 35,
                 "y": 150
@@ -35024,16 +32003,7 @@
             },
             {
               "id": 590,
-              "text": "Recette pour",
-              "text_position": {
-                "x": 30,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 591,
-              "text": "\" 4 personnes\"",
+              "text": "Recette pour\n\" 4 personnes\"",
               "text_position": {
                 "x": 30,
                 "y": 200
