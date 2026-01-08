@@ -72,12 +72,21 @@ class Hotspot:
 
 
 @dataclass
+class SceneCommand:
+    """A command that executes in the scene (playtext, playwav, etc.)"""
+    command_type: str  # 'playtext', 'playwav', 'addbmp', 'scene', etc.
+    full_command: str
+    condition: Optional[str] = None
+
+
+@dataclass
 class Scene:
     """Game scene with background and hotspots"""
     id: int
     background: str
     audio: Optional[str] = None
     hotspots: List[Hotspot] = field(default_factory=list)
+    commands: List[SceneCommand] = field(default_factory=list)
     offset: int = 0
 
 
@@ -287,6 +296,9 @@ class VndPolygonParser:
             # Merge multiline hotspots (same X position, consecutive Y positions)
             self._merge_multiline_hotspots(scene)
 
+            # Extract ALL scene commands (playtext, playwav, addbmp, etc.)
+            self._extract_scene_commands(scene, search_start, search_end)
+
             # Look for scene-wide audio
             audio_pattern = r'([\w]+\.wav)'
             scene_audio_text = self.text_content[search_start:min(search_start + 500, search_end)]
@@ -335,6 +347,48 @@ class VndPolygonParser:
             merged.append(current)
 
         scene.hotspots = merged
+
+    def _extract_scene_commands(self, scene: Scene, start_offset: int, end_offset: int):
+        """Extract ALL commands in the scene (not just those attached to hotspots)"""
+        region_text = self.text_content[start_offset:end_offset]
+
+        # Extract playtext commands with conditions
+        playtext_pattern = r'((\w+\s*[<>=!]+\s*\d+)\s+then\s+)?(playtext\s+[^\x00\n\r]+)'
+        for match in re.finditer(playtext_pattern, region_text, re.IGNORECASE):
+            condition = match.group(2) if match.group(2) else None
+            command = match.group(3)
+            command = ''.join(c for c in command if c.isprintable() or c in ' \t').strip()
+
+            scene.commands.append(SceneCommand(
+                command_type='playtext',
+                full_command=command,
+                condition=condition
+            ))
+
+        # Extract playwav commands with conditions
+        playwav_pattern = r'((\w+\s*[<>=!]+\s*\d+)\s+then\s+)?(playwav\s+[^\x00\n\r]+)'
+        for match in re.finditer(playwav_pattern, region_text, re.IGNORECASE):
+            condition = match.group(2) if match.group(2) else None
+            command = match.group(3)
+            command = ''.join(c for c in command if c.isprintable() or c in ' \t').strip()
+
+            scene.commands.append(SceneCommand(
+                command_type='playwav',
+                full_command=command,
+                condition=condition
+            ))
+
+        # Extract scene navigation commands
+        scene_cmd_pattern = r'((\w+\s*[<>=!]+\s*\d+)\s+then\s+)?(scene\s+\d+)'
+        for match in re.finditer(scene_cmd_pattern, region_text, re.IGNORECASE):
+            condition = match.group(2) if match.group(2) else None
+            command = match.group(3)
+
+            scene.commands.append(SceneCommand(
+                command_type='scene',
+                full_command=command,
+                condition=condition
+            ))
 
     def _extract_hotspot_data(self, hotspot: Hotspot, start_offset: int, end_offset: int):
         """Extract all data associated with a hotspot (polygon, video, actions, etc.)"""
@@ -449,7 +503,8 @@ class VndPolygonParser:
                 'id': scene.id,
                 'background': scene.background,
                 'audio': scene.audio,
-                'hotspots': []
+                'hotspots': [],
+                'commands': []
             }
 
             for hotspot in scene.hotspots:
@@ -501,6 +556,16 @@ class VndPolygonParser:
                     ]
 
                 scene_dict['hotspots'].append(hotspot_dict)
+
+            # Add scene commands
+            for cmd in scene.commands:
+                cmd_dict = {
+                    'type': cmd.command_type,
+                    'command': cmd.full_command
+                }
+                if cmd.condition:
+                    cmd_dict['condition'] = cmd.condition
+                scene_dict['commands'].append(cmd_dict)
 
             result['scenes'].append(scene_dict)
 
