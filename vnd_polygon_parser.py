@@ -279,46 +279,56 @@ class VndPolygonParser:
 
         return backgrounds
 
-    def clean_hotspot_text(self, text: str) -> str:
-        """Clean hotspot text by removing trailing garbage characters
+    def find_hotspot_records_binary(self, start_offset: int, end_offset: int) -> List[Tuple[int, str, int, int, int]]:
+        """Find Type 0x26 (hotspot text) records by parsing binary data directly
 
-        VND files often have a padding/flag byte after text data that gets captured
-        by regex. These appear as trailing single letters like 'd', 'j', 'k', 'i', etc.
+        This is the proper way to parse VND records - reading exact byte counts
+        from the record length field instead of using regex on decoded text.
+
+        Returns: List of (offset, text, x, y, layer) tuples
         """
-        if not text or len(text) < 2:
-            return text
+        hotspots = []
+        pos = start_offset
 
-        # Common garbage characters: d, j, k, i, h, f, l (bytes like 0x64, 0x6a, 0x6b, etc.)
-        # These appear as the last byte of the Type 0x26 record data
-        garbage_chars = 'dfjhijkl'
+        while pos < end_offset - 8:
+            # Check if this is a Type 0x26 record
+            if pos + 8 <= self.size:
+                rec_type = struct.unpack_from('<I', self.data, pos)[0]
 
-        # Check if last character is a suspicious garbage byte
-        if text[-1] in garbage_chars:
-            # Additional checks to avoid removing legitimate text:
-            # - If preceded by a vowel, it's likely a word ending (like "litd" from "lit")
-            # - If preceded by 'e' or 'r', check context
-            # - If preceded by space/punctuation, it's likely garbage
+                if rec_type == self.RECORD_TYPE_HOTSPOT_TEXT:
+                    rec_len = struct.unpack_from('<I', self.data, pos + 4)[0]
 
-            if text[-2] in ' .!?':
-                # Definitely garbage (space or punctuation before)
-                return text[:-1]
+                    # Sanity check on length
+                    if 10 < rec_len < 500 and pos + 8 + rec_len <= self.size:
+                        # Read EXACTLY rec_len bytes of data (no more, no less)
+                        rec_data = self.data[pos + 8 : pos + 8 + rec_len]
 
-            elif text[-2] in 'aeiouèéêëàâùûîïôœ':
-                # Vowel before the letter - likely NOT a valid French word ending
-                # (French words rarely end in vowel + d/j/k)
-                return text[:-1]
+                        try:
+                            # Decode the exact record data
+                            decoded = rec_data.decode('latin-1')
 
-            elif len(text) >= 3 and text[-2:] in ['td', 'ej', 'nd', 'rj', 'sd', 'ij', 'uj', 'xj', 'sk', 'xk', 'xd',
-                                                     'Ef', 'Eh', 'tf', 'ld', 'li', 'lj', 'Od', 'ah', 'eh', 'oh']:
-                # Suspicious 2-letter combos that don't exist in French
-                return text[:-1]
+                            # Parse the hotspot pattern: "X Y 125 365 layer text"
+                            import re
+                            pattern = r'^(\d{1,4})\s+(\d{1,3})\s+125\s+365\s+(\d+)\s+(.+)$'
+                            match = re.match(pattern, decoded)
 
-            elif len(text) >= 4 and text[-3:] in ['usj', 'uxj', 'aud', 'eud', 'oid', 'rik', 'tik', 'IEf', 'IEh',
-                                                     'Old', 'ald', 'ntf', 'eli', 'olj']:
-                # Suspicious 3-letter combos
-                return text[:-1]
+                            if match:
+                                x = int(match.group(1))
+                                y = int(match.group(2))
+                                layer = int(match.group(3))
+                                text = match.group(4)
 
-        return text
+                                # Validate coordinates
+                                if 0 <= x <= 2000 and 0 <= y <= 480 and len(text) > 0:
+                                    hotspots.append((pos, text, x, y, layer))
+
+                        except:
+                            pass
+
+            pos += 1
+
+        return hotspots
+
 
     def extract_text_at(self, offset: int, max_length: int = 100) -> str:
         """Extract readable text at offset"""
@@ -363,41 +373,23 @@ class VndPolygonParser:
             search_start = bg_offset
             search_end = scene_end
 
-            # First, find all FONT records (type 0x27 = 39) which mark hotspot boundaries
-            # Pattern: "18 0 #ffffff Comic sans MS" or "24 0 #000000 Arial"
-            font_pattern = r'(\d{1,2})\s+\d+\s+#[0-9A-Fa-f]{6}\s+([^\x00\n\r]{3,30})'
+            # Parse hotspot records using BINARY parsing (the proper way!)
+            # This reads exact byte counts from record headers instead of using regex
+            hotspot_records = self.find_hotspot_records_binary(search_start, search_end)
 
+            # First, find all FONT records (type 0x27) for validation
+            font_pattern = r'(\d{1,2})\s+\d+\s+#[0-9A-Fa-f]{6}\s+([^\x00\n\r]{3,30})'
             scene_text = self.text_content[search_start:search_end]
             font_matches = list(re.finditer(font_pattern, scene_text))
-
-            # Create a set of font positions for quick lookup
             font_positions = {search_start + m.start() for m in font_matches}
 
-            # Now find hotspot text patterns
-            # Pattern: X Y 125 365 layer text (the constants 125 and 365 identify hotspots)
-            pattern = r'(\d{1,3})\s+(\d{1,3})\s+125\s+365\s+(\d+)\s+([^\x00\r\n]+)'
-
-            for match in re.finditer(pattern, scene_text):
-                hotspot_offset = search_start + match.start()
-                x = int(match.group(1))
-                y = int(match.group(2))
-                layer = int(match.group(3))
-                text = match.group(4)
-
+            # Process each hotspot record found
+            for hotspot_offset, text, x, y, layer in hotspot_records:
                 # Clean the text (remove control characters)
                 text = ''.join(c for c in text if c.isprintable() or c in ' \t')
                 text = text.strip()
 
-                # Remove trailing garbage characters (padding bytes from VND records)
-                text = self.clean_hotspot_text(text)
-
-                # Filter out obviously wrong matches
-                # Note: x can be > 640 due to horizontal scrolling in some scenes
-                if not (0 <= x <= 2000 and 0 <= y <= 480 and len(text) > 0):
-                    continue
-
-                # IMPORTANT: Filter out false positives
-                # 1. Must be preceded by a FONT record within ~200 bytes
+                # Validation: Must be preceded by a FONT record within ~200 bytes
                 has_font_before = False
                 closest_font_distance = float('inf')
                 for font_pos in font_positions:
@@ -410,15 +402,13 @@ class VndPolygonParser:
                 if not has_font_before:
                     continue
 
-                # 2. Skip ONLY if inside a playtext command AND font is far
-                # If font is very close (< 100 bytes), it's a real hotspot even if inside a condition
+                # Skip if inside a playtext command AND font is far
                 if closest_font_distance > 100:
                     context_before = self.text_content[max(0, hotspot_offset - 100):hotspot_offset]
                     skip_keywords = ['playtext', 'playwav']
                     should_skip = False
                     for keyword in skip_keywords:
                         if keyword in context_before.lower():
-                            # Make sure the keyword is recent (within 50 chars)
                             last_index = context_before.lower().rfind(keyword)
                             if last_index >= len(context_before) - 50:
                                 should_skip = True
@@ -442,7 +432,8 @@ class VndPolygonParser:
                 next_font_offset = None
                 for font_match in font_matches:
                     font_abs_offset = search_start + font_match.start()
-                    if font_abs_offset > hotspot_offset + len(match.group(0)):
+                    # Check if this font is after the current hotspot
+                    if font_abs_offset > hotspot_offset + 50:  # Give some buffer
                         next_font_offset = font_abs_offset
                         break
 
