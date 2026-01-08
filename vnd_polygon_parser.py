@@ -118,8 +118,8 @@ class VndPolygonParser:
             x = struct.unpack_from('<i', self.data, point_offset)[0]
             y = struct.unpack_from('<i', self.data, point_offset + 4)[0]
 
-            # Validate coordinates
-            if not (-200 <= x <= 800 and -200 <= y <= 600):
+            # Validate coordinates (allow wider range for scrolling scenes)
+            if not (-200 <= x <= 2000 and -200 <= y <= 600):
                 return None
 
             points.append((x, y))
@@ -220,35 +220,40 @@ class VndPolygonParser:
                 text = text.strip()
 
                 # Filter out obviously wrong matches
-                if not (0 <= x <= 640 and 0 <= y <= 480 and len(text) > 0):
+                # Note: x can be > 640 due to horizontal scrolling in some scenes
+                if not (0 <= x <= 2000 and 0 <= y <= 480 and len(text) > 0):
                     continue
 
                 # IMPORTANT: Filter out false positives
                 # 1. Must be preceded by a FONT record within ~200 bytes
                 has_font_before = False
+                closest_font_distance = float('inf')
                 for font_pos in font_positions:
-                    if font_pos < hotspot_offset and hotspot_offset - font_pos < 200:
-                        has_font_before = True
-                        break
+                    if font_pos < hotspot_offset:
+                        distance = hotspot_offset - font_pos
+                        if distance < 200:
+                            has_font_before = True
+                            closest_font_distance = min(closest_font_distance, distance)
 
                 if not has_font_before:
                     continue
 
-                # 2. Must NOT be inside a playtext/playwav/addbmp/etc command
-                # Check if there's a command keyword in the previous 100 bytes
-                context_before = self.text_content[max(0, hotspot_offset - 100):hotspot_offset]
-                skip_keywords = ['playtext', 'playwav', 'addbmp', 'if ', 'then ']
-                should_skip = False
-                for keyword in skip_keywords:
-                    if keyword in context_before.lower():
-                        # Make sure the keyword is recent (within 50 chars)
-                        last_index = context_before.lower().rfind(keyword)
-                        if last_index >= len(context_before) - 50:
-                            should_skip = True
-                            break
+                # 2. Skip ONLY if inside a playtext command AND font is far
+                # If font is very close (< 100 bytes), it's a real hotspot even if inside a condition
+                if closest_font_distance > 100:
+                    context_before = self.text_content[max(0, hotspot_offset - 100):hotspot_offset]
+                    skip_keywords = ['playtext', 'playwav']
+                    should_skip = False
+                    for keyword in skip_keywords:
+                        if keyword in context_before.lower():
+                            # Make sure the keyword is recent (within 50 chars)
+                            last_index = context_before.lower().rfind(keyword)
+                            if last_index >= len(context_before) - 50:
+                                should_skip = True
+                                break
 
-                if should_skip:
-                    continue
+                    if should_skip:
+                        continue
 
                 hotspot_global_id += 1
                 hotspot = Hotspot(
