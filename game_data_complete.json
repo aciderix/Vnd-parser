@@ -182,7 +182,13 @@
                 }
               },
               "video": "bankbis.avi",
-              "goto_scene": 3
+              "goto_scene": 3,
+              "type_09_record": {
+                "count": 22,
+                "subtype": 0,
+                "data_length": 175,
+                "action": "euroland\\bankbis.avi 13i±S/ªòÌÙÑ©ã¤õ¿¦g¨}v(v'18 0 #00"
+              }
             },
             {
               "id": 3,
@@ -232,7 +238,13 @@
                 }
               },
               "video": "home2.avi",
-              "goto_scene": 5
+              "goto_scene": 5,
+              "type_09_record": {
+                "count": 20,
+                "subtype": 0,
+                "data_length": 117,
+                "action": "euroland\\home2.avi 15i\t2c&Àø'18 0 #00"
+              }
             },
             {
               "id": 4,
@@ -306,7 +318,13 @@
                 }
               },
               "video": "profbis.avi",
-              "goto_scene": 6
+              "goto_scene": 6,
+              "type_09_record": {
+                "count": 22,
+                "subtype": 0,
+                "data_length": 167,
+                "action": "euroland\\profbis.avi 16iÒ¼eÎDÐÑïø(<<\\B~8¦ð'18 0 #00"
+              }
             },
             {
               "id": 5,
@@ -376,7 +394,13 @@
                 }
               },
               "video": "musee.avi",
-              "goto_scene": 7
+              "goto_scene": 7,
+              "type_09_record": {
+                "count": 20,
+                "subtype": 0,
+                "data_length": 157,
+                "action": "euroland\\musee.avi 17iîÆµ;[¢¡¾Ëõ'18 0 #00"
+              }
             },
             {
               "id": 6,
@@ -434,7 +458,13 @@
                 }
               },
               "video": "fontaine.avi",
-              "goto_scene": 39
+              "goto_scene": 39,
+              "type_09_record": {
+                "count": 23,
+                "subtype": 0,
+                "data_length": 206,
+                "action": "euroland\\fontaine.avi 1$39i<è<Õ0ä!å!/Le bureau du banquiereuroland"
+              }
             }
           ],
           "commands": []
@@ -461,24 +491,6 @@
               ]
             },
             {
-              "id": 8,
-              "text": "L'agenda du banquierj",
-              "text_position": {
-                "x": 40,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 9,
-              "text": "Une tasse de café noird",
-              "text_position": {
-                "x": 40,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
               "id": 10,
               "text": "Une bouteille d'encre noire",
               "text_position": {
@@ -486,16 +498,14 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 22
-            },
-            {
-              "id": 11,
-              "text": "Du courrierj",
-              "text_position": {
-                "x": 40,
-                "y": 350
+              "display_text": {
+                "text": "L'agenda du banquierj\nUne tasse de café noird",
+                "position": {
+                  "x": 40,
+                  "y": 350
+                }
               },
-              "layer": 0
+              "goto_scene": 22
             },
             {
               "id": 12,
@@ -504,7 +514,19 @@
                 "x": 40,
                 "y": 350
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Du courrierj",
+                "position": {
+                  "x": 40,
+                  "y": 350
+                }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 117,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -615,15 +637,6 @@
               ]
             },
             {
-              "id": 16,
-              "text": "Le livre des\nrecettes d'Europej",
-              "text_position": {
-                "x": 380,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
               "id": 18,
               "text": "La bibliothécaire d'Euroland",
               "text_position": {
@@ -631,6 +644,13 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le livre des\nrecettes d'Europej",
+                "position": {
+                  "x": 380,
+                  "y": 225
+                }
+              },
               "video": "biblio1.avi",
               "goto_scene": 16,
               "actions": [
@@ -657,75 +677,6 @@
               ]
             },
             {
-              "id": 19,
-              "text": "Une lampe de bureaud",
-              "text_position": {
-                "x": 30,
-                "y": 290
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp 2"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\biblio\\biblio.vnp 2"
-              ]
-            },
-            {
-              "id": 20,
-              "text": "Le petit atlas\nd'Europe.j",
-              "text_position": {
-                "x": 385,
-                "y": 232
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp 10"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\biblio\\biblio.vnp 10"
-              ]
-            },
-            {
-              "id": 22,
-              "text": "Les Hymnes\nnationauxj",
-              "text_position": {
-                "x": 120,
-                "y": 162
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\italie\\italie.vnp  27"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\italie\\italie.vnp  27"
-              ]
-            },
-            {
-              "id": 24,
-              "text": "Léonard\nde Vincij",
-              "text_position": {
-                "x": 355,
-                "y": 42
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp  11"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\biblio\\biblio.vnp  11"
-              ]
-            },
-            {
-              "id": 26,
-              "text": "L'euro et nousj",
-              "text_position": {
-                "x": 375,
-                "y": 362
-              },
-              "layer": 0
-            },
-            {
               "id": 27,
               "text": "Big\nBen",
               "text_position": {
@@ -733,6 +684,13 @@
                 "y": 32
               },
               "layer": 0,
+              "display_text": {
+                "text": "Une lampe de bureaud\nLe petit atlas\nd'Europe.j\nLes Hymnes\nnationauxj\nLéonard\nde Vincij\nL'euro et nousj",
+                "position": {
+                  "x": 375,
+                  "y": 362
+                }
+              },
               "goto_scene": 59,
               "actions": [
                 "runprj ..\\angl\\angleterre.vnp 59j",
@@ -744,15 +702,6 @@
               ]
             },
             {
-              "id": 29,
-              "text": "Le mur de\nBerlinj",
-              "text_position": {
-                "x": 740,
-                "y": 22
-              },
-              "layer": 0
-            },
-            {
               "id": 31,
               "text": "les corsaires",
               "text_position": {
@@ -760,6 +709,13 @@
                 "y": 332
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le mur de\nBerlinj",
+                "position": {
+                  "x": 740,
+                  "y": 22
+                }
+              },
               "goto_scene": 27,
               "actions": [
                 "runprj ..\\france\\france.vnp 27j",
@@ -771,165 +727,6 @@
               ]
             },
             {
-              "id": 32,
-              "text": "Les jeux\nOlympiquesj",
-              "text_position": {
-                "x": 440,
-                "y": 42
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\ecosse\\ecosse.vnp 36"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\ecosse\\ecosse.vnp 36"
-              ]
-            },
-            {
-              "id": 34,
-              "text": "La cornemusej",
-              "text_position": {
-                "x": 100,
-                "y": 100
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\angl\\angleterre.vnp 1"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\angl\\angleterre.vnp 1"
-              ]
-            },
-            {
-              "id": 35,
-              "text": "Les joyaux de\nla couronne\nd'Angleterrej",
-              "text_position": {
-                "x": 410,
-                "y": 360
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\france\\france.vnp 17"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 17"
-              ]
-            },
-            {
-              "id": 38,
-              "text": "La tour Eiffelj",
-              "text_position": {
-                "x": 900,
-                "y": 182
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\portu\\portu.vnp 11"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\portu\\portu.vnp 11"
-              ]
-            },
-            {
-              "id": 39,
-              "text": "L'exposition\nuniversellej",
-              "text_position": {
-                "x": 600,
-                "y": 82
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\allem\\allem.vnp 6"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\allem\\allem.vnp 6"
-              ]
-            },
-            {
-              "id": 41,
-              "text": "Un livre sur\nla fabrication\nde la bièrej",
-              "text_position": {
-                "x": 120,
-                "y": 362
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\belge\\belge.vnp 23"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\belge\\belge.vnp 23"
-              ]
-            },
-            {
-              "id": 44,
-              "text": "L'histoire\ndu chocolatj",
-              "text_position": {
-                "x": 950,
-                "y": 182
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\portu\\portu.vnp 14"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\portu\\portu.vnp 14"
-              ]
-            },
-            {
-              "id": 46,
-              "text": "Le fadoj",
-              "text_position": {
-                "x": 515,
-                "y": 44
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\france\\france.vnp 26"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 26"
-              ]
-            },
-            {
-              "id": 47,
-              "text": "Les grands couturiersj",
-              "text_position": {
-                "x": 300,
-                "y": 280
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\holl\\holl.vnp 11"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\holl\\holl.vnp 11"
-              ]
-            },
-            {
-              "id": 48,
-              "text": "Les tulipesj",
-              "text_position": {
-                "x": 110,
-                "y": 260
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\portu\\portu.vnp 15"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\portu\\portu.vnp 15"
-              ]
-            },
-            {
-              "id": 49,
-              "text": "Les grands\nnavigateursj",
-              "text_position": {
-                "x": 450,
-                "y": 282
-              },
-              "layer": 0
-            },
-            {
               "id": 51,
               "text": "Louis\nPasteur",
               "text_position": {
@@ -937,6 +734,13 @@
                 "y": 165
               },
               "layer": 0,
+              "display_text": {
+                "text": "Les jeux\nOlympiquesj\nLa cornemusej\nLes joyaux de\nla couronne\nd'Angleterrej\nLa tour Eiffelj\nL'exposition\nuniversellej\nUn livre sur\nla fabrication\nde la bièrej\nL'histoire\ndu chocolatj\nLe fadoj\nLes grands couturiersj\nLes tulipesj\nLes grands\nnavigateursj",
+                "position": {
+                  "x": 450,
+                  "y": 282
+                }
+              },
               "goto_scene": 15,
               "actions": [
                 "runprj ..\\france\\france.vnp 15j",
@@ -948,15 +752,6 @@
               ]
             },
             {
-              "id": 53,
-              "text": "Balade à\nVenisej",
-              "text_position": {
-                "x": 395,
-                "y": 242
-              },
-              "layer": 0
-            },
-            {
               "id": 55,
               "text": "Ludwig Van Beethoven",
               "text_position": {
@@ -964,6 +759,13 @@
                 "y": 362
               },
               "layer": 0,
+              "display_text": {
+                "text": "Balade à\nVenisej",
+                "position": {
+                  "x": 395,
+                  "y": 242
+                }
+              },
               "goto_scene": 5,
               "actions": [
                 "runprj ..\\allem\\allem.vnp 5j"
@@ -986,7 +788,12 @@
               ],
               "conditions": [
                 "jeu = 1 then runprj ..\\angl\\angleterre.vnp 57j"
-              ]
+              ],
+              "type_09_record": {
+                "count": 109,
+                "subtype": 117,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -1037,7 +844,13 @@
               },
               "layer": 0,
               "video": "femme.avi",
-              "goto_scene": 2
+              "goto_scene": 2,
+              "type_09_record": {
+                "count": 36,
+                "subtype": 0,
+                "data_length": 199,
+                "action": "euroland\\femme.avi 1 220 150 420 400music.wav 2lözSÍ,X²qÅrÿzJbK}xd$'18 0 #ff"
+              }
             },
             {
               "id": 60,
@@ -1159,16 +972,12 @@
               ],
               "conditions": [
                 "bonus1 = 2 then playtext 680 350 125 365 0 tu as déjà réponduk"
-              ]
-            },
-            {
-              "id": 63,
-              "text": "Tu n'as pas le temps\nde te reposer.",
-              "text_position": {
-                "x": 800,
-                "y": 370
-              },
-              "layer": 0
+              ],
+              "type_09_record": {
+                "count": 40,
+                "subtype": 3,
+                "data_length": 16
+              }
             },
             {
               "id": 65,
@@ -1177,16 +986,19 @@
                 "x": 990,
                 "y": 350
               },
-              "layer": 0
-            },
-            {
-              "id": 66,
-              "text": "Un message est caché\ndans cette pièce, mais pas ici.d",
-              "text_position": {
-                "x": 380,
-                "y": 340
+              "layer": 0,
+              "display_text": {
+                "text": "Tu n'as pas le temps\nde te reposer.",
+                "position": {
+                  "x": 800,
+                  "y": 370
+                }
               },
-              "layer": 0
+              "type_09_record": {
+                "count": 2,
+                "subtype": 3,
+                "data_length": 80
+              }
             },
             {
               "id": 68,
@@ -1195,7 +1007,19 @@
                 "x": 90,
                 "y": 350
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Un message est caché\ndans cette pièce, mais pas ici.d",
+                "position": {
+                  "x": 380,
+                  "y": 340
+                }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 117,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -1311,7 +1135,13 @@
               },
               "layer": 0,
               "video": "prof2.avi",
-              "goto_scene": 13
+              "goto_scene": 13,
+              "type_09_record": {
+                "count": 38,
+                "subtype": 0,
+                "data_length": 52,
+                "action": "euroland\\prof2.avi 1 1100 159 1300 39913"
+              }
             },
             {
               "id": 71,
@@ -1378,16 +1208,13 @@
               },
               "layer": 0,
               "video": "pro1a.avi",
-              "goto_scene": 6
-            },
-            {
-              "id": 73,
-              "text": "Un diplômed",
-              "text_position": {
-                "x": 200,
-                "y": 40
-              },
-              "layer": 0
+              "goto_scene": 6,
+              "type_09_record": {
+                "count": 36,
+                "subtype": 0,
+                "data_length": 151,
+                "action": "euroland\\pro1a.avi 1 659 166 771 286music.wav 6l^å¤º]'18 0 #ff"
+              }
             },
             {
               "id": 74,
@@ -1397,8 +1224,21 @@
                 "y": 150
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un diplômed",
+                "position": {
+                  "x": 200,
+                  "y": 40
+                }
+              },
               "video": "trans.avi",
-              "goto_scene": 2
+              "goto_scene": 2,
+              "type_09_record": {
+                "count": 38,
+                "subtype": 0,
+                "data_length": 113,
+                "action": "euroland\\trans.avi 1 1644 182 1878 400music.wav 2ip:M\t'18 0 #ff"
+              }
             }
           ],
           "commands": [
@@ -1517,7 +1357,13 @@
                 }
               },
               "video": "pro2.avi",
-              "goto_scene": 13
+              "goto_scene": 13,
+              "type_09_record": {
+                "count": 35,
+                "subtype": 0,
+                "data_length": 162,
+                "action": "euroland\\pro2.avi 1 659 166 771 28613i0´±\tmusic.waveuroland"
+              }
             }
           ],
           "commands": []
@@ -1556,25 +1402,13 @@
               "conditions": [
                 "calc = 0 then playavi euroland\\conser4.avi 1 368 118 520 344",
                 "calc = 0 then rundll francs.dll"
-              ]
-            },
-            {
-              "id": 79,
-              "text": "Le conservateur du muséel",
-              "text_position": {
-                "x": 360,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 80,
-              "text": "Le tableau de la légende.\nClique dessus si tu veux\nrevoir l'introduction.j",
-              "text_position": {
-                "x": 760,
-                "y": 260
-              },
-              "layer": 0
+              ],
+              "type_09_record": {
+                "count": 38,
+                "subtype": 0,
+                "data_length": 180,
+                "action": "euroland\\conser5.avi 1 368 118 520 344<calc = 0 then playavi euroland\\conser4.avi 1 368 118 520 344music.wav 2calc = 0 then rundll francs.dll"
+              }
             },
             {
               "id": 83,
@@ -1584,6 +1418,13 @@
                 "y": 40
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le conservateur du muséel\nLe tableau de la légende.\nClique dessus si tu veux\nrevoir l'introduction.j",
+                "position": {
+                  "x": 760,
+                  "y": 260
+                }
+              },
               "clickable_area": {
                 "type": "polygon",
                 "points": [
@@ -1746,24 +1587,6 @@
               ]
             },
             {
-              "id": 86,
-              "text": "SORTIEh",
-              "text_position": {
-                "x": 280,
-                "y": 370
-              },
-              "layer": 0
-            },
-            {
-              "id": 87,
-              "text": "Il y a une autre\nbouteille en Europe\nelle te sera utile si tu\nla remplis d'eau.",
-              "text_position": {
-                "x": 230,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
               "id": 91,
               "text": "Une boîte d'allumettes",
               "text_position": {
@@ -1771,6 +1594,13 @@
                 "y": 60
               },
               "layer": 0,
+              "display_text": {
+                "text": "SORTIEh\nIl y a une autre\nbouteille en Europe\nelle te sera utile si tu\nla remplis d'eau.",
+                "position": {
+                  "x": 230,
+                  "y": 110
+                }
+              },
               "actions": [
                 "addbmp al euroland\\rollover\\allumette2.bmp 0 360 36",
                 "set_var allumette 1"
@@ -1793,22 +1623,25 @@
               ]
             },
             {
-              "id": 92,
-              "text": "Il te faut un sac à dos pour le mettre dedansd",
-              "text_position": {
-                "x": 20,
-                "y": 370
-              },
-              "layer": 0
-            },
-            {
               "id": 93,
               "text": "Ces livres ne te\nseront d'aucune\nutilitéd",
               "text_position": {
                 "x": 400,
                 "y": 380
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Il te faut un sac à dos pour le mettre dedansd",
+                "position": {
+                  "x": 20,
+                  "y": 370
+                }
+              },
+              "type_09_record": {
+                "count": 83,
+                "subtype": 97,
+                "data_length": 61
+              }
             }
           ],
           "commands": [
@@ -1896,7 +1729,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 115,
+                "subtype": 97,
+                "data_length": 142
+              }
             }
           ],
           "commands": []
@@ -2254,7 +2092,13 @@
                   "layer": null,
                   "position": null
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 29,
+                "subtype": 0,
+                "data_length": 68,
+                "action": "bouton.avi  2 164 337 394 388300active 0"
+              }
             }
           ],
           "commands": [
@@ -2343,7 +2187,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 109,
+                "subtype": 117,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -3100,7 +2949,13 @@
                 }
               },
               "video": "intro12.avi",
-              "goto_scene": 7
+              "goto_scene": 7,
+              "type_09_record": {
+                "count": 29,
+                "subtype": 0,
+                "data_length": 182,
+                "action": "intro12.avi 0 150 150 470 350$7i$Ë¯\"Clmo¼WÖeuroland"
+              }
             }
           ],
           "commands": []
@@ -3479,15 +3334,6 @@
               ]
             },
             {
-              "id": 122,
-              "text": "Il te faut un sac à dos pour ranger tes objetsd",
-              "text_position": {
-                "x": 20,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
               "id": 123,
               "text": "Une burette d'huile",
               "text_position": {
@@ -3495,6 +3341,13 @@
                 "y": 290
               },
               "layer": 0,
+              "display_text": {
+                "text": "Il te faut un sac à dos pour ranger tes objetsd",
+                "position": {
+                  "x": 20,
+                  "y": 350
+                }
+              },
               "actions": [
                 "addbmp burette rollover\\burette2.bmp 0 0 191",
                 "set_var burette 1"
@@ -3518,24 +3371,6 @@
               ]
             },
             {
-              "id": 124,
-              "text": "Il te faut un sac à dos pour ranger tes objetsd",
-              "text_position": {
-                "x": 20,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 125,
-              "text": "Des produits chimiquesd",
-              "text_position": {
-                "x": 400,
-                "y": 140
-              },
-              "layer": 0
-            },
-            {
               "id": 126,
               "text": "Plan du transvecteur",
               "text_position": {
@@ -3543,6 +3378,13 @@
                 "y": 300
               },
               "layer": 0,
+              "display_text": {
+                "text": "Il te faut un sac à dos pour ranger tes objetsd\nDes produits chimiquesd",
+                "position": {
+                  "x": 400,
+                  "y": 140
+                }
+              },
               "goto_scene": 11
             }
           ],
@@ -3665,7 +3507,12 @@
                     "y": 258
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 129,
@@ -3746,7 +3593,13 @@
                     "y": 202
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 1,
+                "subtype": 0,
+                "data_length": 20,
+                "action": "occupe 2"
+              }
             },
             {
               "id": 130,
@@ -3852,7 +3705,12 @@
                     "y": 132
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 131,
@@ -3943,7 +3801,12 @@
                     "y": 76
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 132,
@@ -4024,7 +3887,12 @@
                     "y": 42
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 133,
@@ -4105,7 +3973,12 @@
                     "y": 39
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 134,
@@ -4186,7 +4059,12 @@
                     "y": 58
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 135,
@@ -4364,7 +4242,12 @@
                     "y": 172
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 137,
@@ -4455,7 +4338,12 @@
                     "y": 238
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 138,
@@ -4540,7 +4428,12 @@
                     "y": 293
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 139,
@@ -4631,7 +4524,12 @@
                     "y": 302
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 0
+              }
             },
             {
               "id": 140,
@@ -5181,7 +5079,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h"
-              ]
+              ],
+              "type_09_record": {
+                "count": 70,
+                "subtype": 105,
+                "data_length": 180
+              }
             }
           ],
           "commands": []
@@ -5538,7 +5441,13 @@
                 "y": 22
               },
               "layer": 0,
-              "video": "jap3.avi"
+              "video": "jap3.avi",
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 69,
+                "action": "jap3.avi 1 518 62 575 119france.wav 2'18 0 #00"
+              }
             },
             {
               "id": 10,
@@ -5803,15 +5712,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 17,
-              "text": "Une boulangeriee",
-              "text_position": {
-                "x": 80,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
               "id": 18,
               "text": "Un restaurantf",
               "text_position": {
@@ -5819,6 +5719,13 @@
                 "y": 30
               },
               "layer": 0,
+              "display_text": {
+                "text": "Une boulangeriee",
+                "position": {
+                  "x": 80,
+                  "y": 130
+                }
+              },
               "clickable_area": {
                 "type": "polygon",
                 "points": [
@@ -5891,7 +5798,13 @@
                 }
               },
               "video": "coq.avi",
-              "goto_scene": 240
+              "goto_scene": 240,
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 219,
+                "action": "coq.avi 1 105 154 186 240ig,dB\tÕDÊcátÇ|¬§Õz3france.wavboulan.b"
+              }
             }
           ],
           "commands": [
@@ -6248,7 +6161,13 @@
               },
               "layer": 0,
               "video": "helico2.avi",
-              "goto_scene": 122
+              "goto_scene": 122,
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 113,
+                "action": "helico2.avi 2 0 0 640 122d|cabine.b"
+              }
             }
           ],
           "commands": [
@@ -6270,15 +6189,6 @@
           "audio": "ascen.wav",
           "hotspots": [
             {
-              "id": 29,
-              "text": "Le dernier étage",
-              "text_position": {
-                "x": 350,
-                "y": 80
-              },
-              "layer": 0
-            },
-            {
               "id": 30,
               "text": "Le dernier étage est en réparation.\nImpossible d'y accéder.i",
               "text_position": {
@@ -6286,7 +6196,20 @@
                 "y": 60
               },
               "layer": 0,
-              "video": "asc2.avi"
+              "display_text": {
+                "text": "Le dernier étage",
+                "position": {
+                  "x": 350,
+                  "y": 80
+                }
+              },
+              "video": "asc2.avi",
+              "type_09_record": {
+                "count": 10,
+                "subtype": 0,
+                "data_length": 85,
+                "action": "asc2.avi 1\tascen.wav\t\tasc.avi 13'18 0 #00"
+              }
             },
             {
               "id": 32,
@@ -6296,7 +6219,13 @@
                 "y": 240
               },
               "layer": 0,
-              "video": "asc.avi"
+              "video": "asc.avi",
+              "type_09_record": {
+                "count": 10,
+                "subtype": 0,
+                "data_length": 85,
+                "action": "asc1.avi 1\tascen.wav\t\tasc.avi 12'18 0 #00"
+              }
             },
             {
               "id": 38,
@@ -7408,25 +7337,6 @@
           "audio": "boing.wav",
           "hotspots": [
             {
-              "id": 4,
-              "text": "Informations sur\nle mur de Berlinj",
-              "text_position": {
-                "x": 700,
-                "y": 240
-              },
-              "layer": 0,
-              "actions": [
-                "scene 9",
-                "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "set_var bonus16 1"
-              ],
-              "conditions": [
-                "bonus16 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "bonus16 = 0 then set_var bonus16 1",
-                "bonus16 =  1 then scene 9"
-              ]
-            },
-            {
               "id": 6,
               "text": "Question bonus",
               "text_position": {
@@ -7434,12 +7344,24 @@
                 "y": 40
               },
               "layer": 0,
+              "display_text": {
+                "text": "Informations sur\nle mur de Berlinj",
+                "position": {
+                  "x": 700,
+                  "y": 240
+                }
+              },
               "actions": [
                 "playtext 30 40 125 365 0 tu as déjà réponduk"
               ],
               "conditions": [
                 "bonus16 = 2 then playtext 30 40 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 98,
+                "subtype": 114,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -7571,7 +7493,13 @@
                 "bonus15 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
                 "bonus15 = 0 then set_var bonus15 1",
                 "bonus15 =  1 then scene 9k"
-              ]
+              ],
+              "type_09_record": {
+                "count": 85,
+                "subtype": 0,
+                "data_length": 100,
+                "action": "h¯¬·\tferme.bm"
+              }
             }
           ],
           "commands": [
@@ -7709,7 +7637,12 @@
               },
               "layer": 0,
               "video": "avion.avi",
-              "goto_scene": 18
+              "goto_scene": 18,
+              "type_09_record": {
+                "count": 65,
+                "subtype": 118,
+                "data_length": 135
+              }
             },
             {
               "id": 14,
@@ -7720,7 +7653,12 @@
               },
               "layer": 0,
               "video": "avion.avi",
-              "goto_scene": 28
+              "goto_scene": 28,
+              "type_09_record": {
+                "count": 65,
+                "subtype": 118,
+                "data_length": 234
+              }
             },
             {
               "id": 16,
@@ -7881,7 +7819,12 @@
                 "danemark = 1  then dec_var danemark 1",
                 "portugal = 1  then dec_var portugal 1",
                 "suede = 1  then dec_var suede 1d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 264
+              }
             }
           ],
           "commands": []
@@ -9176,7 +9119,12 @@
                 "non = 0 then  scene 71",
                 "non = 2 then playavi waterloo2.avi 1 434 81 503 146",
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 104
+              }
             },
             {
               "id": 8,
@@ -9401,15 +9349,6 @@
               }
             },
             {
-              "id": 11,
-              "text": "La tour blanche.j",
-              "text_position": {
-                "x": 190,
-                "y": 14
-              },
-              "layer": 0
-            },
-            {
               "id": 12,
               "text": "Question bonus",
               "text_position": {
@@ -9417,6 +9356,13 @@
                 "y": 70
               },
               "layer": 0,
+              "display_text": {
+                "text": "La tour blanche.j",
+                "position": {
+                  "x": 190,
+                  "y": 14
+                }
+              },
               "goto_scene": 80,
               "actions": [
                 "scene 80",
@@ -9429,7 +9375,12 @@
                 "bonus26 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
                 "bonus26 = 0 then set_var bonus26 1",
                 "bonus26 = 1 then scene 80k"
-              ]
+              ],
+              "type_09_record": {
+                "count": 115,
+                "subtype": 97,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -9613,7 +9564,12 @@
                 "x": 70,
                 "y": 344
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 114,
+                "subtype": 101,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -10007,7 +9963,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 4,
+                "subtype": 0,
+                "data_length": 110,
+                "action": "H9º1Ð¾¯Þ¬Ç6¿59'22 0 #00"
+              }
             },
             {
               "id": 22,
@@ -10022,7 +9984,12 @@
               ],
               "conditions": [
                 "bonus23 = 2 then playtext 350 170 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 115,
+                "subtype": 116,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -10164,7 +10131,13 @@
               },
               "layer": 0,
               "video": "bus2.avi",
-              "goto_scene": 48
+              "goto_scene": 48,
+              "type_09_record": {
+                "count": 22,
+                "subtype": 0,
+                "data_length": 194,
+                "action": "bus2.avi 1 0 0 640 40048g-ý{þ|((-d..\\..\\ecosse\\digit\\chateau.wavtoursel2"
+              }
             }
           ],
           "commands": []
@@ -10193,15 +10166,6 @@
               ]
             },
             {
-              "id": 26,
-              "text": "Un petit indice c'est toujours bon à prendre",
-              "text_position": {
-                "x": 200,
-                "y": 360
-              },
-              "layer": 0
-            },
-            {
               "id": 27,
               "text": "Du sel te sera utile pour beaucoup de choses...",
               "text_position": {
@@ -10209,6 +10173,13 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un petit indice c'est toujours bon à prendre",
+                "position": {
+                  "x": 200,
+                  "y": 360
+                }
+              },
               "goto_scene": 58,
               "actions": [
                 "playtext 150 360 125 365 0 Tu as déja pris du sel",
@@ -10494,7 +10465,12 @@
                 "non = 0 then playavi bus.avi 1 199 103 298 158",
                 "non = 1 then playavi bus99.avi 1 199 103 298 158",
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
+              ],
+              "type_09_record": {
+                "count": 25,
+                "subtype": 1,
+                "data_length": 102
+              }
             },
             {
               "id": 34,
@@ -10527,7 +10503,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 116,
+                "action": "stone2.avi 0 0 40 388 4403score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54stone11 stone1.b"
+              }
             }
           ],
           "commands": []
@@ -10724,7 +10706,12 @@
                 "x": 50,
                 "y": 74
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 109,
+                "subtype": 97,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -10924,7 +10911,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 103,
+                "subtype": 108,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -10997,7 +10989,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 99,
+                "subtype": 114,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -11128,7 +11125,12 @@
                 "danemark = 1  then dec_var danemark 1",
                 "portugal = 1  then dec_var portugal 1",
                 "suede = 1  then dec_var suede 1"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 150
+              }
             }
           ],
           "commands": []
@@ -11158,7 +11160,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -11697,25 +11704,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 1,
-              "text": "Tu as déja joué.e",
-              "text_position": {
-                "x": 470,
-                "y": 200
-              },
-              "layer": 0,
-              "actions": [
-                "scene 21",
-                "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "set_var bonus30 1"
-              ],
-              "conditions": [
-                "bonus30 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "bonus30 = 0 then set_var bonus30 1",
-                "bonus30 =  1 then scene 21"
-              ]
-            },
-            {
               "id": 2,
               "text": "Question bonus",
               "text_position": {
@@ -11723,12 +11711,24 @@
                 "y": 70
               },
               "layer": 0,
+              "display_text": {
+                "text": "Tu as déja joué.e",
+                "position": {
+                  "x": 470,
+                  "y": 200
+                }
+              },
               "actions": [
                 "playtext 30 70 125 365 0 tu as déjà réponduk"
               ],
               "conditions": [
                 "bonus30 = 2 then playtext 30 70 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -11786,23 +11786,6 @@
               ]
             },
             {
-              "id": 4,
-              "text": "Un Luthiere",
-              "text_position": {
-                "x": 900,
-                "y": 335
-              },
-              "layer": 0,
-              "actions": [
-                "scene 3",
-                "scene 22"
-              ],
-              "conditions": [
-                "api = 0 then scene 3",
-                "api = 1 then scene 3"
-              ]
-            },
-            {
               "id": 5,
               "text": "Des ruches !!f",
               "text_position": {
@@ -11810,10 +11793,22 @@
                 "y": 335
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un Luthiere",
+                "position": {
+                  "x": 900,
+                  "y": 335
+                }
+              },
               "goto_scene": 11,
               "actions": [
                 "addbmp sansviolon"
-              ]
+              ],
+              "type_09_record": {
+                "count": 9,
+                "subtype": 2,
+                "data_length": 80
+              }
             }
           ],
           "commands": [
@@ -11967,15 +11962,6 @@
               ]
             },
             {
-              "id": 7,
-              "text": "Un fer à chevald",
-              "text_position": {
-                "x": 770,
-                "y": 125
-              },
-              "layer": 0
-            },
-            {
               "id": 8,
               "text": "Une cigogned",
               "text_position": {
@@ -11983,6 +11969,13 @@
                 "y": 55
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un fer à chevald",
+                "position": {
+                  "x": 770,
+                  "y": 125
+                }
+              },
               "video": "violon1.avi",
               "goto_scene": 20,
               "actions": [
@@ -12013,7 +12006,12 @@
                   "layer": null,
                   "position": null
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 115,
+                "subtype": 97,
+                "data_length": 48
+              }
             }
           ],
           "commands": [
@@ -12374,31 +12372,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 14,
-              "text": "Une carrioled",
-              "text_position": {
-                "x": 60,
-                "y": 180
-              },
-              "layer": 0
-            },
-            {
-              "id": 15,
-              "text": "Une lampe à huiled",
-              "text_position": {
-                "x": 20,
-                "y": 80
-              },
-              "layer": 0
-            },
-            {
               "id": 16,
               "text": "Une selle de chevald",
               "text_position": {
                 "x": 470,
                 "y": 130
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Une carrioled\nUne lampe à huiled",
+                "position": {
+                  "x": 20,
+                  "y": 80
+                }
+              },
+              "type_09_record": {
+                "count": 6,
+                "subtype": 2,
+                "data_length": 80
+              }
             },
             {
               "id": 17,
@@ -12407,7 +12399,13 @@
                 "x": 90,
                 "y": 370
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 0,
+                "subtype": 0,
+                "data_length": 52,
+                "action": "úõÿ=kLjM6"
+              }
             },
             {
               "id": 18,
@@ -12805,7 +12803,12 @@
                 "x": 310,
                 "y": 365
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -13560,7 +13563,12 @@
                 "bonus9 = 1 then scene 4",
                 "bonus9 = 1 then dec_var score 10",
                 "bonus9 = 1 then inc_var bonus9 1"
-              ]
+              ],
+              "type_09_record": {
+                "count": 114,
+                "subtype": 117,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -13772,7 +13780,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54g"
-              ]
+              ],
+              "type_09_record": {
+                "count": 29,
+                "subtype": 0,
+                "data_length": 63,
+                "action": "motard1.avi 1 429 206 514 25615'18 0 #00"
+              }
             },
             {
               "id": 2,
@@ -13923,15 +13937,6 @@
               ]
             },
             {
-              "id": 6,
-              "text": "Des informations\nsur le chocolatj",
-              "text_position": {
-                "x": 460,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
               "id": 8,
               "text": "Question bonus",
               "text_position": {
@@ -13939,6 +13944,13 @@
                 "y": 70
               },
               "layer": 0,
+              "display_text": {
+                "text": "Des informations\nsur le chocolatj",
+                "position": {
+                  "x": 460,
+                  "y": 110
+                }
+              },
               "goto_scene": 27,
               "actions": [
                 "scene 27",
@@ -14141,40 +14153,25 @@
               ]
             },
             {
-              "id": 14,
-              "text": "Classe d'histoireg",
-              "text_position": {
-                "x": 220,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 15,
-              "text": "Classe de sporte",
-              "text_position": {
-                "x": 220,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
-              "id": 16,
-              "text": "Classe de mathématiquese",
-              "text_position": {
-                "x": 220,
-                "y": 350
-              },
-              "layer": 0
-            },
-            {
               "id": 17,
               "text": "SORTIEh",
               "text_position": {
                 "x": 280,
                 "y": 350
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Classe d'histoireg\nClasse de sporte\nClasse de mathématiquese",
+                "position": {
+                  "x": 220,
+                  "y": 350
+                }
+              },
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -14192,15 +14189,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 18,
-              "text": "Ta prof de géographiel",
-              "text_position": {
-                "x": 260,
-                "y": 250
-              },
-              "layer": 0
-            },
-            {
               "id": 19,
               "text": "Question bonus",
               "text_position": {
@@ -14208,6 +14196,13 @@
                 "y": 270
               },
               "layer": 0,
+              "display_text": {
+                "text": "Ta prof de géographiel",
+                "position": {
+                  "x": 260,
+                  "y": 250
+                }
+              },
               "goto_scene": 27,
               "actions": [
                 "scene 27",
@@ -14381,7 +14376,12 @@
                 "x": 480,
                 "y": 240
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -14509,21 +14509,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 28,
-              "text": "Des informations\nsur l'Atomiumj",
-              "text_position": {
-                "x": 480,
-                "y": 160
-              },
-              "layer": 0,
-              "actions": [
-                "runprj ..\\biblio\\biblio.vnp 13"
-              ],
-              "conditions": [
-                "dico = 1 then runprj ..\\biblio\\biblio.vnp 13"
-              ]
-            },
-            {
               "id": 30,
               "text": "La table des\nmonnaies",
               "text_position": {
@@ -14531,6 +14516,13 @@
                 "y": 160
               },
               "layer": 0,
+              "display_text": {
+                "text": "Des informations\nsur l'Atomiumj",
+                "position": {
+                  "x": 480,
+                  "y": 160
+                }
+              },
               "video": "math3.avi",
               "actions": [
                 "set_var non 2",
@@ -14643,7 +14635,13 @@
               },
               "layer": 0,
               "video": "math1.avi",
-              "goto_scene": 245
+              "goto_scene": 245,
+              "type_09_record": {
+                "count": 27,
+                "subtype": 0,
+                "data_length": 136,
+                "action": "math1.avi 1 123 190 230 245jÝÎÑ/C(!..\\..\\ecosse\\"
+              }
             }
           ],
           "commands": []
@@ -15790,7 +15788,13 @@
                 "y": 400
               },
               "layer": 0,
-              "video": "choco2.avi"
+              "video": "choco2.avi",
+              "type_09_record": {
+                "count": 27,
+                "subtype": 0,
+                "data_length": 54,
+                "action": "choco2.avi 0 310 80 630 280chocob choco2.b"
+              }
             }
           ],
           "commands": []
@@ -16292,7 +16296,13 @@
               },
               "layer": 0,
               "video": "canard1.avi",
-              "goto_scene": 190
+              "goto_scene": 190,
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 174,
+                "action": "canard1.avi 2 0 0 640 190300\tcanard1.avi 2 0 0 640 190d}Ç\ta_dan.wav\tforge.bm"
+              }
             }
           ],
           "commands": []
@@ -16558,7 +16568,13 @@
                 "parfum = 2 then playavi sirene99.avi 1 289 6 401 115",
                 "tulipejaune = 2 then playavi sirene99.avi 1 289 6 401 115",
                 "bouche = 1 then scene 14"
-              ]
+              ],
+              "type_09_record": {
+                "count": 27,
+                "subtype": 0,
+                "data_length": 125,
+                "action": "sirene2.avi 1 289 6 401 115dÂYd´ f15'18 0 #00"
+              }
             },
             {
               "id": 7,
@@ -16567,7 +16583,12 @@
                 "x": 470,
                 "y": 125
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -17126,7 +17147,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 136,
+                "subtype": 1,
+                "data_length": 52
+              }
             },
             {
               "id": 12,
@@ -17135,7 +17161,12 @@
                 "x": 500,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 108,
+                "data_length": 100
+              }
             },
             {
               "id": 13,
@@ -17144,7 +17175,12 @@
                 "x": 390,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 108,
+                "data_length": 100
+              }
             },
             {
               "id": 14,
@@ -17153,7 +17189,12 @@
                 "x": 280,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 108,
+                "data_length": 115
+              }
             },
             {
               "id": 15,
@@ -17162,7 +17203,12 @@
                 "x": 170,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 108,
+                "data_length": 100
+              }
             },
             {
               "id": 16,
@@ -17319,7 +17365,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 1,
+                "subtype": 1,
+                "data_length": 41
+              }
             },
             {
               "id": 2,
@@ -18015,7 +18066,12 @@
                 "fioleangleterre = 2 then inc_var non 1",
                 "non = 0 then playavi hasquet.avi 1 246 55 343 179",
                 "non = 1 then playavi hasquet99.avi 1 246 55 343 179l"
-              ]
+              ],
+              "type_09_record": {
+                "count": 99,
+                "subtype": 111,
+                "data_length": 244
+              }
             },
             {
               "id": 25,
@@ -18829,7 +18885,13 @@
               "conditions": [
                 "fioleecosse = 0  then playavi fantom.avi 1 320 0 640 400",
                 "fioleecosse = 1  then playavi fantom2.avi 1 320 0 640 400"
-              ]
+              ],
+              "type_09_record": {
+                "count": 1,
+                "subtype": 0,
+                "data_length": 12,
+                "action": "$"
+              }
             },
             {
               "id": 40,
@@ -18839,7 +18901,12 @@
                 "y": 100
               },
               "layer": 0,
-              "video": "antom.avi"
+              "video": "antom.avi",
+              "type_09_record": {
+                "count": 112,
+                "subtype": 104,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -18920,7 +18987,13 @@
                 "photo = 2 then scene 41",
                 "photo = 2 then set_var photo -1",
                 "nessie = 2 then set_var nessie 3d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 29,
+                "subtype": 0,
+                "data_length": 80,
+                "action": "nessie1.avi 1 200 135 438 295300d²Ô*"
+              }
             },
             {
               "id": 45,
@@ -19142,7 +19215,12 @@
                 "bonus7 = 1 then scene 6",
                 "bonus7 = 1 then dec_var score 10",
                 "bonus7 = 1 then inc_var bonus7 1"
-              ]
+              ],
+              "type_09_record": {
+                "count": 98,
+                "subtype": 111,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -19416,7 +19494,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 115,
+                "action": "walace.avi 0 0 40 326 4403score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54walace walace.b"
+              }
             }
           ],
           "commands": []
@@ -19524,7 +19608,12 @@
                 "danemark = 1  then dec_var danemark 1",
                 "portugal = 1  then dec_var portugal 1",
                 "suede = 1  then dec_var suede 1"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 119
+              }
             }
           ],
           "commands": []
@@ -19635,7 +19724,13 @@
                 "y": 400
               },
               "layer": 0,
-              "video": "nessie2.avi"
+              "video": "nessie2.avi",
+              "type_09_record": {
+                "count": 26,
+                "subtype": 0,
+                "data_length": 54,
+                "action": "nessie2.avi 0 0 41 426 437messie2 nessie2."
+              }
             }
           ],
           "commands": []
@@ -20212,7 +20307,12 @@
                 "danemark = 1  then dec_var danemark 1",
                 "portugal = 1  then dec_var portugal 1",
                 "suede = 1  then dec_var suede 1d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 100
+              }
             }
           ],
           "commands": []
@@ -21527,26 +21627,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 1,
-              "text": "Mais où est la chouette d'Athéna ? else playtext 10 20 125 365 0 Athéna a sa chouette, merci !!j",
-              "text_position": {
-                "x": 10,
-                "y": 20
-              },
-              "layer": 0,
-              "actions": [
-                "scene 17",
-                "playtext 10 20 125 365 0 Athéna a sa chouette, merci !!j",
-                "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "set_var bonus29 1"
-              ],
-              "conditions": [
-                "bonus29 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "bonus29 = 0 then set_var bonus29 1",
-                "bonus29 =  1 then scene 17"
-              ]
-            },
-            {
               "id": 2,
               "text": "Question bonus",
               "text_position": {
@@ -21554,12 +21634,24 @@
                 "y": 20
               },
               "layer": 0,
+              "display_text": {
+                "text": "Mais où est la chouette d'Athéna ? else playtext 10 20 125 365 0 Athéna a sa chouette, merci !!j",
+                "position": {
+                  "x": 10,
+                  "y": 20
+                }
+              },
               "actions": [
                 "playtext 10 20 125 365 0 tu as déjà réponduk"
               ],
               "conditions": [
                 "bonus29 = 2 then playtext 10 20 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -21776,7 +21868,12 @@
                 "x": 470,
                 "y": 410
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 108,
+                "subtype": 105,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -22136,7 +22233,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
-              ]
+              ],
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 96,
+                "action": "jo1.avi 0 400 100 560 2173score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+              }
             }
           ],
           "commands": []
@@ -22353,7 +22456,12 @@
                 "bonus9 = 1 then scene 4",
                 "bonus9 = 1 then dec_var score 10",
                 "bonus9 = 1 then inc_var bonus9 1i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -22485,15 +22593,6 @@
               ]
             },
             {
-              "id": 2,
-              "text": "Un mouling",
-              "text_position": {
-                "x": 250,
-                "y": 30
-              },
-              "layer": 0
-            },
-            {
               "id": 3,
               "text": "Une barque",
               "text_position": {
@@ -22501,8 +22600,21 @@
                 "y": 270
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un mouling",
+                "position": {
+                  "x": 250,
+                  "y": 30
+                }
+              },
               "video": "barque.avi",
-              "goto_scene": 4
+              "goto_scene": 4,
+              "type_09_record": {
+                "count": 30,
+                "subtype": 0,
+                "data_length": 95,
+                "action": "barque.avi 1 2200 220 2560 4004i/û\t'18 0 #00"
+              }
             },
             {
               "id": 4,
@@ -22558,24 +22670,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 5,
-              "text": "Informations sur les polders ?j",
-              "text_position": {
-                "x": 380,
-                "y": 140
-              },
-              "layer": 0
-            },
-            {
-              "id": 6,
-              "text": "Un autre moulin voyons !!??d",
-              "text_position": {
-                "x": 320,
-                "y": 110
-              },
-              "layer": 0
-            },
-            {
               "id": 7,
               "text": "Un artiste peintre",
               "text_position": {
@@ -22583,6 +22677,13 @@
                 "y": 90
               },
               "layer": 0,
+              "display_text": {
+                "text": "Informations sur les polders ?j\nUn autre moulin voyons !!??d",
+                "position": {
+                  "x": 320,
+                  "y": 110
+                }
+              },
               "goto_scene": 1,
               "actions": [
                 "playwav peintre3.wav 1",
@@ -22678,32 +22779,6 @@
               ]
             },
             {
-              "id": 10,
-              "text": "Merci pour elle !",
-              "text_position": {
-                "x": 350,
-                "y": 60
-              },
-              "layer": 0,
-              "actions": [
-                "set_var dejachewing 1"
-              ],
-              "conditions": [
-                "chewing = 2 then defcursor fleche.cur",
-                "chewing = 2 then set_var dejachewing 1",
-                "chewing = 2 then set_var chewing -1"
-              ]
-            },
-            {
-              "id": 11,
-              "text": "Un fermier sympal",
-              "text_position": {
-                "x": 250,
-                "y": 360
-              },
-              "layer": 0
-            },
-            {
               "id": 12,
               "text": "Une valise à questions !!?",
               "text_position": {
@@ -22711,6 +22786,13 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "Merci pour elle !\nUn fermier sympal",
+                "position": {
+                  "x": 250,
+                  "y": 360
+                }
+              },
               "goto_scene": 17,
               "actions": [
                 "scene 17"
@@ -22912,7 +22994,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54f"
-              ]
+              ],
+              "type_09_record": {
+                "count": 28,
+                "subtype": 0,
+                "data_length": 32,
+                "action": "me_holl.avi 1 473 49 546 134"
+              }
             },
             {
               "id": 19,
@@ -22928,7 +23016,12 @@
               ],
               "conditions": [
                 "hotte = 0 then addbmp hotte"
-              ]
+              ],
+              "type_09_record": {
+                "count": 228,
+                "subtype": 1,
+                "data_length": 80
+              }
             }
           ],
           "commands": []
@@ -22939,15 +23032,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 23,
-              "text": "Une hotte",
-              "text_position": {
-                "x": 360,
-                "y": 120
-              },
-              "layer": 0
-            },
-            {
               "id": 24,
               "text": "50 euros",
               "text_position": {
@@ -22955,6 +23039,13 @@
                 "y": 40
               },
               "layer": 0,
+              "display_text": {
+                "text": "Une hotte",
+                "position": {
+                  "x": 360,
+                  "y": 120
+                }
+              },
               "actions": [
                 "delbmp hotte",
                 "set_var hotte 1",
@@ -22995,24 +23086,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 25,
-              "text": "Un panier plein d'oeufsd",
-              "text_position": {
-                "x": 340,
-                "y": 280
-              },
-              "layer": 0
-            },
-            {
-              "id": 26,
-              "text": "Un sabot",
-              "text_position": {
-                "x": 130,
-                "y": 370
-              },
-              "layer": 0
-            },
-            {
               "id": 27,
               "text": "2 euros",
               "text_position": {
@@ -23020,6 +23093,13 @@
                 "y": 40
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un panier plein d'oeufsd\nUn sabot",
+                "position": {
+                  "x": 130,
+                  "y": 370
+                }
+              },
               "actions": [
                 "delbmp sab",
                 "set_var sabot1 1",
@@ -23092,43 +23172,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 31,
-              "text": "Un sac de blé",
-              "text_position": {
-                "x": 100,
-                "y": 320
-              },
-              "layer": 0
-            },
-            {
-              "id": 32,
-              "text": "10 eurosd",
-              "text_position": {
-                "x": 382,
-                "y": 40
-              },
-              "layer": 0
-            },
-            {
-              "id": 33,
-              "text": "Un arrosoird",
-              "text_position": {
-                "x": 520,
-                "y": 380
-              },
-              "layer": 0,
-              "actions": [
-                "scene 21",
-                "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "set_var bonus19 1"
-              ],
-              "conditions": [
-                "bonus19 = 0 then playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
-                "bonus19 = 0 then set_var bonus19 1",
-                "bonus19 =  1 then scene 21"
-              ]
-            },
-            {
               "id": 34,
               "text": "Question bonus",
               "text_position": {
@@ -23136,12 +23179,24 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un sac de blé\n10 eurosd\nUn arrosoird",
+                "position": {
+                  "x": 520,
+                  "y": 380
+                }
+              },
               "actions": [
                 "playtext 120 360 125 365 0 tu as déjà réponduk"
               ],
               "conditions": [
                 "bonus19 = 2 then playtext 120 360 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -23199,24 +23254,6 @@
               ]
             },
             {
-              "id": 36,
-              "text": "Un galerie de peinturef",
-              "text_position": {
-                "x": 190,
-                "y": 8
-              },
-              "layer": 0
-            },
-            {
-              "id": 37,
-              "text": "Vers les poldersg",
-              "text_position": {
-                "x": 96,
-                "y": 20
-              },
-              "layer": 0
-            },
-            {
               "id": 38,
               "text": "Des informations sur la bicyclettej",
               "text_position": {
@@ -23224,7 +23261,20 @@
                 "y": 20
               },
               "layer": 0,
-              "video": "velo.avi"
+              "display_text": {
+                "text": "Un galerie de peinturef\nVers les poldersg",
+                "position": {
+                  "x": 96,
+                  "y": 20
+                }
+              },
+              "video": "velo.avi",
+              "type_09_record": {
+                "count": 27,
+                "subtype": 0,
+                "data_length": 61,
+                "action": "velo.avi 1 1131 36 1221 11814'18 0 #ff"
+              }
             },
             {
               "id": 39,
@@ -23243,7 +23293,12 @@
                 "x": 400,
                 "y": 20
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -23306,15 +23361,6 @@
               ]
             },
             {
-              "id": 45,
-              "text": "Le responsable de la\ngalerie de peinturel",
-              "text_position": {
-                "x": 370,
-                "y": 40
-              },
-              "layer": 0
-            },
-            {
               "id": 47,
               "text": "Question bonus",
               "text_position": {
@@ -23322,6 +23368,13 @@
                 "y": 260
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le responsable de la\ngalerie de peinturel",
+                "position": {
+                  "x": 370,
+                  "y": 40
+                }
+              },
               "goto_scene": 21,
               "actions": [
                 "scene 21",
@@ -23877,7 +23930,12 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": []
@@ -24410,49 +24468,25 @@
           "audio": "cling.wav",
           "hotspots": [
             {
-              "id": 52,
-              "text": "30 oeufs à 39 francs francais",
-              "text_position": {
-                "x": 20,
-                "y": 230
-              },
-              "layer": 0
-            },
-            {
-              "id": 53,
-              "text": "40 oeufs à 14 euros",
-              "text_position": {
-                "x": 140,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 54,
-              "text": "15 oeufs à 9 euros",
-              "text_position": {
-                "x": 240,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 55,
-              "text": "100 oeufs à 299 francs francais",
-              "text_position": {
-                "x": 360,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
               "id": 56,
               "text": "La valise à questions peut te faire gagner\n150 euros pour cela tu dois me dire dans quel\npanier l'oeuf à l'unité est le moins cher.",
               "text_position": {
                 "x": 100,
                 "y": 60
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "30 oeufs à 39 francs francais\n40 oeufs à 14 euros\n15 oeufs à 9 euros\n100 oeufs à 299 francs francais",
+                "position": {
+                  "x": 360,
+                  "y": 240
+                }
+              },
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 34
+              }
             }
           ],
           "commands": []
@@ -25182,7 +25216,12 @@
               ],
               "conditions": [
                 "bonus14 = 2 then playtext 80 20 125 365 0 tu as déjà réponduk"
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -25956,30 +25995,6 @@
               ]
             },
             {
-              "id": 3,
-              "text": "Le plus grand\ncouturier du mondef",
-              "text_position": {
-                "x": 980,
-                "y": 50
-              },
-              "layer": 0
-            },
-            {
-              "id": 5,
-              "text": "Une pizzeria",
-              "text_position": {
-                "x": 360,
-                "y": 30
-              },
-              "layer": 0,
-              "actions": [
-                "scene 4"
-              ],
-              "conditions": [
-                "chianti = 0 then scene 4"
-              ]
-            },
-            {
               "id": 6,
               "text": "Une pizzeria",
               "text_position": {
@@ -25987,6 +26002,13 @@
                 "y": 20
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le plus grand\ncouturier du mondef\nUne pizzeria",
+                "position": {
+                  "x": 360,
+                  "y": 30
+                }
+              },
               "video": "vespa.avi",
               "goto_scene": 174,
               "actions": [
@@ -26507,7 +26529,12 @@
               "conditions": [
                 "api != 0 then playtext 100 290 125 365 0 Grâce à toi le couturier",
                 "api != 0 then playtext 100 310 125 365 0 a tout rangé.i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 114,
+                "subtype": 101,
+                "data_length": 29
+              }
             }
           ],
           "commands": [
@@ -26563,7 +26590,13 @@
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h"
-              ]
+              ],
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 124,
+                "action": "feu.avi 2 374 134 446 2073score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h^b"
+              }
             },
             {
               "id": 29,
@@ -26694,7 +26727,12 @@
                 "chianti = 0 then playtext 285 100 125 365 0     à gagner !",
                 "chianti != 0 then playtext 245 80 125 365 0 Tu as déjà gagné une",
                 "chianti != 0 then playtext 250 100 125 365 0 bouteille de chianti !d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 116,
+                "subtype": 111,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -26735,15 +26773,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 31,
-              "text": "La tour de Pise.\nTiens, on dirait qu'elle penche !f",
-              "text_position": {
-                "x": 305,
-                "y": 120
-              },
-              "layer": 0
-            },
-            {
               "id": 33,
               "text": "Le gardien",
               "text_position": {
@@ -26751,6 +26780,13 @@
                 "y": 41
               },
               "layer": 0,
+              "display_text": {
+                "text": "La tour de Pise.\nTiens, on dirait qu'elle penche !f",
+                "position": {
+                  "x": 305,
+                  "y": 120
+                }
+              },
               "video": "pise99.avi",
               "goto_scene": 7,
               "actions": [
@@ -26952,7 +26988,13 @@
               ],
               "conditions": [
                 "fioleitalie = 0 then scene 13i"
-              ]
+              ],
+              "type_09_record": {
+                "count": 27,
+                "subtype": 0,
+                "data_length": 47,
+                "action": "torche.avi 2 143 21 587 116'18 0 #ff"
+              }
             }
           ],
           "commands": [
@@ -27096,7 +27138,12 @@
                 "x": 110,
                 "y": 380
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 112,
+                "subtype": 105,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -27151,7 +27198,12 @@
                 "x": 480,
                 "y": 410
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 112,
+                "subtype": 105,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -27673,7 +27725,13 @@
                 "danemark = 1  then dec_var danemark 1",
                 "portugal = 1  then dec_var portugal 1",
                 "suede = 1  then dec_var suede 1"
-              ]
+              ],
+              "type_09_record": {
+                "count": 12,
+                "subtype": 0,
+                "data_length": 36,
+                "action": "italie.avi 1italie 1"
+              }
             }
           ],
           "commands": []
@@ -27894,6 +27952,11 @@
                   "x": 155,
                   "y": 194
                 }
+              },
+              "type_09_record": {
+                "count": 97,
+                "subtype": 110,
+                "data_length": 32
               }
             },
             {
@@ -27942,6 +28005,11 @@
                   "x": 564,
                   "y": 236
                 }
+              },
+              "type_09_record": {
+                "count": 98,
+                "subtype": 97,
+                "data_length": 4
               }
             },
             {
@@ -27951,7 +28019,12 @@
                 "x": 30,
                 "y": 60
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 98,
+                "subtype": 97,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -28482,21 +28555,6 @@
           "audio": "tram.wav",
           "hotspots": [
             {
-              "id": 7,
-              "text": "Un magasin de porcelaine",
-              "text_position": {
-                "x": 200,
-                "y": 80
-              },
-              "layer": 0,
-              "actions": [
-                "playtext 200 80 125 365 0 Le magasin est fermé.g"
-              ],
-              "conditions": [
-                "vase = 1 then playtext 200 80 125 365 0 Le magasin est fermé.g"
-              ]
-            },
-            {
               "id": 8,
               "text": "Une poissonneriee",
               "text_position": {
@@ -28504,6 +28562,13 @@
                 "y": 80
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un magasin de porcelaine",
+                "position": {
+                  "x": 200,
+                  "y": 80
+                }
+              },
               "goto_scene": 8
             },
             {
@@ -28513,7 +28578,12 @@
                 "x": 240,
                 "y": 80
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 98,
+                "subtype": 97,
+                "data_length": 4
+              }
             }
           ],
           "commands": [
@@ -28647,7 +28717,13 @@
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "expo = 0 then addbmp image2"
-              ]
+              ],
+              "type_09_record": {
+                "count": 2,
+                "subtype": 0,
+                "data_length": 62,
+                "action": "expo 0.expo = 0 then addbmp image2 expo4.bm"
+              }
             }
           ],
           "commands": []
@@ -28879,24 +28955,6 @@
           "audio": "clapotis.wav",
           "hotspots": [
             {
-              "id": 1,
-              "text": "Le librairef",
-              "text_position": {
-                "x": 460,
-                "y": 80
-              },
-              "layer": 0
-            },
-            {
-              "id": 2,
-              "text": "La fabrique de bougiesf",
-              "text_position": {
-                "x": 350,
-                "y": 70
-              },
-              "layer": 0
-            },
-            {
               "id": 3,
               "text": "La maison de l'inventeurf",
               "text_position": {
@@ -28904,6 +28962,13 @@
                 "y": 60
               },
               "layer": 0,
+              "display_text": {
+                "text": "Le librairef\nLa fabrique de bougiesf",
+                "position": {
+                  "x": 350,
+                  "y": 70
+                }
+              },
               "goto_scene": 3
             }
           ],
@@ -29162,7 +29227,12 @@
                 "x": 310,
                 "y": 100
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 105,
+                "subtype": 110,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -29503,7 +29573,13 @@
               },
               "layer": 0,
               "video": "radar.avi",
-              "goto_scene": 139
+              "goto_scene": 139,
+              "type_09_record": {
+                "count": 25,
+                "subtype": 0,
+                "data_length": 150,
+                "action": "radar.avi 2 140 1 342 139\tradar.avi 2 140 1 342 139dqRsoumar3."
+              }
             }
           ],
           "commands": [
@@ -30119,7 +30195,12 @@
                     "y": 400
                   }
                 }
-              ]
+              ],
+              "type_09_record": {
+                "count": 97,
+                "subtype": 95,
+                "data_length": 64
+              }
             }
           ],
           "commands": [
@@ -30611,7 +30692,12 @@
                 "cmenu1 = 8 then playhtml recette\\r8.htm 0 200 20 630 340",
                 "cmenu1 = 9 then playhtml recette\\r9.htm 0 200 20 630 340",
                 "cmenu1 = 10 then playhtml recette\\r10.htm 0 200 20 630 340d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 99,
+                "subtype": 117,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -31002,67 +31088,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 62,
-              "text": "SOUPE DE\nPOISSONS",
-              "text_position": {
-                "x": 35,
-                "y": 150
-              },
-              "layer": 0
-            },
-            {
-              "id": 64,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 65,
-              "text": "Recette pour\n\" 4 personnes\"",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 67,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 68,
-              "text": "Préparation\n20 minutes",
-              "text_position": {
-                "x": 35,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 70,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 285
-              },
-              "layer": 0
-            },
-            {
               "id": 71,
               "text": "Cuisson",
               "text_position": {
                 "x": 45,
                 "y": 300
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "SOUPE DE\nPOISSONS\n*\nRecette pour\n\" 4 personnes\"\n*\nPréparation\n20 minutes\n*",
+                "position": {
+                  "x": 70,
+                  "y": 285
+                }
+              },
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             },
             {
               "id": 72,
@@ -31071,7 +31115,12 @@
                 "x": 35,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             }
           ],
           "commands": []
@@ -31687,85 +31736,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 135,
-              "text": "RIZ",
-              "text_position": {
-                "x": 50,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 136,
-              "text": "AU LAIT",
-              "text_position": {
-                "x": 35,
-                "y": 150
-              },
-              "layer": 0
-            },
-            {
-              "id": 137,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 138,
-              "text": "Recette pour\n\" 8 personnes\"",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 140,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 141,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 142,
-              "text": "15 minutes",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 143,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 285
-              },
-              "layer": 0
-            },
-            {
               "id": 144,
               "text": "Cuisson",
               "text_position": {
                 "x": 45,
                 "y": 300
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "RIZ\nAU LAIT\n*\nRecette pour\n\" 8 personnes\"\n*\nPréparation\n15 minutes\n*",
+                "position": {
+                  "x": 70,
+                  "y": 285
+                }
+              },
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             },
             {
               "id": 145,
@@ -31774,7 +31763,12 @@
                 "x": 35,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             }
           ],
           "commands": []
@@ -31917,67 +31911,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 159,
-              "text": "TIRAMISU",
-              "text_position": {
-                "x": 35,
-                "y": 140
-              },
-              "layer": 0
-            },
-            {
-              "id": 160,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 161,
-              "text": "Recette pour\n\" 6 personnes\"",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 163,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 164,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 165,
-              "text": "20 minutes",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
               "id": 166,
               "text": "*d",
               "text_position": {
                 "x": 70,
                 "y": 285
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "TIRAMISU\n*\nRecette pour\n\" 6 personnes\"\n*\nPréparation\n20 minutes",
+                "position": {
+                  "x": 40,
+                  "y": 260
+                }
+              },
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             }
           ],
           "commands": []
@@ -32204,7 +32156,12 @@
                 "cmenu3 = 9 then playhtml recette\\r30.htm 0 200 20 630 340",
                 "cmenu3 = 10 then playhtml recette\\r31.htm 0 200 20 630 340",
                 "cmenu3 = 11 then playhtml recette\\r32.htm 0 200 20 630 340d"
-              ]
+              ],
+              "type_09_record": {
+                "count": 99,
+                "subtype": 117,
+                "data_length": 4
+              }
             }
           ],
           "commands": []
@@ -34195,15 +34152,6 @@
           "audio": "tic1.wav",
           "hotspots": [
             {
-              "id": 308,
-              "text": "La couronne suédoise",
-              "text_position": {
-                "x": 180,
-                "y": 250
-              },
-              "layer": 0
-            },
-            {
               "id": 309,
               "text": "Quitteri",
               "text_position": {
@@ -34211,6 +34159,13 @@
                 "y": 420
               },
               "layer": 0,
+              "display_text": {
+                "text": "La couronne suédoise",
+                "position": {
+                  "x": 180,
+                  "y": 250
+                }
+              },
               "clickable_area": {
                 "type": "polygon",
                 "points": [
@@ -34762,15 +34717,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 312,
-              "text": "Histoire\nportugaise",
-              "text_position": {
-                "x": 35,
-                "y": 440
-              },
-              "layer": 0
-            },
-            {
               "id": 314,
               "text": "La marine\nportugaised",
               "text_position": {
@@ -34778,12 +34724,24 @@
                 "y": 155
               },
               "layer": 0,
+              "display_text": {
+                "text": "Histoire\nportugaise",
+                "position": {
+                  "x": 35,
+                  "y": 440
+                }
+              },
               "actions": [
                 "runprj ..\\belge\\belge.vnp 14"
               ],
               "conditions": [
                 "dico = 1 then runprj ..\\belge\\belge.vnp 14"
-              ]
+              ],
+              "type_09_record": {
+                "count": 228,
+                "subtype": 1,
+                "data_length": 300
+              }
             }
           ],
           "commands": []
@@ -35119,15 +35077,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 351,
-              "text": "Monument\nanglais",
-              "text_position": {
-                "x": 35,
-                "y": 440
-              },
-              "layer": 0
-            },
-            {
               "id": 353,
               "text": "Big Bend",
               "text_position": {
@@ -35135,12 +35084,24 @@
                 "y": 135
               },
               "layer": 0,
+              "display_text": {
+                "text": "Monument\nanglais",
+                "position": {
+                  "x": 35,
+                  "y": 440
+                }
+              },
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 32"
               ],
               "conditions": [
                 "dico = 1 then runprj ..\\ecosse\\ecosse.vnp 32"
-              ]
+              ],
+              "type_09_record": {
+                "count": 10,
+                "subtype": 2,
+                "data_length": 300
+              }
             }
           ],
           "commands": []
@@ -35183,15 +35144,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 358,
-              "text": "Spécialité\nallemande",
-              "text_position": {
-                "x": 35,
-                "y": 440
-              },
-              "layer": 0
-            },
-            {
               "id": 360,
               "text": "La fabrication\nde la bièred",
               "text_position": {
@@ -35199,12 +35151,24 @@
                 "y": 155
               },
               "layer": 0,
+              "display_text": {
+                "text": "Spécialité\nallemande",
+                "position": {
+                  "x": 35,
+                  "y": 440
+                }
+              },
               "actions": [
                 "runprj ..\\suede\\suede.vnp 10"
               ],
               "conditions": [
                 "dico = 1 then runprj ..\\suede\\suede.vnp 10"
-              ]
+              ],
+              "type_09_record": {
+                "count": 114,
+                "subtype": 1,
+                "data_length": 8
+              }
             }
           ],
           "commands": []
@@ -35375,15 +35339,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 376,
-              "text": "Inventeur\nitalien",
-              "text_position": {
-                "x": 35,
-                "y": 440
-              },
-              "layer": 0
-            },
-            {
               "id": 378,
               "text": "Léonard\nde Vincid",
               "text_position": {
@@ -35391,12 +35346,24 @@
                 "y": 155
               },
               "layer": 0,
+              "display_text": {
+                "text": "Inventeur\nitalien",
+                "position": {
+                  "x": 35,
+                  "y": 440
+                }
+              },
               "actions": [
                 "runprj ..\\portu\\portu.vnp 14"
               ],
               "conditions": [
                 "dico = 1 then runprj ..\\portu\\portu.vnp 14"
-              ]
+              ],
+              "type_09_record": {
+                "count": 60,
+                "subtype": 1,
+                "data_length": 300
+              }
             }
           ],
           "commands": []
@@ -35922,22 +35889,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 433,
-              "text": "Monument\nespagnol",
-              "text_position": {
-                "x": 35,
-                "y": 440
-              },
-              "layer": 0
-            },
-            {
               "id": 435,
               "text": "L'Alhambrad",
               "text_position": {
                 "x": 20,
                 "y": 135
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "Monument\nespagnol",
+                "position": {
+                  "x": 35,
+                  "y": 440
+                }
+              },
+              "type_09_record": {
+                "count": 3,
+                "subtype": 2,
+                "data_length": 16
+              }
             }
           ],
           "commands": []
@@ -36143,7 +36113,12 @@
                   "y": 428
                 }
               },
-              "goto_scene": 29
+              "goto_scene": 29,
+              "type_09_record": {
+                "count": 109,
+                "subtype": 97,
+                "data_length": 300
+              }
             }
           ],
           "commands": []
@@ -36267,7 +36242,12 @@
                   "y": 405
                 }
               },
-              "goto_scene": 31
+              "goto_scene": 31,
+              "type_09_record": {
+                "count": 109,
+                "subtype": 97,
+                "data_length": 300
+              }
             }
           ],
           "commands": []
@@ -36397,6 +36377,11 @@
                   "x": 569,
                   "y": 425
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -36537,6 +36522,11 @@
                   "x": 570,
                   "y": 422
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -36670,6 +36660,11 @@
                   "x": 568,
                   "y": 427
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -36810,6 +36805,11 @@
                   "x": 567,
                   "y": 424
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -36947,6 +36947,11 @@
                   "x": 561,
                   "y": 412
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37087,6 +37092,11 @@
                   "x": 563,
                   "y": 420
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37206,6 +37216,11 @@
                   "x": 563,
                   "y": 414
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37308,6 +37323,11 @@
                   "x": 568,
                   "y": 416
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37410,6 +37430,11 @@
                   "x": 570,
                   "y": 420
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37518,7 +37543,12 @@
                 "x": 430,
                 "y": 420
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
+              }
             }
           ],
           "commands": []
@@ -37658,6 +37688,11 @@
                   "x": 573,
                   "y": 416
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37752,6 +37787,11 @@
                   "x": 559,
                   "y": 405
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -37854,6 +37894,11 @@
                   "x": 570,
                   "y": 423
                 }
+              },
+              "type_09_record": {
+                "count": 109,
+                "subtype": 105,
+                "data_length": 105
               }
             }
           ],
@@ -38465,85 +38510,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 479,
-              "text": "PANSE DE",
-              "text_position": {
-                "x": 35,
-                "y": 130
-              },
-              "layer": 0
-            },
-            {
-              "id": 480,
-              "text": "BREBIS FARCIE",
-              "text_position": {
-                "x": 8,
-                "y": 150
-              },
-              "layer": 0
-            },
-            {
-              "id": 481,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 482,
-              "text": "Recette pour\n12 personnes",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 484,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 485,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 486,
-              "text": "20 minutes",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 487,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 285
-              },
-              "layer": 0
-            },
-            {
               "id": 488,
               "text": "Cuisson",
               "text_position": {
                 "x": 45,
                 "y": 300
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "PANSE DE\nBREBIS FARCIE\n*\nRecette pour\n12 personnes\n*\nPréparation\n20 minutes\n*",
+                "position": {
+                  "x": 70,
+                  "y": 285
+                }
+              },
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             },
             {
               "id": 489,
@@ -38552,7 +38537,12 @@
                 "x": 40,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             }
           ],
           "commands": []
@@ -38974,69 +38964,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 526,
-              "text": "TARTIFLETTE",
-              "text_position": {
-                "x": 25,
-                "y": 140
-              },
-              "layer": 0
-            },
-            {
-              "id": 527,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 528,
-              "text": "Recette pour\n\" 6 personnes\"",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 530,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 531,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 532,
-              "text": "20 minutes",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 533,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 285
-              },
-              "layer": 0
-            },
-            {
               "id": 534,
               "text": "Cuisson",
               "text_position": {
@@ -39044,6 +38971,13 @@
                 "y": 300
               },
               "layer": 0,
+              "display_text": {
+                "text": "TARTIFLETTE\n*\nRecette pour\n\" 6 personnes\"\n*\nPréparation\n20 minutes\n*",
+                "position": {
+                  "x": 70,
+                  "y": 285
+                }
+              },
               "goto_scene": 30
             },
             {
@@ -39091,76 +39025,25 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 538,
-              "text": "PÂTE A\nPIZZA",
-              "text_position": {
-                "x": 35,
-                "y": 150
-              },
-              "layer": 0
-            },
-            {
-              "id": 540,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 169
-              },
-              "layer": 0
-            },
-            {
-              "id": 541,
-              "text": "Recette pour\n\" 6 personnes\"",
-              "text_position": {
-                "x": 30,
-                "y": 200
-              },
-              "layer": 0
-            },
-            {
-              "id": 543,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 225
-              },
-              "layer": 0
-            },
-            {
-              "id": 544,
-              "text": "Préparation",
-              "text_position": {
-                "x": 35,
-                "y": 240
-              },
-              "layer": 0
-            },
-            {
-              "id": 545,
-              "text": "20 minutes",
-              "text_position": {
-                "x": 40,
-                "y": 260
-              },
-              "layer": 0
-            },
-            {
-              "id": 546,
-              "text": "*",
-              "text_position": {
-                "x": 70,
-                "y": 285
-              },
-              "layer": 0
-            },
-            {
               "id": 547,
               "text": "Cuisson",
               "text_position": {
                 "x": 45,
                 "y": 300
               },
-              "layer": 0
+              "layer": 0,
+              "display_text": {
+                "text": "PÂTE A\nPIZZA\n*\nRecette pour\n\" 6 personnes\"\n*\nPréparation\n20 minutes\n*",
+                "position": {
+                  "x": 70,
+                  "y": 285
+                }
+              },
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             },
             {
               "id": 548,
@@ -39169,7 +39052,12 @@
                 "x": 20,
                 "y": 320
               },
-              "layer": 0
+              "layer": 0,
+              "type_09_record": {
+                "count": 99,
+                "subtype": 109,
+                "data_length": 80
+              }
             }
           ],
           "commands": []

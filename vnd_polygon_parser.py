@@ -55,11 +55,28 @@ class BmpAction:
 
 
 @dataclass
+class DisplayText:
+    """Text displayed when hovering over a hotspot (may differ from label)"""
+    text: str
+    x: int
+    y: int
+
+
+@dataclass
+class Type09Record:
+    """Type 0x09 record data - can be action strings or binary data"""
+    count: int
+    subtype: int
+    data: bytes
+    decoded_action: Optional[str] = None  # For subtype=0 (action strings like "euroland\bankbis.avi 1")
+
+
+@dataclass
 class Hotspot:
     """Complete hotspot with text, polygon, and action"""
     id: int
-    text: str = ""
-    text_x: int = 0  # Text display position (NOT click zone!)
+    text: str = ""  # Label of the hotspot (e.g., "Un litd")
+    text_x: int = 0  # Label display position
     text_y: int = 0
     layer: int = 0
     polygon: Optional[Polygon] = None
@@ -68,6 +85,8 @@ class Hotspot:
     actions: List[str] = field(default_factory=list)
     conditions: List[str] = field(default_factory=list)
     bmp_actions: List[BmpAction] = field(default_factory=list)
+    display_text: Optional[DisplayText] = None  # Alternative text shown on hover
+    type_09_record: Optional[Type09Record] = None  # Type 0x09 special record (video actions, associations, etc.)
     offset: int = 0  # File offset for debugging
 
 
@@ -96,6 +115,7 @@ class VndPolygonParser:
     RECORD_TYPE_HOTSPOT_TEXT = 0x26  # 38
     RECORD_TYPE_FONT = 0x27  # 39
     RECORD_TYPE_POLYGON = 0x69  # 105
+    RECORD_TYPE_09 = 0x09  # 9 - Special record (actions, video, associations)
 
     def __init__(self, filepath: Path):
         self.filepath = filepath
@@ -136,6 +156,72 @@ class VndPolygonParser:
         if points:
             return Polygon(points=points)
         return None
+
+    def read_type_09_at(self, offset: int, max_search_distance: int = 300) -> Optional[Type09Record]:
+        """Read a Type 0x09 record at a specific offset
+
+        Type 0x09 format:
+        - Bytes 0-3: Type (0x09 0x00 0x00 0x00)
+        - Byte 4: Count
+        - Byte 5: Subtype (0 = action string, 3 = binary data/associations)
+        - Bytes 6-7: Padding (0x00 0x00)
+        - Bytes 8+: Data (variable length)
+
+        The data length is determined by finding the next known record type.
+        """
+        if offset + 8 > self.size:
+            return None
+
+        record_type = struct.unpack_from('<I', self.data, offset)[0]
+        if record_type != self.RECORD_TYPE_09:
+            return None
+
+        # Read header
+        count = self.data[offset + 4]
+        subtype = self.data[offset + 5]
+
+        # Find the end of this record by searching for next known record type
+        data_start = offset + 8
+        data_end = None
+
+        known_types = [self.RECORD_TYPE_HOTSPOT_TEXT, self.RECORD_TYPE_FONT,
+                      self.RECORD_TYPE_POLYGON, 0x15]  # 0x15 = condition record
+
+        for search_offset in range(data_start, min(data_start + max_search_distance, self.size), 4):
+            if search_offset + 4 > self.size:
+                break
+
+            check_type = struct.unpack_from('<I', self.data, search_offset)[0]
+            if check_type in known_types:
+                data_end = search_offset
+                break
+
+        if data_end is None:
+            data_end = min(data_start + max_search_distance, self.size)
+
+        # Extract data
+        data = self.data[data_start:data_end]
+
+        # Try to decode as action string if subtype=0
+        decoded_action = None
+        if subtype == 0 and len(data) > 0:
+            try:
+                # Try to decode as string
+                decoded = data.decode('latin-1', errors='ignore')
+                # Clean up (remove null bytes and control characters)
+                decoded = ''.join(c for c in decoded if c.isprintable() or c in ' \t')
+                decoded = decoded.strip()
+                if decoded:
+                    decoded_action = decoded
+            except:
+                pass
+
+        return Type09Record(
+            count=count,
+            subtype=subtype,
+            data=data,
+            decoded_action=decoded_action
+        )
 
     def find_all_backgrounds(self) -> List[Tuple[int, str]]:
         """Find all background image references with their offsets"""
@@ -296,6 +382,9 @@ class VndPolygonParser:
             # Merge multiline hotspots (same X position, consecutive Y positions)
             self._merge_multiline_hotspots(scene)
 
+            # Associate display texts with triggering hotspots
+            self._associate_display_texts(scene)
+
             # Extract ALL scene commands (playtext, playwav, addbmp, etc.)
             self._extract_scene_commands(scene, search_start, search_end)
 
@@ -348,6 +437,56 @@ class VndPolygonParser:
 
         scene.hotspots = merged
 
+    def _associate_display_texts(self, scene: Scene):
+        """Associate display texts with their triggering hotspots
+
+        VND structure pattern:
+        FONT #1 → Display text(s) without polygon
+        FONT #2 → Clickable hotspot with polygon
+
+        The display text from FONT #1 should be shown when hovering the hotspot from FONT #2
+        """
+        if not scene.hotspots:
+            return
+
+        pending_display_texts = []
+        final_hotspots = []
+
+        for hotspot in scene.hotspots:
+            # Check if this is a display-only text (no polygon, no bmp_actions, no goto, no Type 0x09)
+            is_display_only = (
+                hotspot.polygon is None and
+                not hotspot.bmp_actions and
+                hotspot.goto_scene is None and
+                not hotspot.video and
+                hotspot.type_09_record is None  # Type 0x09 makes it interactive
+            )
+
+            if is_display_only:
+                # This is a text that will be displayed on hover of next hotspot
+                pending_display_texts.append(hotspot)
+            else:
+                # This is a real interactive hotspot
+                if pending_display_texts:
+                    # Merge all pending texts into display_text
+                    merged_text = '\n'.join(h.text for h in pending_display_texts)
+                    last_text = pending_display_texts[-1]
+
+                    hotspot.display_text = DisplayText(
+                        text=merged_text,
+                        x=last_text.text_x,
+                        y=last_text.text_y
+                    )
+
+                    pending_display_texts.clear()
+
+                final_hotspots.append(hotspot)
+
+        # Keep remaining display-only hotspots (they are autonomous)
+        final_hotspots.extend(pending_display_texts)
+
+        scene.hotspots = final_hotspots
+
     def _extract_scene_commands(self, scene: Scene, start_offset: int, end_offset: int):
         """Extract ALL commands in the scene (not just those attached to hotspots)"""
         region_text = self.text_content[start_offset:end_offset]
@@ -396,7 +535,16 @@ class VndPolygonParser:
         # Search region
         region_size = end_offset - start_offset
 
-        # 1. Search for polygon (binary data)
+        # 1. Search for Type 0x09 record (special actions/associations)
+        for offset in range(start_offset, min(start_offset + region_size, end_offset)):
+            if offset + 8 > self.size:
+                break
+            type_09 = self.read_type_09_at(offset, max_search_distance=min(300, end_offset - offset))
+            if type_09:
+                hotspot.type_09_record = type_09
+                break
+
+        # 2. Search for polygon (binary data)
         for offset in range(start_offset, min(start_offset + region_size, end_offset)):
             if offset + 8 > self.size:
                 break
@@ -515,6 +663,13 @@ class VndPolygonParser:
                     'layer': hotspot.layer,
                 }
 
+                # Add display_text if different from label
+                if hotspot.display_text:
+                    hotspot_dict['display_text'] = {
+                        'text': hotspot.display_text.text,
+                        'position': {'x': hotspot.display_text.x, 'y': hotspot.display_text.y}
+                    }
+
                 if hotspot.polygon:
                     hotspot_dict['clickable_area'] = {
                         'type': 'polygon',
@@ -554,6 +709,15 @@ class VndPolygonParser:
                         }
                         for bmp in hotspot.bmp_actions
                     ]
+
+                if hotspot.type_09_record:
+                    hotspot_dict['type_09_record'] = {
+                        'count': hotspot.type_09_record.count,
+                        'subtype': hotspot.type_09_record.subtype,
+                        'data_length': len(hotspot.type_09_record.data)
+                    }
+                    if hotspot.type_09_record.decoded_action:
+                        hotspot_dict['type_09_record']['action'] = hotspot.type_09_record.decoded_action
 
                 scene_dict['hotspots'].append(hotspot_dict)
 
