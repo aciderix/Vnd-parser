@@ -208,9 +208,42 @@ class VndPolygonParser:
             try:
                 # Try to decode as string
                 decoded = data.decode('latin-1', errors='ignore')
-                # Clean up (remove null bytes and control characters)
-                decoded = ''.join(c for c in decoded if c.isprintable() or c in ' \t')
-                decoded = decoded.strip()
+
+                # Type 0x09 subtype=0 format: "path\file.avi [params...]"
+                # After the .avi there are binary parameters - stop before them
+                # Look for .avi or .wav extension and take everything before the binary garbage
+                if '.avi' in decoded.lower():
+                    # Find .avi and take only up to ~20 chars after it (for parameters)
+                    avi_pos = decoded.lower().find('.avi')
+                    # Take text up to .avi + 20 chars max (for parameters like "1")
+                    decoded = decoded[:avi_pos + 4 + 20]
+
+                    # Stop at first non-printable or excessive garbage character
+                    clean_parts = []
+                    for c in decoded:
+                        if c.isprintable() or c in ' \t\\':
+                            clean_parts.append(c)
+                        else:
+                            break
+                    decoded = ''.join(clean_parts).strip()
+
+                elif '.wav' in decoded.lower():
+                    # Same for .wav files
+                    wav_pos = decoded.lower().find('.wav')
+                    decoded = decoded[:wav_pos + 4 + 10]
+                    clean_parts = []
+                    for c in decoded:
+                        if c.isprintable() or c in ' \t\\':
+                            clean_parts.append(c)
+                        else:
+                            break
+                    decoded = ''.join(clean_parts).strip()
+
+                else:
+                    # Generic cleanup - remove control characters
+                    decoded = ''.join(c for c in decoded if c.isprintable() or c in ' \t\\')
+                    decoded = decoded.strip()
+
                 if decoded:
                     decoded_action = decoded
             except:
@@ -245,6 +278,47 @@ class VndPolygonParser:
                 backgrounds.append((offset, name))
 
         return backgrounds
+
+    def clean_hotspot_text(self, text: str) -> str:
+        """Clean hotspot text by removing trailing garbage characters
+
+        VND files often have a padding/flag byte after text data that gets captured
+        by regex. These appear as trailing single letters like 'd', 'j', 'k', 'i', etc.
+        """
+        if not text or len(text) < 2:
+            return text
+
+        # Common garbage characters: d, j, k, i, h, f, l (bytes like 0x64, 0x6a, 0x6b, etc.)
+        # These appear as the last byte of the Type 0x26 record data
+        garbage_chars = 'dfjhijkl'
+
+        # Check if last character is a suspicious garbage byte
+        if text[-1] in garbage_chars:
+            # Additional checks to avoid removing legitimate text:
+            # - If preceded by a vowel, it's likely a word ending (like "litd" from "lit")
+            # - If preceded by 'e' or 'r', check context
+            # - If preceded by space/punctuation, it's likely garbage
+
+            if text[-2] in ' .!?':
+                # Definitely garbage (space or punctuation before)
+                return text[:-1]
+
+            elif text[-2] in 'aeiouèéêëàâùûîïôœ':
+                # Vowel before the letter - likely NOT a valid French word ending
+                # (French words rarely end in vowel + d/j/k)
+                return text[:-1]
+
+            elif len(text) >= 3 and text[-2:] in ['td', 'ej', 'nd', 'rj', 'sd', 'ij', 'uj', 'xj', 'sk', 'xk', 'xd',
+                                                     'Ef', 'Eh', 'tf', 'ld', 'li', 'lj', 'Od', 'ah', 'eh', 'oh']:
+                # Suspicious 2-letter combos that don't exist in French
+                return text[:-1]
+
+            elif len(text) >= 4 and text[-3:] in ['usj', 'uxj', 'aud', 'eud', 'oid', 'rik', 'tik', 'IEf', 'IEh',
+                                                     'Old', 'ald', 'ntf', 'eli', 'olj']:
+                # Suspicious 3-letter combos
+                return text[:-1]
+
+        return text
 
     def extract_text_at(self, offset: int, max_length: int = 100) -> str:
         """Extract readable text at offset"""
@@ -313,6 +387,9 @@ class VndPolygonParser:
                 # Clean the text (remove control characters)
                 text = ''.join(c for c in text if c.isprintable() or c in ' \t')
                 text = text.strip()
+
+                # Remove trailing garbage characters (padding bytes from VND records)
+                text = self.clean_hotspot_text(text)
 
                 # Filter out obviously wrong matches
                 # Note: x can be > 640 due to horizontal scrolling in some scenes

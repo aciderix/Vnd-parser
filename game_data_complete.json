@@ -187,7 +187,7 @@
                 "count": 22,
                 "subtype": 0,
                 "data_length": 175,
-                "action": "euroland\\bankbis.avi 13i±S/ªòÌÙÑ©ã¤õ¿¦g¨}v(v'18 0 #00"
+                "action": "euroland\\bankbis.avi 1"
               }
             },
             {
@@ -243,12 +243,12 @@
                 "count": 20,
                 "subtype": 0,
                 "data_length": 117,
-                "action": "euroland\\home2.avi 15i\t2c&Àø'18 0 #00"
+                "action": "euroland\\home2.avi 1"
               }
             },
             {
               "id": 4,
-              "text": "La maison de prof",
+              "text": "La maison de pro",
               "text_position": {
                 "x": 387,
                 "y": 18
@@ -323,7 +323,7 @@
                 "count": 22,
                 "subtype": 0,
                 "data_length": 167,
-                "action": "euroland\\profbis.avi 16iÒ¼eÎDÐÑïø(<<\\B~8¦ð'18 0 #00"
+                "action": "euroland\\profbis.avi 1"
               }
             },
             {
@@ -399,7 +399,7 @@
                 "count": 20,
                 "subtype": 0,
                 "data_length": 157,
-                "action": "euroland\\musee.avi 17iîÆµ;[¢¡¾Ëõ'18 0 #00"
+                "action": "euroland\\musee.avi 1"
               }
             },
             {
@@ -463,7 +463,7 @@
                 "count": 23,
                 "subtype": 0,
                 "data_length": 206,
-                "action": "euroland\\fontaine.avi 1$39i<è<Õ0ä!å!/Le bureau du banquiereuroland"
+                "action": "euroland\\fontaine.avi 1"
               }
             }
           ],
@@ -499,7 +499,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "L'agenda du banquierj\nUne tasse de café noird",
+                "text": "L'agenda du banquier\nUne tasse de café noird",
                 "position": {
                   "x": 40,
                   "y": 350
@@ -509,14 +509,14 @@
             },
             {
               "id": 12,
-              "text": "Dossier euroj",
+              "text": "Dossier euro",
               "text_position": {
                 "x": 40,
                 "y": 350
               },
               "layer": 0,
               "display_text": {
-                "text": "Du courrierj",
+                "text": "Du courrier",
                 "position": {
                   "x": 40,
                   "y": 350
@@ -638,14 +638,14 @@
             },
             {
               "id": 18,
-              "text": "La bibliothécaire d'Euroland",
+              "text": "La bibliothécaire d'Eurolan",
               "text_position": {
                 "x": 850,
                 "y": 360
               },
               "layer": 0,
               "display_text": {
-                "text": "Le livre des\nrecettes d'Europej",
+                "text": "Le livre des\nrecettes d'Europe",
                 "position": {
                   "x": 380,
                   "y": 225
@@ -685,7 +685,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Une lampe de bureaud\nLe petit atlas\nd'Europe.j\nLes Hymnes\nnationauxj\nLéonard\nde Vincij\nL'euro et nousj",
+                "text": "Une lampe de bureau\nLe petit atlas\nd'Europe.\nLes Hymnes\nnationaux\nLéonard\nde Vinci\nL'euro et nous",
                 "position": {
                   "x": 375,
                   "y": 362
@@ -735,7 +735,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Les jeux\nOlympiquesj\nLa cornemusej\nLes joyaux de\nla couronne\nd'Angleterrej\nLa tour Eiffelj\nL'exposition\nuniversellej\nUn livre sur\nla fabrication\nde la bièrej\nL'histoire\ndu chocolatj\nLe fadoj\nLes grands couturiersj\nLes tulipesj\nLes grands\nnavigateursj",
+                "text": "Les jeux\nOlympiquesj\nLa cornemuse\nLes joyaux de\nla couronne\nd'Angleterre\nLa tour Eiffel\nL'exposition\nuniverselle\nUn livre sur\nla fabrication\nde la bière\nL'histoire\ndu chocolatj\nLe fado\nLes grands couturiersj\nLes tulipesj\nLes grands\nnavigateursj",
                 "position": {
                   "x": 450,
                   "y": 282
@@ -760,7 +760,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Balade à\nVenisej",
+                "text": "Balade à\nVenise",
                 "position": {
                   "x": 395,
                   "y": 242
@@ -827,7 +827,7 @@
             },
             {
               "id": 58,
-              "text": "SORTIEf",
+              "text": "SORTIE",
               "text_position": {
                 "x": 95,
                 "y": 350
@@ -849,7 +849,7 @@
                 "count": 36,
                 "subtype": 0,
                 "data_length": 199,
-                "action": "euroland\\femme.avi 1 220 150 420 400music.wav 2lözSÍ,X²qÅrÿzJbK}xd$'18 0 #ff"
+                "action": "euroland\\femme.avi 1 220 150 420 400"
               }
             },
             {
@@ -981,7 +981,7 @@
             },
             {
               "id": 65,
-              "text": "Un litd",
+              "text": "Un lit",
               "text_position": {
                 "x": 990,
                 "y": 350
@@ -1002,14 +1002,14 @@
             },
             {
               "id": 68,
-              "text": "Une étagèrej",
+              "text": "Une étagère",
               "text_position": {
                 "x": 90,
                 "y": 350
               },
               "layer": 0,
               "display_text": {
-                "text": "Un message est caché\ndans cette pièce, mais pas ici.d",
+                "text": "Un message est caché\ndans cette pièce, mais pas ici.",
                 "position": {
                   "x": 380,
                   "y": 340
@@ -1140,7 +1140,7 @@
                 "count": 38,
                 "subtype": 0,
                 "data_length": 52,
-                "action": "euroland\\prof2.avi 1 1100 159 1300 39913"
+                "action": "euroland\\prof2.avi 1 1100 159 1300 399"
               }
             },
             {
@@ -1201,7 +1201,7 @@
             },
             {
               "id": 72,
-              "text": "Prof",
+              "text": "Pro",
               "text_position": {
                 "x": 690,
                 "y": 350
@@ -1213,7 +1213,7 @@
                 "count": 36,
                 "subtype": 0,
                 "data_length": 151,
-                "action": "euroland\\pro1a.avi 1 659 166 771 286music.wav 6l^å¤º]'18 0 #ff"
+                "action": "euroland\\pro1a.avi 1 659 166 771 286"
               }
             },
             {
@@ -1225,7 +1225,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Un diplômed",
+                "text": "Un diplôme",
                 "position": {
                   "x": 200,
                   "y": 40
@@ -1237,7 +1237,7 @@
                 "count": 38,
                 "subtype": 0,
                 "data_length": 113,
-                "action": "euroland\\trans.avi 1 1644 182 1878 400music.wav 2ip:M\t'18 0 #ff"
+                "action": "euroland\\trans.avi 1 1644 182 1878 400"
               }
             }
           ],
@@ -1267,7 +1267,7 @@
           "hotspots": [
             {
               "id": 75,
-              "text": "Un coffre fermé à cléi",
+              "text": "Un coffre fermé à clé",
               "text_position": {
                 "x": 65,
                 "y": 350
@@ -1362,7 +1362,7 @@
                 "count": 35,
                 "subtype": 0,
                 "data_length": 162,
-                "action": "euroland\\pro2.avi 1 659 166 771 28613i0´±\tmusic.waveuroland"
+                "action": "euroland\\pro2.avi 1 659 166 771 286"
               }
             }
           ],
@@ -1392,7 +1392,7 @@
             },
             {
               "id": 78,
-              "text": "SORTIEf",
+              "text": "SORTIE",
               "text_position": {
                 "x": 150,
                 "y": 320
@@ -1407,7 +1407,7 @@
                 "count": 38,
                 "subtype": 0,
                 "data_length": 180,
-                "action": "euroland\\conser5.avi 1 368 118 520 344<calc = 0 then playavi euroland\\conser4.avi 1 368 118 520 344music.wav 2calc = 0 then rundll francs.dll"
+                "action": "euroland\\conser5.avi 1 368 118 520 344"
               }
             },
             {
@@ -1419,7 +1419,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Le conservateur du muséel\nLe tableau de la légende.\nClique dessus si tu veux\nrevoir l'introduction.j",
+                "text": "Le conservateur du musée\nLe tableau de la légende.\nClique dessus si tu veux\nrevoir l'introduction.",
                 "position": {
                   "x": 760,
                   "y": 260
@@ -1508,7 +1508,7 @@
             },
             {
               "id": 84,
-              "text": "La momie du pharaon TOUTHENEUROd",
+              "text": "La momie du pharaon TOUTHENEURO",
               "text_position": {
                 "x": 980,
                 "y": 340
@@ -1595,7 +1595,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "SORTIEh\nIl y a une autre\nbouteille en Europe\nelle te sera utile si tu\nla remplis d'eau.",
+                "text": "SORTIE\nIl y a une autre\nbouteille en Europe\nelle te sera utile si tu\nla remplis d'eau.",
                 "position": {
                   "x": 230,
                   "y": 110
@@ -1624,14 +1624,14 @@
             },
             {
               "id": 93,
-              "text": "Ces livres ne te\nseront d'aucune\nutilitéd",
+              "text": "Ces livres ne te\nseront d'aucune\nutilité",
               "text_position": {
                 "x": 400,
                 "y": 380
               },
               "layer": 0,
               "display_text": {
-                "text": "Il te faut un sac à dos pour le mettre dedansd",
+                "text": "Il te faut un sac à dos pour le mettre dedans",
                 "position": {
                   "x": 20,
                   "y": 370
@@ -2097,7 +2097,7 @@
                 "count": 29,
                 "subtype": 0,
                 "data_length": 68,
-                "action": "bouton.avi  2 164 337 394 388300active 0"
+                "action": "bouton.avi  2 164 337 394 388"
               }
             }
           ],
@@ -2954,7 +2954,7 @@
                 "count": 29,
                 "subtype": 0,
                 "data_length": 182,
-                "action": "intro12.avi 0 150 150 470 350$7i$Ë¯\"Clmo¼WÖeuroland"
+                "action": "intro12.avi 0 150 150 470 350"
               }
             }
           ],
@@ -3342,7 +3342,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Il te faut un sac à dos pour ranger tes objetsd",
+                "text": "Il te faut un sac à dos pour ranger tes objets",
                 "position": {
                   "x": 20,
                   "y": 350
@@ -3379,7 +3379,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Il te faut un sac à dos pour ranger tes objetsd\nDes produits chimiquesd",
+                "text": "Il te faut un sac à dos pour ranger tes objets\nDes produits chimiques",
                 "position": {
                   "x": 400,
                   "y": 140
@@ -3442,7 +3442,7 @@
           "hotspots": [
             {
               "id": 127,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 280,
                 "y": 360
@@ -3516,7 +3516,7 @@
             },
             {
               "id": 129,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -3714,7 +3714,7 @@
             },
             {
               "id": 131,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -3810,7 +3810,7 @@
             },
             {
               "id": 132,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -3896,7 +3896,7 @@
             },
             {
               "id": 133,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -3982,7 +3982,7 @@
             },
             {
               "id": 134,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -4068,7 +4068,7 @@
             },
             {
               "id": 135,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -4251,7 +4251,7 @@
             },
             {
               "id": 137,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -4347,7 +4347,7 @@
             },
             {
               "id": 138,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -4437,7 +4437,7 @@
             },
             {
               "id": 139,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -4533,7 +4533,7 @@
             },
             {
               "id": 140,
-              "text": "Vide else playtext 280 260 125 365 0 Activéi",
+              "text": "Vide else playtext 280 260 125 365 0 Activé",
               "text_position": {
                 "x": 280,
                 "y": 260
@@ -5042,7 +5042,7 @@
             },
             {
               "id": 147,
-              "text": "Une bouteille vided",
+              "text": "Une bouteille vide",
               "text_position": {
                 "x": 400,
                 "y": 180
@@ -5253,7 +5253,7 @@
             },
             {
               "id": 5,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 500,
                 "y": 270
@@ -5364,7 +5364,7 @@
           "hotspots": [
             {
               "id": 7,
-              "text": "Un appareil",
+              "text": "Un apparei",
               "text_position": {
                 "x": 150,
                 "y": 240
@@ -5435,7 +5435,7 @@
             },
             {
               "id": 8,
-              "text": "Il ne sait que sourire\net il n'a rien à te dire!!!l",
+              "text": "Il ne sait que sourire\net il n'a rien à te dire!!!",
               "text_position": {
                 "x": 280,
                 "y": 22
@@ -5446,12 +5446,12 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 69,
-                "action": "jap3.avi 1 518 62 575 119france.wav 2'18 0 #00"
+                "action": "jap3.avi 1 518 62 575 119"
               }
             },
             {
               "id": 10,
-              "text": "Un autre touriste\njaponais.l",
+              "text": "Un autre touriste\njaponais.",
               "text_position": {
                 "x": 380,
                 "y": 22
@@ -5469,7 +5469,7 @@
             },
             {
               "id": 12,
-              "text": "Un touriste\njaponais.l",
+              "text": "Un touriste\njaponais.",
               "text_position": {
                 "x": 120,
                 "y": 60
@@ -5713,7 +5713,7 @@
           "hotspots": [
             {
               "id": 18,
-              "text": "Un restaurantf",
+              "text": "Un restaurant",
               "text_position": {
                 "x": 270,
                 "y": 30
@@ -5803,7 +5803,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 219,
-                "action": "coq.avi 1 105 154 186 240ig,dB\tÕDÊcátÇ|¬§Õz3france.wavboulan.b"
+                "action": "coq.avi 1 105 154 186 240i"
               }
             }
           ],
@@ -6008,7 +6008,7 @@
             },
             {
               "id": 22,
-              "text": "Qui était\nLouis Pasteur ?j",
+              "text": "Qui était\nLouis Pasteur ?",
               "text_position": {
                 "x": 120,
                 "y": 180
@@ -6017,7 +6017,7 @@
             },
             {
               "id": 24,
-              "text": "Il était une fois\nles corsaires.j",
+              "text": "Il était une fois\nles corsaires.",
               "text_position": {
                 "x": 140,
                 "y": 160
@@ -6154,7 +6154,7 @@
             },
             {
               "id": 27,
-              "text": "Un hélicoptère  un moyen\nde transport idéald",
+              "text": "Un hélicoptère  un moyen\nde transport idéal",
               "text_position": {
                 "x": 320,
                 "y": 160
@@ -6166,7 +6166,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 113,
-                "action": "helico2.avi 2 0 0 640 122d|cabine.b"
+                "action": "helico2.avi 2 0 0 640 122d"
               }
             }
           ],
@@ -6190,7 +6190,7 @@
           "hotspots": [
             {
               "id": 30,
-              "text": "Le dernier étage est en réparation.\nImpossible d'y accéder.i",
+              "text": "Le dernier étage est en réparation.\nImpossible d'y accéder.",
               "text_position": {
                 "x": 350,
                 "y": 60
@@ -6208,12 +6208,12 @@
                 "count": 10,
                 "subtype": 0,
                 "data_length": 85,
-                "action": "asc2.avi 1\tascen.wav\t\tasc.avi 13'18 0 #00"
+                "action": "asc2.avi 1"
               }
             },
             {
               "id": 32,
-              "text": "Le deuxième étage\nd'où on a une super\nvue panoramique.i\nLe premier étage\noù se trouve un restaurant\nde grand luxe.i",
+              "text": "Le deuxième étage\nd'où on a une super\nvue panoramique.\nLe premier étage\noù se trouve un restaurant\nde grand luxe.",
               "text_position": {
                 "x": 350,
                 "y": 240
@@ -6224,12 +6224,12 @@
                 "count": 10,
                 "subtype": 0,
                 "data_length": 85,
-                "action": "asc1.avi 1\tascen.wav\t\tasc.avi 12'18 0 #00"
+                "action": "asc1.avi 1"
               }
             },
             {
               "id": 38,
-              "text": "Il vous faudra\nprendre un autre\nbillet si vous voulez\nremonter.i",
+              "text": "Il vous faudra\nprendre un autre\nbillet si vous voulez\nremonter.",
               "text_position": {
                 "x": 350,
                 "y": 300
@@ -6359,7 +6359,7 @@
             },
             {
               "id": 43,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 120,
                 "y": 360
@@ -7179,7 +7179,7 @@
           "hotspots": [
             {
               "id": 2,
-              "text": "Un orguei",
+              "text": "Un orgue",
               "text_position": {
                 "x": 330,
                 "y": 370
@@ -7409,7 +7409,7 @@
             },
             {
               "id": 8,
-              "text": "Des informations sur la\nfabrication de la bière.j",
+              "text": "Des informations sur la\nfabrication de la bière.",
               "text_position": {
                 "x": 310,
                 "y": 340
@@ -7662,7 +7662,7 @@
             },
             {
               "id": 16,
-              "text": "Pour aller en Irlande,\nil suffit de cliquer ici .i",
+              "text": "Pour aller en Irlande,\nil suffit de cliquer ici .",
               "text_position": {
                 "x": 215,
                 "y": 100
@@ -8839,7 +8839,7 @@
             },
             {
               "id": 3,
-              "text": "La tour du seli",
+              "text": "La tour du sel",
               "text_position": {
                 "x": 420,
                 "y": 15
@@ -8883,7 +8883,7 @@
             },
             {
               "id": 4,
-              "text": "La caserne Waterlooi",
+              "text": "La caserne Waterloo",
               "text_position": {
                 "x": 20,
                 "y": 35
@@ -8927,7 +8927,7 @@
             },
             {
               "id": 5,
-              "text": "La tour blanchei",
+              "text": "La tour blanche",
               "text_position": {
                 "x": 300,
                 "y": 10
@@ -9007,7 +9007,7 @@
           "hotspots": [
             {
               "id": 7,
-              "text": "Un garde Royal",
+              "text": "Un garde Roya",
               "text_position": {
                 "x": 240,
                 "y": 360
@@ -9310,7 +9310,7 @@
             },
             {
               "id": 10,
-              "text": "Pour revenir à la cartei",
+              "text": "Pour revenir à la carte",
               "text_position": {
                 "x": 330,
                 "y": 354
@@ -9357,7 +9357,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "La tour blanche.j",
+                "text": "La tour blanche.",
                 "position": {
                   "x": 190,
                   "y": 14
@@ -9587,7 +9587,7 @@
           "hotspots": [
             {
               "id": 17,
-              "text": "La maison de la reinef",
+              "text": "La maison de la reine",
               "text_position": {
                 "x": 190,
                 "y": 314
@@ -9678,7 +9678,7 @@
             },
             {
               "id": 20,
-              "text": "Un petit coup de clairon ?i",
+              "text": "Un petit coup de clairon ?",
               "text_position": {
                 "x": 190,
                 "y": 314
@@ -10124,7 +10124,7 @@
           "hotspots": [
             {
               "id": 24,
-              "text": "Stonehenge!!f",
+              "text": "Stonehenge!!",
               "text_position": {
                 "x": 250,
                 "y": 74
@@ -10136,7 +10136,7 @@
                 "count": 22,
                 "subtype": 0,
                 "data_length": 194,
-                "action": "bus2.avi 1 0 0 640 40048g-ý{þ|((-d..\\..\\ecosse\\digit\\chateau.wavtoursel2"
+                "action": "bus2.avi 1 0 0 640 400"
               }
             }
           ],
@@ -10219,7 +10219,7 @@
             },
             {
               "id": 30,
-              "text": "Pour retourner à la carte du châteaui",
+              "text": "Pour retourner à la carte du château",
               "text_position": {
                 "x": 150,
                 "y": 360
@@ -10474,7 +10474,7 @@
             },
             {
               "id": 34,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 5,
                 "y": 360
@@ -10508,7 +10508,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 116,
-                "action": "stone2.avi 0 0 40 388 4403score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54stone11 stone1.b"
+                "action": "stone2.avi 0 0 40 388 440"
               }
             }
           ],
@@ -10701,7 +10701,7 @@
           "hotspots": [
             {
               "id": 39,
-              "text": "Un guichetier anglaisd",
+              "text": "Un guichetier anglais",
               "text_position": {
                 "x": 50,
                 "y": 74
@@ -11373,7 +11373,7 @@
             },
             {
               "id": 51,
-              "text": "Stonehenge!!f",
+              "text": "Stonehenge!!",
               "text_position": {
                 "x": 250,
                 "y": 74
@@ -11787,7 +11787,7 @@
             },
             {
               "id": 5,
-              "text": "Des ruches !!f",
+              "text": "Des ruches !!",
               "text_position": {
                 "x": 900,
                 "y": 335
@@ -11963,14 +11963,14 @@
             },
             {
               "id": 8,
-              "text": "Une cigogned",
+              "text": "Une cigogne",
               "text_position": {
                 "x": 750,
                 "y": 55
               },
               "layer": 0,
               "display_text": {
-                "text": "Un fer à chevald",
+                "text": "Un fer à cheval",
                 "position": {
                   "x": 770,
                   "y": 125
@@ -12328,7 +12328,7 @@
           "hotspots": [
             {
               "id": 12,
-              "text": "Des informations sur le tyrolj",
+              "text": "Des informations sur le tyrol",
               "text_position": {
                 "x": 40,
                 "y": 180
@@ -12373,14 +12373,14 @@
           "hotspots": [
             {
               "id": 16,
-              "text": "Une selle de chevald",
+              "text": "Une selle de cheval",
               "text_position": {
                 "x": 470,
                 "y": 130
               },
               "layer": 0,
               "display_text": {
-                "text": "Une carrioled\nUne lampe à huiled",
+                "text": "Une carriole\nUne lampe à huile",
                 "position": {
                   "x": 20,
                   "y": 80
@@ -12394,7 +12394,7 @@
             },
             {
               "id": 17,
-              "text": "Une pelled",
+              "text": "Une pelle",
               "text_position": {
                 "x": 90,
                 "y": 370
@@ -12409,7 +12409,7 @@
             },
             {
               "id": 18,
-              "text": "Une fourched",
+              "text": "Une fourche",
               "text_position": {
                 "x": 90,
                 "y": 360
@@ -12798,7 +12798,7 @@
           "hotspots": [
             {
               "id": 19,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 310,
                 "y": 365
@@ -13785,12 +13785,12 @@
                 "count": 29,
                 "subtype": 0,
                 "data_length": 63,
-                "action": "motard1.avi 1 429 206 514 25615'18 0 #00"
+                "action": "motard1.avi 1 429 206 514 256"
               }
             },
             {
               "id": 2,
-              "text": "Une moto bleue.i",
+              "text": "Une moto bleue.",
               "text_position": {
                 "x": 260,
                 "y": 330
@@ -13839,7 +13839,7 @@
             },
             {
               "id": 3,
-              "text": "L'école municipalef",
+              "text": "L'école municipale",
               "text_position": {
                 "x": 260,
                 "y": 330
@@ -14076,7 +14076,7 @@
             },
             {
               "id": 11,
-              "text": "Attention manger trop\nde bonbons facilite les cariesd",
+              "text": "Attention manger trop\nde bonbons facilite les caries",
               "text_position": {
                 "x": 400,
                 "y": 120
@@ -14154,7 +14154,7 @@
             },
             {
               "id": 17,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 280,
                 "y": 350
@@ -14197,7 +14197,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Ta prof de géographiel",
+                "text": "Ta prof de géographie",
                 "position": {
                   "x": 260,
                   "y": 250
@@ -14640,7 +14640,7 @@
                 "count": 27,
                 "subtype": 0,
                 "data_length": 136,
-                "action": "math1.avi 1 123 190 230 245jÝÎÑ/C(!..\\..\\ecosse\\"
+                "action": "math1.avi 1 123 190 230 245j"
               }
             }
           ],
@@ -15793,7 +15793,7 @@
                 "count": 27,
                 "subtype": 0,
                 "data_length": 54,
-                "action": "choco2.avi 0 310 80 630 280chocob choco2.b"
+                "action": "choco2.avi 0 310 80 630 280"
               }
             }
           ],
@@ -16289,7 +16289,7 @@
           "hotspots": [
             {
               "id": 1,
-              "text": "La petite sirène.f",
+              "text": "La petite sirène.",
               "text_position": {
                 "x": 470,
                 "y": 365
@@ -16301,7 +16301,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 174,
-                "action": "canard1.avi 2 0 0 640 190300\tcanard1.avi 2 0 0 640 190d}Ç\ta_dan.wav\tforge.bm"
+                "action": "canard1.avi 2 0 0 640 190"
               }
             }
           ],
@@ -16573,7 +16573,7 @@
                 "count": 27,
                 "subtype": 0,
                 "data_length": 125,
-                "action": "sirene2.avi 1 289 6 401 115dÂYd´ f15'18 0 #00"
+                "action": "sirene2.avi 1 289 6 401 115d"
               }
             },
             {
@@ -17374,7 +17374,7 @@
             },
             {
               "id": 2,
-              "text": "La maison de Mac hattapultei",
+              "text": "La maison de Mac hattapulte",
               "text_position": {
                 "x": 459,
                 "y": 293
@@ -17414,7 +17414,7 @@
             },
             {
               "id": 3,
-              "text": "La maison de Mac hasquettei",
+              "text": "La maison de Mac hasquette",
               "text_position": {
                 "x": 593,
                 "y": 359
@@ -17525,7 +17525,7 @@
             },
             {
               "id": 7,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 450,
                 "y": 370
@@ -17542,7 +17542,7 @@
           "hotspots": [
             {
               "id": 8,
-              "text": "Il y a quelque chose la dedans !!d",
+              "text": "Il y a quelque chose la dedans !!",
               "text_position": {
                 "x": 10,
                 "y": 30
@@ -17791,7 +17791,7 @@
           "hotspots": [
             {
               "id": 15,
-              "text": "Un passage secret.i",
+              "text": "Un passage secret.",
               "text_position": {
                 "x": 1,
                 "y": 103
@@ -17871,7 +17871,7 @@
           "hotspots": [
             {
               "id": 17,
-              "text": "Un joueur de\nrugby !!l",
+              "text": "Un joueur de\nrugby !!",
               "text_position": {
                 "x": 310,
                 "y": 183
@@ -18075,7 +18075,7 @@
             },
             {
               "id": 25,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 410,
                 "y": 373
@@ -18301,7 +18301,7 @@
             },
             {
               "id": 32,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 63,
                 "y": 343
@@ -18414,7 +18414,7 @@
           "hotspots": [
             {
               "id": 35,
-              "text": "Désires-tu connaître\nl'histoire de William\nWallace?j",
+              "text": "Désires-tu connaître\nl'histoire de William\nWallace?",
               "text_position": {
                 "x": 63,
                 "y": 283
@@ -18875,7 +18875,7 @@
             },
             {
               "id": 39,
-              "text": "Clique ici pour commencer le jeui",
+              "text": "Clique ici pour commencer le jeu",
               "text_position": {
                 "x": 150,
                 "y": 110
@@ -18895,7 +18895,7 @@
             },
             {
               "id": 40,
-              "text": "Le fantôme du châteaul",
+              "text": "Le fantôme du château",
               "text_position": {
                 "x": 380,
                 "y": 100
@@ -18941,7 +18941,7 @@
           "hotspots": [
             {
               "id": 43,
-              "text": "Le château de Lord Barnetd",
+              "text": "Le château de Lord Barnet",
               "text_position": {
                 "x": 380,
                 "y": 98
@@ -18968,7 +18968,7 @@
           "hotspots": [
             {
               "id": 44,
-              "text": "Un trepied",
+              "text": "Un trepie",
               "text_position": {
                 "x": 510,
                 "y": 158
@@ -18992,7 +18992,7 @@
                 "count": 29,
                 "subtype": 0,
                 "data_length": 80,
-                "action": "nessie1.avi 1 200 135 438 295300d²Ô*"
+                "action": "nessie1.avi 1 200 135 438 295"
               }
             },
             {
@@ -19499,7 +19499,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 115,
-                "action": "walace.avi 0 0 40 326 4403score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54walace walace.b"
+                "action": "walace.avi 0 0 40 326 440"
               }
             }
           ],
@@ -19729,7 +19729,7 @@
                 "count": 26,
                 "subtype": 0,
                 "data_length": 54,
-                "action": "nessie2.avi 0 0 41 426 437messie2 nessie2."
+                "action": "nessie2.avi 0 0 41 426 437"
               }
             }
           ],
@@ -21635,7 +21635,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Mais où est la chouette d'Athéna ? else playtext 10 20 125 365 0 Athéna a sa chouette, merci !!j",
+                "text": "Mais où est la chouette d'Athéna ? else playtext 10 20 125 365 0 Athéna a sa chouette, merci !!",
                 "position": {
                   "x": 10,
                   "y": 20
@@ -22238,7 +22238,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 96,
-                "action": "jo1.avi 0 400 100 560 2173score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+                "action": "jo1.avi 0 400 100 560 217"
               }
             }
           ],
@@ -22613,7 +22613,7 @@
                 "count": 30,
                 "subtype": 0,
                 "data_length": 95,
-                "action": "barque.avi 1 2200 220 2560 4004i/û\t'18 0 #00"
+                "action": "barque.avi 1 2200 220 2560 400"
               }
             },
             {
@@ -22678,7 +22678,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Informations sur les polders ?j\nUn autre moulin voyons !!??d",
+                "text": "Informations sur les polders ?\nUn autre moulin voyons !!??",
                 "position": {
                   "x": 320,
                   "y": 110
@@ -22700,7 +22700,7 @@
             },
             {
               "id": 8,
-              "text": "Un tableau plein de couleursd",
+              "text": "Un tableau plein de couleurs",
               "text_position": {
                 "x": 850,
                 "y": 30
@@ -22787,7 +22787,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Merci pour elle !\nUn fermier sympal",
+                "text": "Merci pour elle !\nUn fermier sympa",
                 "position": {
                   "x": 250,
                   "y": 360
@@ -23094,7 +23094,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Un panier plein d'oeufsd\nUn sabot",
+                "text": "Un panier plein d'oeufs\nUn sabot",
                 "position": {
                   "x": 130,
                   "y": 370
@@ -23150,7 +23150,7 @@
             },
             {
               "id": 29,
-              "text": "Non, c'est trop\nlourd !d",
+              "text": "Non, c'est trop\nlourd !",
               "text_position": {
                 "x": 85,
                 "y": 325
@@ -23180,7 +23180,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Un sac de blé\n10 eurosd\nUn arrosoird",
+                "text": "Un sac de blé\n10 euros\nUn arrosoird",
                 "position": {
                   "x": 520,
                   "y": 380
@@ -23255,14 +23255,14 @@
             },
             {
               "id": 38,
-              "text": "Des informations sur la bicyclettej",
+              "text": "Des informations sur la bicyclette",
               "text_position": {
                 "x": 610,
                 "y": 20
               },
               "layer": 0,
               "display_text": {
-                "text": "Un galerie de peinturef\nVers les poldersg",
+                "text": "Un galerie de peinture\nVers les poldersg",
                 "position": {
                   "x": 96,
                   "y": 20
@@ -23273,7 +23273,7 @@
                 "count": 27,
                 "subtype": 0,
                 "data_length": 61,
-                "action": "velo.avi 1 1131 36 1221 11814'18 0 #ff"
+                "action": "velo.avi 1 1131 36 1221 118"
               }
             },
             {
@@ -23288,7 +23288,7 @@
             },
             {
               "id": 40,
-              "text": "Les célèbres façades d'Amsterdam !d",
+              "text": "Les célèbres façades d'Amsterdam !",
               "text_position": {
                 "x": 400,
                 "y": 20
@@ -23369,7 +23369,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Le responsable de la\ngalerie de peinturel",
+                "text": "Le responsable de la\ngalerie de peinture",
                 "position": {
                   "x": 370,
                   "y": 40
@@ -24469,7 +24469,7 @@
           "hotspots": [
             {
               "id": 56,
-              "text": "La valise à questions peut te faire gagner\n150 euros pour cela tu dois me dire dans quel\npanier l'oeuf à l'unité est le moins cher.",
+              "text": "La valise à questions peut te faire gagner\n150 euros pour cela tu dois me dire dans que\npanier l'oeuf à l'unité est le moins cher.",
               "text_position": {
                 "x": 100,
                 "y": 60
@@ -26003,7 +26003,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Le plus grand\ncouturier du mondef\nUne pizzeria",
+                "text": "Le plus gran\ncouturier du monde\nUne pizzeria",
                 "position": {
                   "x": 360,
                   "y": 30
@@ -26239,7 +26239,7 @@
             },
             {
               "id": 10,
-              "text": "Des informations sur Venisej",
+              "text": "Des informations sur Venise",
               "text_position": {
                 "x": 200,
                 "y": 325
@@ -26248,7 +26248,7 @@
             },
             {
               "id": 11,
-              "text": "Indispensable pour passer\nde l'autre coté de la rive.d",
+              "text": "Indispensable pour passer\nde l'autre coté de la rive.",
               "text_position": {
                 "x": 245,
                 "y": 305
@@ -26266,7 +26266,7 @@
             },
             {
               "id": 14,
-              "text": "Fermé pour cause\nd'inventaired",
+              "text": "Fermé pour cause\nd'inventaire",
               "text_position": {
                 "x": 890,
                 "y": 50
@@ -26319,7 +26319,7 @@
             },
             {
               "id": 17,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 310,
                 "y": 365
@@ -26328,7 +26328,7 @@
             },
             {
               "id": 18,
-              "text": "Le Coliséej",
+              "text": "Le Colisée",
               "text_position": {
                 "x": 10,
                 "y": 365
@@ -26337,7 +26337,7 @@
             },
             {
               "id": 19,
-              "text": "La colonne Trajanej",
+              "text": "La colonne Trajane",
               "text_position": {
                 "x": 10,
                 "y": 365
@@ -26346,7 +26346,7 @@
             },
             {
               "id": 20,
-              "text": "La fondation de Romej",
+              "text": "La fondation de Rome",
               "text_position": {
                 "x": 10,
                 "y": 365
@@ -26355,7 +26355,7 @@
             },
             {
               "id": 21,
-              "text": "Le Pôj",
+              "text": "Le Pô",
               "text_position": {
                 "x": 10,
                 "y": 365
@@ -26364,7 +26364,7 @@
             },
             {
               "id": 22,
-              "text": "Une louped",
+              "text": "Une loupe",
               "text_position": {
                 "x": 310,
                 "y": 325
@@ -26595,7 +26595,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 124,
-                "action": "feu.avi 2 374 134 446 2073score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h^b"
+                "action": "feu.avi 2 374 134 446 207"
               }
             },
             {
@@ -26781,7 +26781,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "La tour de Pise.\nTiens, on dirait qu'elle penche !f",
+                "text": "La tour de Pise.\nTiens, on dirait qu'elle penche !",
                 "position": {
                   "x": 305,
                   "y": 120
@@ -26993,7 +26993,7 @@
                 "count": 27,
                 "subtype": 0,
                 "data_length": 47,
-                "action": "torche.avi 2 143 21 587 116'18 0 #ff"
+                "action": "torche.avi 2 143 21 587 116"
               }
             }
           ],
@@ -27019,7 +27019,7 @@
           "hotspots": [
             {
               "id": 38,
-              "text": "Un coffre fort\nfermé à cléi",
+              "text": "Un coffre fort\nfermé à clé",
               "text_position": {
                 "x": 135,
                 "y": 170
@@ -27730,7 +27730,7 @@
                 "count": 12,
                 "subtype": 0,
                 "data_length": 36,
-                "action": "italie.avi 1italie 1"
+                "action": "italie.avi 1"
               }
             }
           ],
@@ -28014,7 +28014,7 @@
             },
             {
               "id": 4,
-              "text": "Le Soleil !d",
+              "text": "Le Soleil !",
               "text_position": {
                 "x": 30,
                 "y": 60
@@ -28239,7 +28239,7 @@
           "hotspots": [
             {
               "id": 6,
-              "text": "SORTIEh",
+              "text": "SORTIE",
               "text_position": {
                 "x": 150,
                 "y": 360
@@ -28573,7 +28573,7 @@
             },
             {
               "id": 9,
-              "text": "Des railsd",
+              "text": "Des rails",
               "text_position": {
                 "x": 240,
                 "y": 80
@@ -28963,7 +28963,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Le librairef\nLa fabrique de bougiesf",
+                "text": "Le libraire\nLa fabrique de bougiesf",
                 "position": {
                   "x": 350,
                   "y": 70
@@ -29222,7 +29222,7 @@
           "hotspots": [
             {
               "id": 9,
-              "text": "L'histoire du ski..j",
+              "text": "L'histoire du ski..",
               "text_position": {
                 "x": 310,
                 "y": 100
@@ -29354,7 +29354,7 @@
           "hotspots": [
             {
               "id": 12,
-              "text": "Des informations sur Alfred Nobel.j",
+              "text": "Des informations sur Alfred Nobel.",
               "text_position": {
                 "x": 280,
                 "y": 376
@@ -29394,7 +29394,7 @@
           "hotspots": [
             {
               "id": 13,
-              "text": "Un tournevisd",
+              "text": "Un tournevis",
               "text_position": {
                 "x": 80,
                 "y": 376
@@ -29578,7 +29578,7 @@
                 "count": 25,
                 "subtype": 0,
                 "data_length": 150,
-                "action": "radar.avi 2 140 1 342 139\tradar.avi 2 140 1 342 139dqRsoumar3."
+                "action": "radar.avi 2 140 1 342 139"
               }
             }
           ],
@@ -30674,7 +30674,7 @@
           "hotspots": [
             {
               "id": 24,
-              "text": "Retour.d",
+              "text": "Retour.",
               "text_position": {
                 "x": 455,
                 "y": 420
@@ -30958,7 +30958,7 @@
             },
             {
               "id": 49,
-              "text": "20 minutesd",
+              "text": "20 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -31110,7 +31110,7 @@
             },
             {
               "id": 72,
-              "text": "20 minutesd",
+              "text": "20 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -31230,7 +31230,7 @@
             },
             {
               "id": 85,
-              "text": "1 heure 15 minutesd",
+              "text": "1 heure 15 minutes",
               "text_position": {
                 "x": 15,
                 "y": 320
@@ -31345,7 +31345,7 @@
             },
             {
               "id": 98,
-              "text": "20 minutesd",
+              "text": "20 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -31758,7 +31758,7 @@
             },
             {
               "id": 145,
-              "text": "25 minutesd",
+              "text": "25 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -32064,7 +32064,7 @@
           "hotspots": [
             {
               "id": 178,
-              "text": "Retour.i",
+              "text": "Retour.",
               "text_position": {
                 "x": 455,
                 "y": 420
@@ -32137,7 +32137,7 @@
           "hotspots": [
             {
               "id": 179,
-              "text": "Retour.d",
+              "text": "Retour.",
               "text_position": {
                 "x": 455,
                 "y": 420
@@ -32294,7 +32294,7 @@
             },
             {
               "id": 192,
-              "text": "30 minutesd",
+              "text": "30 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -32506,7 +32506,7 @@
             },
             {
               "id": 215,
-              "text": "10 minutesd",
+              "text": "10 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -32621,7 +32621,7 @@
             },
             {
               "id": 228,
-              "text": "5 heuresd",
+              "text": "5 heures",
               "text_position": {
                 "x": 40,
                 "y": 320
@@ -32736,7 +32736,7 @@
             },
             {
               "id": 241,
-              "text": "30 minutesd",
+              "text": "30 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -32851,7 +32851,7 @@
             },
             {
               "id": 253,
-              "text": "40 minutesd",
+              "text": "40 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -33807,7 +33807,7 @@
           "hotspots": [
             {
               "id": 261,
-              "text": "Le mark allemand",
+              "text": "Le mark alleman",
               "text_position": {
                 "x": 180,
                 "y": 250
@@ -34718,7 +34718,7 @@
           "hotspots": [
             {
               "id": 314,
-              "text": "La marine\nportugaised",
+              "text": "La marine\nportugaise",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -34794,7 +34794,7 @@
             },
             {
               "id": 321,
-              "text": "La tour Eiffeld",
+              "text": "La tour Eiffel",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -34866,7 +34866,7 @@
             },
             {
               "id": 326,
-              "text": "Le vélo\nen Hollanded",
+              "text": "Le vélo\nen Hollande",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -34889,7 +34889,7 @@
           "hotspots": [
             {
               "id": 328,
-              "text": "Musicien\nallemand",
+              "text": "Musicien\nalleman",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -34898,7 +34898,7 @@
             },
             {
               "id": 330,
-              "text": "Ludwig Van\nBeethovend",
+              "text": "Ludwig Van\nBeethoven",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -34924,7 +34924,7 @@
             },
             {
               "id": 334,
-              "text": "L'oursd",
+              "text": "L'ours",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -34950,7 +34950,7 @@
             },
             {
               "id": 337,
-              "text": "Les chiens\nde traîneaud",
+              "text": "Les chiens\nde traîneau",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -34976,7 +34976,7 @@
             },
             {
               "id": 341,
-              "text": "Coco Chaneld",
+              "text": "Coco Chanel",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35002,7 +35002,7 @@
             },
             {
               "id": 344,
-              "text": "Les joyaux\nde la couronned",
+              "text": "Les joyaux\nde la couronne",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35049,7 +35049,7 @@
             },
             {
               "id": 350,
-              "text": "Le seld",
+              "text": "Le sel",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35078,7 +35078,7 @@
           "hotspots": [
             {
               "id": 353,
-              "text": "Big Bend",
+              "text": "Big Ben",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35145,7 +35145,7 @@
           "hotspots": [
             {
               "id": 360,
-              "text": "La fabrication\nde la bièred",
+              "text": "La fabrication\nde la bière",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35189,7 +35189,7 @@
             },
             {
               "id": 364,
-              "text": "Alfred Nobeld",
+              "text": "Alfred Nobel",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35221,7 +35221,7 @@
             },
             {
               "id": 367,
-              "text": "Le manneken-pisd",
+              "text": "Le manneken-pis",
               "text_position": {
                 "x": 15,
                 "y": 135
@@ -35253,7 +35253,7 @@
             },
             {
               "id": 370,
-              "text": "William Wallaced",
+              "text": "William Wallace",
               "text_position": {
                 "x": 15,
                 "y": 135
@@ -35317,7 +35317,7 @@
             },
             {
               "id": 375,
-              "text": "Le ski en Suèded",
+              "text": "Le ski en Suède",
               "text_position": {
                 "x": 15,
                 "y": 135
@@ -35340,7 +35340,7 @@
           "hotspots": [
             {
               "id": 378,
-              "text": "Léonard\nde Vincid",
+              "text": "Léonard\nde Vinci",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35384,7 +35384,7 @@
             },
             {
               "id": 382,
-              "text": "Le Fadod",
+              "text": "Le Fado",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35416,7 +35416,7 @@
             },
             {
               "id": 385,
-              "text": "Stonehenged",
+              "text": "Stonehenge",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35448,7 +35448,7 @@
             },
             {
               "id": 388,
-              "text": "Coubertin et les\njeux olympiquesd",
+              "text": "Coubertin et les\njeux olympiques",
               "text_position": {
                 "x": 15,
                 "y": 155
@@ -35480,7 +35480,7 @@
             },
             {
               "id": 392,
-              "text": "Rembrandtd",
+              "text": "Rembrandt",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35503,7 +35503,7 @@
           "hotspots": [
             {
               "id": 393,
-              "text": "Monument\nallemand",
+              "text": "Monument\nalleman",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -35512,7 +35512,7 @@
             },
             {
               "id": 395,
-              "text": "Le mur de\nBerlind",
+              "text": "Le mur de\nBerlin",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35544,7 +35544,7 @@
             },
             {
               "id": 399,
-              "text": "La tour de\nLondresd",
+              "text": "La tour de\nLondres",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35576,7 +35576,7 @@
           "hotspots": [
             {
               "id": 402,
-              "text": "Géographie\nPays-Basd",
+              "text": "Géographie\nPays-Bas",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -35602,7 +35602,7 @@
             },
             {
               "id": 406,
-              "text": "Les corsairesd",
+              "text": "Les corsaires",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35634,7 +35634,7 @@
             },
             {
               "id": 409,
-              "text": "Le saunad",
+              "text": "Le sauna",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35657,7 +35657,7 @@
           "hotspots": [
             {
               "id": 410,
-              "text": "Monument\nespagnol",
+              "text": "Monument\nespagno",
               "text_position": {
                 "x": 35,
                 "y": 440
@@ -35666,7 +35666,7 @@
             },
             {
               "id": 412,
-              "text": "La Sagrada\nFamiliad",
+              "text": "La Sagrada\nFamilia",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35698,7 +35698,7 @@
             },
             {
               "id": 415,
-              "text": "L'histoire du théd",
+              "text": "L'histoire du thé",
               "text_position": {
                 "x": 15,
                 "y": 135
@@ -35730,7 +35730,7 @@
             },
             {
               "id": 418,
-              "text": "La tour de Pised",
+              "text": "La tour de Pise",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35762,7 +35762,7 @@
             },
             {
               "id": 421,
-              "text": "Le Coliséed",
+              "text": "Le Colisée",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35794,7 +35794,7 @@
             },
             {
               "id": 424,
-              "text": "La légende\nde Romed",
+              "text": "La légende\nde Rome",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35835,7 +35835,7 @@
             },
             {
               "id": 428,
-              "text": "Venised",
+              "text": "Venise",
               "text_position": {
                 "x": 20,
                 "y": 135
@@ -35867,7 +35867,7 @@
             },
             {
               "id": 431,
-              "text": "La colonne\nTrajaned",
+              "text": "La colonne\nTrajane",
               "text_position": {
                 "x": 20,
                 "y": 155
@@ -35890,14 +35890,14 @@
           "hotspots": [
             {
               "id": 435,
-              "text": "L'Alhambrad",
+              "text": "L'Alhambra",
               "text_position": {
                 "x": 20,
                 "y": 135
               },
               "layer": 0,
               "display_text": {
-                "text": "Monument\nespagnol",
+                "text": "Monument\nespagno",
                 "position": {
                   "x": 35,
                   "y": 440
@@ -38532,7 +38532,7 @@
             },
             {
               "id": 489,
-              "text": "5 heuresd",
+              "text": "5 heures",
               "text_position": {
                 "x": 40,
                 "y": 320
@@ -38652,7 +38652,7 @@
             },
             {
               "id": 501,
-              "text": "5 minutesd",
+              "text": "5 minutes",
               "text_position": {
                 "x": 40,
                 "y": 320
@@ -38776,7 +38776,7 @@
             },
             {
               "id": 514,
-              "text": "40 minutesd",
+              "text": "40 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -38873,7 +38873,7 @@
             },
             {
               "id": 523,
-              "text": "20 minutesd",
+              "text": "20 minutes",
               "text_position": {
                 "x": 35,
                 "y": 260
@@ -39047,7 +39047,7 @@
             },
             {
               "id": 548,
-              "text": "quelques minutesd",
+              "text": "quelques minutes",
               "text_position": {
                 "x": 20,
                 "y": 320
@@ -39167,7 +39167,7 @@
             },
             {
               "id": 560,
-              "text": "45 minutesd",
+              "text": "45 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -39282,7 +39282,7 @@
             },
             {
               "id": 572,
-              "text": "40 minutesd",
+              "text": "40 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -39397,7 +39397,7 @@
             },
             {
               "id": 584,
-              "text": "30 minutesd",
+              "text": "30 minutes",
               "text_position": {
                 "x": 35,
                 "y": 320
@@ -39503,7 +39503,7 @@
             },
             {
               "id": 597,
-              "text": "quelques minutesd",
+              "text": "quelques minutes",
               "text_position": {
                 "x": 20,
                 "y": 320
