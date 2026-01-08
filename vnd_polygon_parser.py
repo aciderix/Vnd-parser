@@ -44,6 +44,17 @@ class Polygon:
 
 
 @dataclass
+class BmpAction:
+    """A bitmap action with coordinates"""
+    command: str  # 'addbmp' or 'delbmp'
+    name: str
+    path: Optional[str] = None
+    layer: Optional[int] = None
+    x: Optional[int] = None
+    y: Optional[int] = None
+
+
+@dataclass
 class Hotspot:
     """Complete hotspot with text, polygon, and action"""
     id: int
@@ -56,6 +67,7 @@ class Hotspot:
     goto_scene: Optional[int] = None
     actions: List[str] = field(default_factory=list)
     conditions: List[str] = field(default_factory=list)
+    bmp_actions: List[BmpAction] = field(default_factory=list)
     offset: int = 0  # File offset for debugging
 
 
@@ -311,7 +323,30 @@ class VndPolygonParser:
         # 4. Extract actions and conditions
         region_text_full = self.text_content[start_offset:end_offset]
 
-        # Actions: addbmp, delbmp, runprj, scene, playtext, playwav, set_var, inc_var, dec_var
+        # Parse addbmp commands with coordinates
+        # Pattern: addbmp name path layer x y
+        addbmp_pattern = r'addbmp\s+(\w+)\s+([^\s]+\.bmp)\s+(\d+)\s+(\d+)\s+(\d+)'
+        for match in re.finditer(addbmp_pattern, region_text_full, re.IGNORECASE):
+            bmp_action = BmpAction(
+                command='addbmp',
+                name=match.group(1),
+                path=match.group(2),
+                layer=int(match.group(3)),
+                x=int(match.group(4)),
+                y=int(match.group(5))
+            )
+            hotspot.bmp_actions.append(bmp_action)
+
+        # Parse delbmp commands
+        delbmp_pattern = r'delbmp\s+(\w+)'
+        for match in re.finditer(delbmp_pattern, region_text_full, re.IGNORECASE):
+            bmp_action = BmpAction(
+                command='delbmp',
+                name=match.group(1)
+            )
+            hotspot.bmp_actions.append(bmp_action)
+
+        # Actions: runprj, scene, playtext, playwav, set_var, inc_var, dec_var
         action_patterns = [
             r'(addbmp\s+[^\x00\n\r]+)',
             r'(delbmp\s+\w+)',
@@ -396,6 +431,18 @@ class VndPolygonParser:
 
                 if hotspot.conditions:
                     hotspot_dict['conditions'] = hotspot.conditions
+
+                if hotspot.bmp_actions:
+                    hotspot_dict['bmp_actions'] = [
+                        {
+                            'command': bmp.command,
+                            'name': bmp.name,
+                            'path': bmp.path,
+                            'layer': bmp.layer,
+                            'position': {'x': bmp.x, 'y': bmp.y} if bmp.x is not None else None
+                        }
+                        for bmp in hotspot.bmp_actions
+                    ]
 
                 scene_dict['hotspots'].append(hotspot_dict)
 

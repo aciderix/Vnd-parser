@@ -531,6 +531,25 @@
                 "milleeuro = 0 then playavi euroland\\banq3.avi 1 168 122 344 374",
                 "milleeuro = 0 then rundll roue.dll",
                 "milleeuro >= 1 then addbmp coffre euroland\\rollover\\coffre.bmp 0 0 203 else delbmp coffre"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "coffre",
+                  "path": "euroland\\rollover\\coffre.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 0,
+                    "y": 203
+                  }
+                },
+                {
+                  "command": "delbmp",
+                  "name": "coffre",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                }
               ]
             }
           ]
@@ -1069,6 +1088,25 @@
                 "sacados = 1 then if clejaune = 0 then set_var clejaune 1",
                 "clejaune = 0 then addbmp clejaune euroland\\rollover\\clejaune.bmp 0 1794 178",
                 "clejaune != 0 then delbmp clejaune"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "clejaune",
+                  "path": "euroland\\rollover\\clejaune.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 1794,
+                    "y": 178
+                  }
+                },
+                {
+                  "command": "delbmp",
+                  "name": "clejaune",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                }
               ]
             },
             {
@@ -1636,6 +1674,130 @@
                 "annule = 1 then delbmp act",
                 "annule = 1 then delbmp anu",
                 "annule = 0 then if active = 4 then scene 12i"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "lesac",
+                  "path": "euroland\\rollover\\detsac.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 75
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sac0",
+                  "path": "euroland\\rollover\\abssac.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 75
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "pai",
+                  "path": "euroland\\rollover\\detpai.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 105
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "pai0",
+                  "path": "euroland\\rollover\\abspai.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 105
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "cal",
+                  "path": "euroland\\rollover\\detcal.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 135
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "cal0",
+                  "path": "euroland\\rollover\\abscal.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 135
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "tel",
+                  "path": "euroland\\rollover\\detcomm.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 170
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "tel0",
+                  "path": "euroland\\rollover\\abscomm.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 370,
+                    "y": 170
+                  }
+                },
+                {
+                  "command": "delbmp",
+                  "name": "lesac",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                },
+                {
+                  "command": "delbmp",
+                  "name": "pai",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                },
+                {
+                  "command": "delbmp",
+                  "name": "cal",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                },
+                {
+                  "command": "delbmp",
+                  "name": "tel",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                },
+                {
+                  "command": "delbmp",
+                  "name": "act",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                },
+                {
+                  "command": "delbmp",
+                  "name": "anu",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                }
               ]
             }
           ]
@@ -2490,6 +2652,38 @@
                 "levure != 0 then addbmp levure rollover\\levure2.bmp 0 205 189",
                 "sirop != 0 then addbmp sirop rollover\\sirop2.bmp 0  464 0",
                 "burette != 0 then addbmp burette rollover\\burette2.bmp 0 0 191h"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "levure",
+                  "path": "rollover\\levure2.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 205,
+                    "y": 189
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sirop",
+                  "path": "rollover\\sirop2.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 464,
+                    "y": 0
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "burette",
+                  "path": "rollover\\burette2.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 0,
+                    "y": 191
+                  }
+                }
               ]
             },
             {
@@ -2564,6 +2758,38 @@
                 "occupe1 = 1 then addbmp f1 rollover\\b1.bmp 0 118 258",
                 "occupe1 = 0 then hotspot 16",
                 "occupe1 != 1 then playbmp rollover\\b1.bmp 0 117 257"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "f1",
+                  "path": "rollover\\b1.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 118,
+                    "y": 258
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "f1",
+                  "path": "rollover\\b1.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 118,
+                    "y": 258
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "f1",
+                  "path": "rollover\\b1.bmp",
+                  "layer": 0,
+                  "position": {
+                    "x": 118,
+                    "y": 258
+                  }
+                }
               ]
             }
           ]
@@ -4219,6 +4445,48 @@
                 "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400",
                 "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400",
                 "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "active",
+                  "path": "..\\..\\barre\\images\\trans.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 163,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "calc1",
+                  "path": "..\\..\\barre\\images\\calc1.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 246,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "telep",
+                  "path": "..\\..\\barre\\images\\telep.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 316,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sac",
+                  "path": "..\\..\\barre\\images\\sac.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 384,
+                    "y": 400
+                  }
+                }
               ]
             }
           ]
@@ -11681,6 +11949,48 @@
                 "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400",
                 "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400",
                 "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "active",
+                  "path": "..\\..\\barre\\images\\trans.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 163,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "calc1",
+                  "path": "..\\..\\barre\\images\\calc1.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 246,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "telep",
+                  "path": "..\\..\\barre\\images\\telep.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 316,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sac",
+                  "path": "..\\..\\barre\\images\\sac.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 384,
+                    "y": 400
+                  }
+                }
               ]
             }
           ]
@@ -15892,6 +16202,15 @@
               "goto_scene": 24,
               "actions": [
                 "delbmp sac"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "delbmp",
+                  "name": "sac",
+                  "path": null,
+                  "layer": null,
+                  "position": null
+                }
               ]
             }
           ]
@@ -20790,6 +21109,368 @@
                 "italie = 1 then  addbmp info ..\\..\\barre\\images\\p_italie.bmp 6 452 400",
                 "belgique = 1 then  addbmp info ..\\..\\barre\\images\\p_belgique.bmp 6 452 400",
                 "paysbas = 1 then  addbmp info ..\\..\\barre\\images\\p_pays.bmp 6 452 400"
+              ],
+              "bmp_actions": [
+                {
+                  "command": "addbmp",
+                  "name": "active",
+                  "path": "..\\..\\barre\\images\\trans.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 163,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "calc1",
+                  "path": "..\\..\\barre\\images\\calc1.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 246,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "telep",
+                  "path": "..\\..\\barre\\images\\telep.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 316,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sac",
+                  "path": "..\\..\\barre\\images\\sac.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 384,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "telep",
+                  "path": "..\\..\\barre\\images\\telep.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 316,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "calc1",
+                  "path": "..\\..\\barre\\images\\calc1.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 246,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "sac",
+                  "path": "..\\..\\barre\\images\\sac.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 384,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "active",
+                  "path": "..\\..\\barre\\images\\trans.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 163,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f1.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f2.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f3.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f4.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f5.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f6.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f7.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f8.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f9.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f10.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 197,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f11.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "fiole",
+                  "path": "..\\..\\barre\\images\\f12.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 196,
+                    "y": 461
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_suede.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_port.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_all.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_france.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_angl.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_autriche.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_danemark.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_ecosse.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_euroland.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_espagne.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_finland.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_grece.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_irlande.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_italie.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_belgique.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                },
+                {
+                  "command": "addbmp",
+                  "name": "info",
+                  "path": "..\\..\\barre\\images\\p_pays.bmp",
+                  "layer": 6,
+                  "position": {
+                    "x": 452,
+                    "y": 400
+                  }
+                }
               ]
             }
           ]
