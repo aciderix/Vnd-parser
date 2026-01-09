@@ -1,0 +1,302 @@
+{
+  "scenes": [
+    {
+      "id": 0,
+      "filename": "euroland\\face.bmp",
+      "offset": 4439
+    },
+    {
+      "id": 1,
+      "filename": "euroland\\bureaubanquier.bmp",
+      "offset": 6610
+    },
+    {
+      "id": 2,
+      "filename": "euroland\\banque.bmp",
+      "offset": 7455
+    },
+    {
+      "id": 3,
+      "filename": "euroland\\maison.bmp",
+      "offset": 14918
+    },
+    {
+      "id": 4,
+      "filename": "euroland\\armoire3.bmp",
+      "offset": 22272
+    },
+    {
+      "id": 5,
+      "filename": "euroland\\infosac.bmp",
+      "offset": 24766
+    },
+    {
+      "id": 6,
+      "filename": "euroland\\schema.bmp",
+      "offset": 25932
+    },
+    {
+      "id": 7,
+      "filename": "euroland\\calc2.bmp",
+      "offset": 31744
+    },
+    {
+      "id": 8,
+      "filename": "euroland\\bonus.bmp",
+      "offset": 37101
+    },
+    {
+      "id": 9,
+      "filename": "euroland\\bonus.bmp",
+      "offset": 38635
+    },
+    {
+      "id": 10,
+      "filename": "euroland\\bonus.bmp",
+      "offset": 42522
+    },
+    {
+      "id": 11,
+      "filename": "euroland\\experience.bmp",
+      "offset": 49826
+    },
+    {
+      "id": 12,
+      "filename": "euroland\\fontain2.bmp",
+      "offset": 57383
+    },
+    {
+      "id": 13,
+      "filename": "euroland\\fiole2.bmp",
+      "offset": 59333
+    },
+    {
+      "id": 14,
+      "filename": "euroland\\papier.bmp",
+      "offset": 71316
+    },
+    {
+      "id": 15,
+      "filename": "euroland\\mess2.bmp",
+      "offset": 74297
+    }
+  ],
+  "hotspots": [
+    {
+      "text": "La banque",
+      "target_id": 22,
+      "offset": 5612,
+      "full_text": "387 351 125 365 0 La banque"
+    },
+    {
+      "text": "Ma maison",
+      "target_id": 20,
+      "offset": 5856,
+      "full_text": "89 375 125 365 0 Ma maison"
+    },
+    {
+      "text": "Le musée du village",
+      "target_id": 20,
+      "offset": 6284,
+      "full_text": "249 297 125 365 0 Le musée du village"
+    },
+    {
+      "text": "La fontaine à couleurs",
+      "target_id": 23,
+      "offset": 6520,
+      "full_text": "348 357 125 365 0 La fontaine à couleurs"
+    },
+    {
+      "text": "Une bouteille d'encre noire",
+      "target_id": 2,
+      "offset": 7366,
+      "full_text": "40 350 125 365 0 Une bouteille d'encre noire"
+    },
+    {
+      "text": "Ben",
+      "target_id": 5,
+      "offset": 11317,
+      "full_text": "700 32 125 365 0 Ben"
+    },
+    {
+      "text": "les corsaires",
+      "target_id": 5,
+      "offset": 11732,
+      "full_text": "1350 332 125 365 0 les corsaires"
+    },
+    {
+      "text": "Pasteur",
+      "target_id": 5,
+      "offset": 14384,
+      "full_text": "380 165 125 365 0 Pasteur"
+    },
+    {
+      "text": "Ludwig Van Beethoven",
+      "target_id": 5,
+      "offset": 14780,
+      "full_text": "395 362 125 365 0 Ludwig Van Beethoven"
+    },
+    {
+      "text": "Stonehenge",
+      "target_id": 5,
+      "offset": 14969,
+      "full_text": "950 162 125 365 0 Stonehenge"
+    },
+    {
+      "text": "Madame euro",
+      "target_id": 0,
+      "offset": 15701,
+      "full_text": "120 360 125 365 0 Madame euro"
+    },
+    {
+      "text": "Une table avec plein de choses dessus",
+      "target_id": 2,
+      "offset": 15983,
+      "full_text": "370 340 125 365 0 Une table avec plein de choses dessus"
+    },
+    {
+      "text": "Tu n'as pas le temps",
+      "target_id": 32,
+      "offset": 17609,
+      "full_text": "800 350 125 365 0 Tu n'as pas le temps"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 1,
+      "offset": 18377,
+      "full_text": "60 340 125 365 0 SORTIE"
+    },
+    {
+      "text": "Ordinateur du transvecteur",
+      "target_id": 0,
+      "offset": 19325,
+      "full_text": "1430 150 125 365 0 Ordinateur du transvecteur"
+    },
+    {
+      "text": "Prof",
+      "target_id": 0,
+      "offset": 19710,
+      "full_text": "690 350 125 365 0 Prof"
+    },
+    {
+      "text": "Le transvecteur",
+      "target_id": 0,
+      "offset": 20046,
+      "full_text": "1590 150 125 365 0 Le transvecteur"
+    },
+    {
+      "text": "Ordinateur du transvecteur",
+      "target_id": 8,
+      "offset": 20777,
+      "full_text": "830 350 125 365 0 Ordinateur du transvecteur"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 0,
+      "offset": 25983,
+      "full_text": "250 370 125 365 0 SORTIE"
+    },
+    {
+      "text": "Clique ici pour arrêter la machine.",
+      "target_id": 8,
+      "offset": 29924,
+      "full_text": "130 200 125 365 0 Clique ici pour arrêter la machine."
+    },
+    {
+      "text": "Réponse N°2",
+      "target_id": 35,
+      "offset": 35814,
+      "full_text": "260 360 125 365 0 Réponse N°2"
+    },
+    {
+      "text": "Réponse N°3",
+      "target_id": 37,
+      "offset": 36483,
+      "full_text": "410 360 125 365 0 Réponse N°3"
+    },
+    {
+      "text": "Réponse N°2",
+      "target_id": 35,
+      "offset": 38686,
+      "full_text": "260 360 125 365 0 Réponse N°2"
+    },
+    {
+      "text": "Réponse N°3",
+      "target_id": 37,
+      "offset": 39373,
+      "full_text": "410 360 125 365 0 Réponse N°3"
+    },
+    {
+      "text": "Réponse N°2",
+      "target_id": 35,
+      "offset": 41147,
+      "full_text": "260 360 125 365 0 Réponse N°2"
+    },
+    {
+      "text": "Réponse N°3",
+      "target_id": 37,
+      "offset": 41836,
+      "full_text": "410 360 125 365 0 Réponse N°3"
+    },
+    {
+      "text": "Réponse N°1",
+      "target_id": 51,
+      "offset": 43006,
+      "full_text": "60 360 125 365 0 Réponse N°1"
+    },
+    {
+      "text": "Réponse N°2",
+      "target_id": 51,
+      "offset": 44074,
+      "full_text": "260 360 125 365 0 Réponse N°2"
+    },
+    {
+      "text": "Réponse N°3",
+      "target_id": 51,
+      "offset": 44888,
+      "full_text": "410 360 125 365 0 Réponse N°3"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 1,
+      "offset": 56537,
+      "full_text": "300 350 125 365 0 SORTIE"
+    },
+    {
+      "text": "Plan du transvecteur",
+      "target_id": 2,
+      "offset": 58615,
+      "full_text": "300 300 125 365 0 Plan du transvecteur"
+    },
+    {
+      "text": "Sortie",
+      "target_id": 2,
+      "offset": 59844,
+      "full_text": "55 360 125 365 0 Sortie"
+    },
+    {
+      "text": "Un Parchemin",
+      "target_id": 2,
+      "offset": 71178,
+      "full_text": "100 303 125 365 0 Un Parchemin"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 1,
+      "offset": 73864,
+      "full_text": "50 350 125 365 0 SORTIE"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 1,
+      "offset": 74179,
+      "full_text": "50 350 125 365 0 SORTIE"
+    },
+    {
+      "text": "SORTIE",
+      "target_id": 1,
+      "offset": 74931,
+      "full_text": "50 350 125 365 0 SORTIE"
+    }
+  ]
+}
