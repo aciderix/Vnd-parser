@@ -124,6 +124,14 @@ class VndPolygonParser:
         self.text_content = self.data.decode('latin-1', errors='replace')
         self.size = len(self.data)
 
+        # Load resource ID to scene ID mapping
+        mapping_file = BASE_DIR / 'resource_id_to_scene.json'
+        self.id_to_scene = {}
+        if mapping_file.exists():
+            with open(mapping_file, 'r') as f:
+                mapping_data = json.load(f)
+                self.id_to_scene = {int(k): v for k, v in mapping_data.get('id_to_scene', {}).items()}
+
     def read_polygon_at(self, offset: int) -> Optional[Polygon]:
         """Read a polygon at a specific offset"""
         if offset + 8 > self.size:
@@ -628,23 +636,34 @@ class VndPolygonParser:
             hotspot.video = video_match.group(1)
             break
 
-        # 3. Search for scene navigation (e.g., '1e', '51j')
-        # Navigation pattern appears AFTER polygon/text, before next hotspot
-        # Look in the binary region between hotspot and next hotspot
-        nav_pattern = r'(?<!\d)(\d{1,3})([a-z])(?!\w)'
+        # 3. Extract hotspot resource ID and resolve to scene
+        # The structure is: [hotspot text] [Type 0x03: 03 00 00 00] [ID as int32]
+        # The ID maps to a filename in the resource table, which then maps to a scene
 
-        # Search in full region including binary data
-        region_binary = self.data[start_offset:end_offset]
-        region_binary_text = region_binary.decode('latin-1', errors='replace')
+        # Find the hotspot text in the data to get its offset
+        text_bytes = hotspot.text.encode('latin-1', errors='ignore')
+        text_pos = self.data.find(text_bytes, start_offset, end_offset)
 
-        # Find the LAST navigation pattern (most likely to be the goto)
-        nav_matches = list(re.finditer(nav_pattern, region_binary_text))
-        if nav_matches:
-            # Take the last one found (usually after polygon)
-            last_nav = nav_matches[-1]
-            scene_id = int(last_nav.group(1))
-            if 1 <= scene_id <= 999:
-                hotspot.goto_scene = scene_id
+        if text_pos != -1:
+            # Search for Type 0x03 marker after the hotspot text
+            text_end_offset = text_pos + len(text_bytes)
+            search_region = self.data[text_end_offset:text_end_offset + 50]
+
+            type_03_marker = b'\x03\x00\x00\x00'
+            marker_idx = search_region.find(type_03_marker)
+
+            if marker_idx != -1 and marker_idx + 8 <= len(search_region):
+                # Extract the resource ID (4 bytes after the Type 0x03 marker)
+                resource_id = int.from_bytes(search_region[marker_idx+4:marker_idx+8], 'little')
+
+                # Check if it's a reasonable ID (1-100)
+                if 1 <= resource_id <= 100:
+                    # Use the resource ID to scene mapping
+                    if resource_id in self.id_to_scene:
+                        hotspot.goto_scene = self.id_to_scene[resource_id]
+                    else:
+                        # ID not in mapping, store as-is for debugging
+                        hotspot.goto_scene = None
 
         # 4. Extract actions and conditions
         region_text_full = self.text_content[start_offset:end_offset]

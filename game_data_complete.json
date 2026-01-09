@@ -68,7 +68,7 @@
                 }
               },
               "video": "bibliobis.avi",
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "dec_var espagne 1",
@@ -182,7 +182,6 @@
                 }
               },
               "video": "bankbis.avi",
-              "goto_scene": 3,
               "type_09_record": {
                 "count": 22,
                 "subtype": 0,
@@ -238,7 +237,6 @@
                 }
               },
               "video": "home2.avi",
-              "goto_scene": 5,
               "type_09_record": {
                 "count": 20,
                 "subtype": 0,
@@ -318,7 +316,6 @@
                 }
               },
               "video": "profbis.avi",
-              "goto_scene": 6,
               "type_09_record": {
                 "count": 22,
                 "subtype": 0,
@@ -394,7 +391,6 @@
                 }
               },
               "video": "musee.avi",
-              "goto_scene": 7,
               "type_09_record": {
                 "count": 20,
                 "subtype": 0,
@@ -458,7 +454,6 @@
                 }
               },
               "video": "fontaine.avi",
-              "goto_scene": 39,
               "type_09_record": {
                 "count": 23,
                 "subtype": 0,
@@ -482,30 +477,13 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ]
-            },
-            {
-              "id": 10,
-              "text": "Une bouteille d'encre noire",
-              "text_position": {
-                "x": 40,
-                "y": 350
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "L'agenda du banquier\nUne tasse de café noir",
-                "position": {
-                  "x": 40,
-                  "y": 350
-                }
-              },
-              "goto_scene": 22
             },
             {
               "id": 12,
@@ -516,7 +494,7 @@
               },
               "layer": 0,
               "display_text": {
-                "text": "Du courrier",
+                "text": "L'agenda du banquier\nUne tasse de café noir\nUne bouteille d'encre noire\nDu courrier",
                 "position": {
                   "x": 40,
                   "y": 350
@@ -611,7 +589,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f",
                 "runprj ..\\biblio\\biblio.vnp 4"
@@ -637,7 +615,6 @@
                 }
               },
               "video": "biblio1.avi",
-              "goto_scene": 16,
               "actions": [
                 "addbmp tt euroland\\rollover\\maintel.bmp 0 732 240",
                 "scene 16"
@@ -662,104 +639,6 @@
               ]
             },
             {
-              "id": 26,
-              "text": "Big\nBen",
-              "text_position": {
-                "x": 700,
-                "y": 32
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "Une lampe de bureau\nLe petit atlas\nd'Europe.\nLes Hymnes\nnationaux\nLéonard\nde Vinci\nL'euro et nous",
-                "position": {
-                  "x": 375,
-                  "y": 362
-                }
-              },
-              "goto_scene": 59,
-              "actions": [
-                "runprj ..\\angl\\angleterre.vnp 59j",
-                "runprj ..\\allem\\allem.vnp 10"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\angl\\angleterre.vnp 59j",
-                "jeu = 1 then runprj ..\\allem\\allem.vnp 10"
-              ]
-            },
-            {
-              "id": 30,
-              "text": "les corsaires",
-              "text_position": {
-                "x": 1350,
-                "y": 332
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "Le mur de\nBerlin",
-                "position": {
-                  "x": 1740,
-                  "y": 22
-                }
-              },
-              "goto_scene": 27,
-              "actions": [
-                "runprj ..\\france\\france.vnp 27j",
-                "runprj ..\\grece\\grece.vnp 13"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 27j",
-                "jeu = 1 then runprj ..\\grece\\grece.vnp 13"
-              ]
-            },
-            {
-              "id": 50,
-              "text": "Louis\nPasteur",
-              "text_position": {
-                "x": 380,
-                "y": 165
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "Les jeux\nOlympiques\nLa cornemuse\nLes joyaux de\nla couronne\nd'Angleterre\nLa tour Eiffel\nL'exposition\nuniverselle\nUn livre sur\nla fabrication\nde la bière\nL'histoire\ndu chocolat\nLe fado\nLes grands couturiers\nLes tulipes\nLes grands\nnavigateurs",
-                "position": {
-                  "x": 1450,
-                  "y": 282
-                }
-              },
-              "goto_scene": 15,
-              "actions": [
-                "runprj ..\\france\\france.vnp 15j",
-                "runprj ..\\italie\\italie.vnp  29"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\france\\france.vnp 15j",
-                "jeu = 1 then runprj ..\\italie\\italie.vnp  29"
-              ]
-            },
-            {
-              "id": 54,
-              "text": "Ludwig Van Beethoven",
-              "text_position": {
-                "x": 395,
-                "y": 362
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "Balade à\nVenise",
-                "position": {
-                  "x": 395,
-                  "y": 242
-                }
-              },
-              "goto_scene": 5,
-              "actions": [
-                "runprj ..\\allem\\allem.vnp 5j"
-              ],
-              "conditions": [
-                "jeu = 1 then runprj ..\\allem\\allem.vnp 5j"
-              ]
-            },
-            {
               "id": 55,
               "text": "Stonehenge",
               "text_position": {
@@ -767,7 +646,13 @@
                 "y": 162
               },
               "layer": 0,
-              "goto_scene": 57,
+              "display_text": {
+                "text": "Une lampe de bureau\nLe petit atlas\nd'Europe.\nLes Hymnes\nnationaux\nLéonard\nde Vinci\nL'euro et nous\nBig\nBen\nLe mur de\nBerlin\nles corsaires\nLes jeux\nOlympiques\nLa cornemuse\nLes joyaux de\nla couronne\nd'Angleterre\nLa tour Eiffel\nL'exposition\nuniverselle\nUn livre sur\nla fabrication\nde la bière\nL'histoire\ndu chocolat\nLe fado\nLes grands couturiers\nLes tulipes\nLes grands\nnavigateurs\nLouis\nPasteur\nBalade à\nVenise\nLudwig Van Beethoven",
+                "position": {
+                  "x": 395,
+                  "y": 362
+                }
+              },
               "actions": [
                 "runprj ..\\angl\\angleterre.vnp 57j"
               ],
@@ -802,23 +687,13 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
               "conditions": [
                 "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ]
-            },
-            {
-              "id": 57,
-              "text": "SORTIE",
-              "text_position": {
-                "x": 95,
-                "y": 350
-              },
-              "layer": 0,
-              "goto_scene": 1
             },
             {
               "id": 58,
@@ -828,8 +703,14 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "SORTIE",
+                "position": {
+                  "x": 95,
+                  "y": 350
+                }
+              },
               "video": "femme.avi",
-              "goto_scene": 2,
               "type_09_record": {
                 "count": 36,
                 "subtype": 0,
@@ -845,7 +726,6 @@
                 "y": 340
               },
               "layer": 0,
-              "goto_scene": 51,
               "actions": [
                 "addbmp clejaune euroland\\rollover\\clejaune.bmp 0 1794 178",
                 "delbmp clejaune",
@@ -985,7 +865,7 @@
                 "y": 340
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 46,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f",
                 "set_var espagne 0",
@@ -1032,7 +912,6 @@
               },
               "layer": 0,
               "video": "prof2.avi",
-              "goto_scene": 13,
               "type_09_record": {
                 "count": 38,
                 "subtype": 0,
@@ -1105,7 +984,6 @@
               },
               "layer": 0,
               "video": "pro1a.avi",
-              "goto_scene": 6,
               "type_09_record": {
                 "count": 36,
                 "subtype": 0,
@@ -1129,7 +1007,6 @@
                 }
               },
               "video": "trans.avi",
-              "goto_scene": 2,
               "type_09_record": {
                 "count": 38,
                 "subtype": 0,
@@ -1254,7 +1131,6 @@
                 }
               },
               "video": "pro2.avi",
-              "goto_scene": 13,
               "type_09_record": {
                 "count": 35,
                 "subtype": 0,
@@ -1279,7 +1155,7 @@
               },
               "layer": 0,
               "video": "vuemusee.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f"
               ],
@@ -1464,7 +1340,7 @@
                   "y": 338
                 }
               },
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -1492,8 +1368,7 @@
                 "x": 250,
                 "y": 370
               },
-              "layer": 0,
-              "goto_scene": 7
+              "layer": 0
             }
           ],
           "commands": [
@@ -1565,7 +1440,7 @@
                   "y": 341
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -1597,7 +1472,6 @@
               },
               "layer": 0,
               "video": "bouton.avi",
-              "goto_scene": 12,
               "actions": [
                 "addbmp  lesac euroland\\rollover\\detsac.bmp 0 370 75 else addbmp sac0 euroland\\rollover\\abssac.bmp 0 370 75",
                 "addbmp  pai euroland\\rollover\\detpai.bmp 0 370 105 else addbmp pai0 euroland\\rollover\\abspai.bmp 0 370 105",
@@ -1917,7 +1791,7 @@
                   "y": 334
                 }
               },
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -1984,7 +1858,7 @@
                   "y": 336
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -2029,7 +1903,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -2053,7 +1927,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "runprj ..\\ecosse\\ecosse.vnp 6",
@@ -2094,7 +1967,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\france\\france.vnp 5",
@@ -2130,7 +2002,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 3,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\france\\france.vnp 5",
@@ -2235,7 +2106,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "runprj ..\\ecosse\\ecosse.vnp 6",
@@ -2276,7 +2146,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\belge\\belge.vnp 2",
@@ -2312,7 +2181,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\belge\\belge.vnp 2",
@@ -2402,7 +2270,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "runprj ..\\ecosse\\ecosse.vnp 6",
@@ -2443,7 +2310,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\france\\france.vnp 5",
@@ -2479,7 +2345,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\france\\france.vnp 5",
@@ -2613,7 +2478,6 @@
                 }
               },
               "video": "intro12.avi",
-              "goto_scene": 7,
               "type_09_record": {
                 "count": 29,
                 "subtype": 0,
@@ -2638,7 +2502,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 5",
@@ -2683,7 +2546,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 1,
               "actions": [
                 "scene 5",
                 "scene 7",
@@ -2723,7 +2585,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 2,
               "actions": [
                 "scene 5",
                 "scene 7",
@@ -2861,7 +2722,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -2891,7 +2752,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 191,
+              "goto_scene": 10,
               "actions": [
                 "addbmp levure rollover\\levure2.bmp 0 205 189",
                 "addbmp sirop rollover\\sirop2.bmp 0  464 0",
@@ -2938,21 +2799,22 @@
               ]
             },
             {
+              "id": 112,
+              "text": "Des produits chimiques",
+              "text_position": {
+                "x": 400,
+                "y": 140
+              },
+              "layer": 0
+            },
+            {
               "id": 113,
               "text": "Plan du transvecteur",
               "text_position": {
                 "x": 300,
                 "y": 300
               },
-              "layer": 0,
-              "display_text": {
-                "text": "Des produits chimiques",
-                "position": {
-                  "x": 400,
-                  "y": 140
-                }
-              },
-              "goto_scene": 11
+              "layer": 0
             }
           ],
           "commands": [
@@ -3032,7 +2894,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "addbmp f1 rollover\\b1.bmp 0 118 258",
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
@@ -3177,7 +3039,7 @@
                 "y": 303
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -3273,7 +3135,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -3297,7 +3159,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -3328,7 +3190,7 @@
                 "y": 290
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54d"
               ],
@@ -3343,8 +3205,7 @@
                 "x": 50,
                 "y": 350
               },
-              "layer": 0,
-              "goto_scene": 5
+              "layer": 0
             },
             {
               "id": 121,
@@ -3379,7 +3240,7 @@
               },
               "layer": 0,
               "video": "perdu.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -3423,7 +3284,6 @@
               },
               "layer": 0,
               "video": "moule1.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54j",
                 "inc_var non 1"
@@ -3826,7 +3686,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -3995,7 +3855,6 @@
                 }
               },
               "video": "coq.avi",
-              "goto_scene": 240,
               "type_09_record": {
                 "count": 25,
                 "subtype": 0,
@@ -4084,7 +3943,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -4101,7 +3960,6 @@
               },
               "layer": 0,
               "video": "chef1.avi",
-              "goto_scene": 21,
               "actions": [
                 "scene 21",
                 "inc_var non 1"
@@ -4244,7 +4102,6 @@
               },
               "layer": 0,
               "video": "helico1.avi",
-              "goto_scene": 16,
               "actions": [
                 "scene 16",
                 "playwav helico.wav",
@@ -4358,7 +4215,6 @@
               },
               "layer": 0,
               "video": "helico2.avi",
-              "goto_scene": 122,
               "type_09_record": {
                 "count": 25,
                 "subtype": 0,
@@ -4450,7 +4306,6 @@
               },
               "layer": 0,
               "video": "garefr1.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54l",
                 "scene 25",
@@ -4585,6 +4440,7 @@
                 "y": 410
               },
               "layer": 0,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -4816,7 +4672,7 @@
                 "y": 375
               },
               "layer": 0,
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -4840,7 +4696,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 6",
@@ -5110,7 +4965,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\belge\\belge.vnp 6",
@@ -5194,7 +5048,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "runprj ..\\ecosse\\ecosse.vnp 6",
                 "runprj ..\\belge\\belge.vnp 6",
@@ -5590,7 +5443,6 @@
               },
               "layer": 0,
               "video": "brasse1.avi",
-              "goto_scene": 2,
               "conditions": [
                 "biereok != 3 then playavi brasse1.avi 1 346 56 415 128",
                 "biereok = 3 then playavi brasse4.avi 1 346 56 415 128"
@@ -5776,7 +5628,6 @@
               },
               "layer": 0,
               "video": "avion.avi",
-              "goto_scene": 18,
               "type_09_record": {
                 "count": 65,
                 "subtype": 118,
@@ -5792,7 +5643,6 @@
               },
               "layer": 0,
               "video": "avion.avi",
-              "goto_scene": 28,
               "type_09_record": {
                 "count": 65,
                 "subtype": 118,
@@ -5922,7 +5772,7 @@
               },
               "layer": 0,
               "video": "all.avi",
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -6004,7 +5854,6 @@
                 "y": 110
               },
               "layer": 0,
-              "goto_scene": 2,
               "actions": [
                 "set_var houblon 1",
                 "dec_var score 3"
@@ -6042,7 +5891,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "scene 1",
@@ -6086,7 +5934,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 1,
               "actions": [
                 "scene 1",
                 "scene 2",
@@ -6125,7 +5972,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 1,
               "actions": [
                 "scene 1",
                 "scene 2",
@@ -6269,7 +6115,8 @@
                 "x": 445,
                 "y": 420
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 10
             }
           ],
           "commands": []
@@ -6362,7 +6209,7 @@
                 }
               },
               "video": "brasse3.avi",
-              "goto_scene": 2,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "inc_var non 1"
@@ -6844,7 +6691,7 @@
                   "y": 219
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -6995,8 +6842,7 @@
                 "x": 20,
                 "y": 350
               },
-              "layer": 0,
-              "goto_scene": 48
+              "layer": 0
             }
           ],
           "commands": []
@@ -7029,7 +6875,6 @@
               },
               "layer": 0,
               "video": "waterloo1.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54l",
                 "scene 71",
@@ -7181,7 +7026,6 @@
                 }
               },
               "video": "waterloo1.avi",
-              "goto_scene": 22,
               "actions": [
                 "scene 1"
               ],
@@ -7219,7 +7063,6 @@
               },
               "layer": 0,
               "video": "police1.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54l",
                 "scene 75",
@@ -7407,22 +7250,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 12,
-              "text": "Le chien de miss Wanterry",
-              "text_position": {
-                "x": 400,
-                "y": 380
-              },
-              "layer": 0,
-              "goto_scene": 53,
-              "actions": [
-                "scene 53"
-              ],
-              "conditions": [
-                "puce = 0 then scene 53i"
-              ]
-            },
-            {
               "id": 13,
               "text": "Des informations sur le thé",
               "text_position": {
@@ -7430,7 +7257,14 @@
                 "y": 280
               },
               "layer": 0,
-              "goto_scene": 54,
+              "display_text": {
+                "text": "Le chien de miss Wanterry",
+                "position": {
+                  "x": 400,
+                  "y": 380
+                }
+              },
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54j"
               ],
@@ -7447,7 +7281,6 @@
               },
               "layer": 0,
               "video": "miss1.avi",
-              "goto_scene": 159,
               "actions": [
                 "inc_var non 1"
               ],
@@ -7614,7 +7447,6 @@
                   "y": 288
                 }
               },
-              "goto_scene": 22,
               "actions": [
                 "scene 80",
                 "playwav ..\\..\\couleurs1\\digit\\bruit\\boing.wav 1",
@@ -7907,7 +7739,7 @@
                   "y": 211
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -8044,7 +7876,6 @@
               },
               "layer": 0,
               "video": "bus2.avi",
-              "goto_scene": 48,
               "type_09_record": {
                 "count": 22,
                 "subtype": 0,
@@ -8061,39 +7892,6 @@
           "audio": "tousel35_.wav",
           "hotspots": [
             {
-              "id": 21,
-              "text": "Un squelette plutôt sympa.",
-              "text_position": {
-                "x": 200,
-                "y": 360
-              },
-              "layer": 0,
-              "display_text": {
-                "text": "Un petit indice c'est toujours bon à prendre",
-                "position": {
-                  "x": 200,
-                  "y": 360
-                }
-              },
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
-            },
-            {
-              "id": 22,
-              "text": "Un passage direct vers la tour blanche",
-              "text_position": {
-                "x": 150,
-                "y": 360
-              },
-              "layer": 0,
-              "goto_scene": 26
-            },
-            {
               "id": 23,
               "text": "Pour retourner à la carte du château",
               "text_position": {
@@ -8101,6 +7899,13 @@
                 "y": 360
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un petit indice c'est toujours bon à prendre\nUn squelette plutôt sympa.\nUn passage direct vers la tour blanche",
+                "position": {
+                  "x": 150,
+                  "y": 360
+                }
+              },
               "clickable_area": {
                 "type": "polygon",
                 "points": [
@@ -8241,7 +8046,6 @@
               },
               "layer": 0,
               "video": "bus.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54l",
                 "inc_var non 1"
@@ -8416,6 +8220,7 @@
                 "y": 400
               },
               "layer": 0,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8477,7 +8282,8 @@
                 "x": 470,
                 "y": 410
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 2
             }
           ],
           "commands": []
@@ -8604,7 +8410,8 @@
                 "x": 110,
                 "y": 400
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 10
             }
           ],
           "commands": []
@@ -8679,6 +8486,7 @@
                   "y": 406
                 }
               },
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8752,6 +8560,7 @@
                   "y": 402
                 }
               },
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8782,6 +8591,7 @@
                 "y": 400
               },
               "layer": 0,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8860,6 +8670,7 @@
                   "y": 406
                 }
               },
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8934,6 +8745,7 @@
                   "y": 401
                 }
               },
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -8965,7 +8777,7 @@
               },
               "layer": 0,
               "video": "angleterre1.avi",
-              "goto_scene": 48,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "dec_var euroland 1",
@@ -9031,6 +8843,7 @@
                 "y": 400
               },
               "layer": 0,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
               ],
@@ -9150,7 +8963,7 @@
                   "y": 343
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -9236,8 +9049,7 @@
                 "x": 250,
                 "y": 74
               },
-              "layer": 0,
-              "goto_scene": 48
+              "layer": 0
             }
           ],
           "commands": [
@@ -9267,7 +9079,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 28",
@@ -9364,7 +9175,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "scene 28",
                 "scene 26",
@@ -9538,7 +9348,7 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54d"
               ],
@@ -9607,7 +9417,7 @@
                 "y": 335
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54g"
               ],
@@ -9630,7 +9440,6 @@
                   "y": 335
                 }
               },
-              "goto_scene": 11,
               "actions": [
                 "addbmp sansviolon"
               ],
@@ -9692,7 +9501,6 @@
                 }
               },
               "video": "violon1.avi",
-              "goto_scene": 20,
               "actions": [
                 "delbmp sansviolon",
                 "scene 20",
@@ -9778,7 +9586,7 @@
                 "y": 345
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -9795,7 +9603,6 @@
               },
               "layer": 0,
               "video": "apicu99.avi",
-              "goto_scene": 2,
               "actions": [
                 "scene 23",
                 "inc_var non 1",
@@ -10964,7 +10771,8 @@
                 "x": 445,
                 "y": 420
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 10
             }
           ],
           "commands": []
@@ -11024,7 +10832,6 @@
                   "y": 404
                 }
               },
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\biblio\\biblio.vnp 17 else scene 7",
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
@@ -11080,7 +10887,7 @@
                 "y": 365
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -11103,8 +10910,7 @@
                 "x": 310,
                 "y": 365
               },
-              "layer": 0,
-              "goto_scene": 1
+              "layer": 0
             }
           ],
           "commands": []
@@ -11121,8 +10927,7 @@
                 "x": 110,
                 "y": 365
               },
-              "layer": 0,
-              "goto_scene": 6
+              "layer": 0
             }
           ],
           "commands": []
@@ -11148,7 +10953,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 1",
@@ -11376,6 +11180,7 @@
                 "y": 345
               },
               "layer": 0,
+              "goto_scene": 10,
               "actions": [
                 "addbmp miel",
                 "runprj ..\\couleurs1\\couleurs1.vnp 54"
@@ -11473,7 +11278,7 @@
               },
               "layer": 0,
               "video": "motard1.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54g"
               ],
@@ -11627,7 +11432,7 @@
                 "y": 370
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -11651,7 +11456,6 @@
                 }
               },
               "video": "confise.avi",
-              "goto_scene": 182,
               "actions": [
                 "inc_var non 1"
               ],
@@ -11821,7 +11625,7 @@
                 "y": 350
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54g"
               ],
@@ -11924,7 +11728,6 @@
               },
               "layer": 0,
               "video": "p_hist1.avi",
-              "goto_scene": 9,
               "actions": [
                 "scene 9",
                 "inc_var non 1"
@@ -12254,7 +12057,6 @@
               },
               "layer": 0,
               "video": "math1.avi",
-              "goto_scene": 245,
               "type_09_record": {
                 "count": 27,
                 "subtype": 0,
@@ -12328,7 +12130,7 @@
                   "y": 406
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -12411,7 +12213,7 @@
                   "y": 413
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -13305,7 +13107,7 @@
                   "y": 408
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -13685,7 +13487,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 6",
@@ -13769,7 +13570,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "scene 6",
                 "scene 2",
@@ -13915,7 +13715,6 @@
               },
               "layer": 0,
               "video": "canard1.avi",
-              "goto_scene": 190,
               "type_09_record": {
                 "count": 25,
                 "subtype": 0,
@@ -14076,7 +13875,6 @@
               },
               "layer": 0,
               "video": "sirene.avi",
-              "goto_scene": 115,
               "actions": [
                 "scene 14",
                 "playwav cling.wav 1",
@@ -14641,7 +14439,7 @@
                   "y": 408
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400",
                 "addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400",
@@ -14761,7 +14559,7 @@
                   "y": 342
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -14901,7 +14699,7 @@
                   "y": 415
                 }
               },
-              "goto_scene": 3,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -14979,7 +14777,7 @@
                   "y": 200
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -15122,8 +14920,7 @@
                   "x": 786,
                   "y": 239
                 }
-              },
-              "goto_scene": 18
+              }
             }
           ],
           "commands": []
@@ -15198,8 +14995,7 @@
                 "x": 240,
                 "y": 370
               },
-              "layer": 0,
-              "goto_scene": 1
+              "layer": 0
             }
           ],
           "commands": []
@@ -15216,8 +15012,7 @@
                 "x": 1270,
                 "y": 370
               },
-              "layer": 0,
-              "goto_scene": 2
+              "layer": 0
             },
             {
               "id": 11,
@@ -15384,22 +15179,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 15,
-              "text": "Tout savoir\nsur la cornemuse !?!!",
-              "text_position": {
-                "x": 410,
-                "y": 183
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54j"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54j"
-              ]
-            },
-            {
               "id": 17,
               "text": "Le plus mauvais  joueur\nde cornemuse de tout\nle pays.",
               "text_position": {
@@ -15407,8 +15186,14 @@
                 "y": 198
               },
               "layer": 0,
+              "display_text": {
+                "text": "Tout savoir\nsur la cornemuse !?!!",
+                "position": {
+                  "x": 410,
+                  "y": 183
+                }
+              },
               "video": "hasquet.avi",
-              "goto_scene": 179,
               "actions": [
                 "inc_var non 1"
               ],
@@ -15539,7 +15324,7 @@
               },
               "layer": 0,
               "video": "harony.avi",
-              "goto_scene": 6,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h",
                 "inc_var non 1"
@@ -15697,7 +15482,6 @@
                 "y": 110
               },
               "layer": 0,
-              "goto_scene": 16,
               "actions": [
                 "scene 10",
                 "scene 16"
@@ -16282,23 +16066,6 @@
           "audio": null,
           "hotspots": [
             {
-              "id": 32,
-              "text": "SORTIE",
-              "text_position": {
-                "x": 250,
-                "y": 360
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54h"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54h",
-                "fioleecosse = 0 then rundll Memory.dll"
-              ]
-            },
-            {
               "id": 33,
               "text": "Le fantôme du château",
               "text_position": {
@@ -16306,6 +16073,13 @@
                 "y": 100
               },
               "layer": 0,
+              "display_text": {
+                "text": "SORTIE",
+                "position": {
+                  "x": 250,
+                  "y": 360
+                }
+              },
               "video": "fantom.avi",
               "type_09_record": {
                 "count": 112,
@@ -16415,7 +16189,7 @@
                 "y": 343
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54e"
               ],
@@ -16513,7 +16287,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 6",
@@ -16734,7 +16507,7 @@
                 "y": 303
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 39"
@@ -16902,7 +16675,7 @@
                 }
               },
               "video": "ecosse.avi",
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -17030,7 +16803,7 @@
                   "y": 419
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -17099,7 +16872,6 @@
                 "y": 50
               },
               "layer": 0,
-              "goto_scene": 3,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -17525,7 +17297,8 @@
                 "x": 445,
                 "y": 420
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 2
             }
           ],
           "commands": []
@@ -17601,7 +17374,7 @@
                 }
               },
               "video": "espa.avi",
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "dec_var euroland 1",
@@ -17714,7 +17487,7 @@
                   "y": 411
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -17907,7 +17680,6 @@
                   "y": 337
                 }
               },
-              "goto_scene": 10,
               "actions": [
                 "set_var ingrok 1"
               ],
@@ -17971,7 +17743,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 2",
@@ -18050,7 +17821,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "scene 2",
                 "scene 4",
@@ -19648,7 +19418,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 1,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54",
                 "scene 3",
@@ -19693,7 +19462,6 @@
               },
               "layer": 0,
               "video": "bonus1.avi",
-              "goto_scene": 1,
               "actions": [
                 "scene 3",
                 "scene 2",
@@ -19731,7 +19499,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "scene 3",
                 "scene 2",
@@ -19886,7 +19653,7 @@
                 "y": 30
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f"
               ],
@@ -19941,6 +19708,24 @@
           "audio": null,
           "hotspots": [
             {
+              "id": 3,
+              "text": "Informations sur les polders ?",
+              "text_position": {
+                "x": 380,
+                "y": 140
+              },
+              "layer": 0
+            },
+            {
+              "id": 4,
+              "text": "Un autre moulin voyons !!??",
+              "text_position": {
+                "x": 320,
+                "y": 110
+              },
+              "layer": 0
+            },
+            {
               "id": 5,
               "text": "Un artiste peintre",
               "text_position": {
@@ -19948,14 +19733,6 @@
                 "y": 90
               },
               "layer": 0,
-              "display_text": {
-                "text": "Informations sur les polders ?\nUn autre moulin voyons !!??",
-                "position": {
-                  "x": 320,
-                  "y": 110
-                }
-              },
-              "goto_scene": 1,
               "actions": [
                 "playwav peintre3.wav 1",
                 "playwav peintre2.wav 1",
@@ -19977,7 +19754,6 @@
                 "y": 30
               },
               "layer": 0,
-              "goto_scene": 18,
               "actions": [
                 "scene 18",
                 "playwav peintre4.wav 1",
@@ -20032,7 +19808,7 @@
               },
               "layer": 0,
               "video": "fermier2.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f",
                 "inc_var objetsfermier 1",
@@ -20050,6 +19826,15 @@
               ]
             },
             {
+              "id": 8,
+              "text": "Un fermier sympa",
+              "text_position": {
+                "x": 250,
+                "y": 360
+              },
+              "layer": 0
+            },
+            {
               "id": 9,
               "text": "Une valise à questions !!?",
               "text_position": {
@@ -20057,14 +19842,6 @@
                 "y": 360
               },
               "layer": 0,
-              "display_text": {
-                "text": "Un fermier sympa",
-                "position": {
-                  "x": 250,
-                  "y": 360
-                }
-              },
-              "goto_scene": 17,
               "actions": [
                 "scene 17"
               ],
@@ -20117,7 +19894,6 @@
                 "y": 10
               },
               "layer": 0,
-              "goto_scene": 19,
               "actions": [
                 "delbmp sac"
               ],
@@ -20200,7 +19976,7 @@
               },
               "layer": 0,
               "video": "me_holl.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f"
               ],
@@ -20387,7 +20163,7 @@
                 "y": 20
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54e"
               ],
@@ -20458,7 +20234,7 @@
                 "y": 320
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -20942,7 +20718,6 @@
                   "y": 418
                 }
               },
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -21030,7 +20805,7 @@
                   "y": 413
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -21600,7 +21375,6 @@
                 "y": 360
               },
               "layer": 0,
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 1",
@@ -21809,7 +21583,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 3",
@@ -21893,7 +21666,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 3,
               "actions": [
                 "scene 3",
                 "scene 7",
@@ -22777,7 +22549,6 @@
               },
               "layer": 0,
               "video": "bonus2.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 7",
@@ -23047,7 +22818,7 @@
                 "y": 50
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -23081,7 +22852,6 @@
               },
               "layer": 0,
               "video": "gond2.avi",
-              "goto_scene": 5,
               "actions": [
                 "scene 5",
                 "inc_var non 1",
@@ -23259,7 +23029,7 @@
                 "y": 365
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54j"
               ],
@@ -23335,7 +23105,6 @@
               },
               "layer": 0,
               "video": "coutur1.avi",
-              "goto_scene": 146,
               "actions": [
                 "inc_var non 1"
               ],
@@ -23483,7 +23252,6 @@
               },
               "layer": 0,
               "video": "feu.avi",
-              "goto_scene": 54,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -23506,7 +23274,6 @@
               },
               "layer": 0,
               "video": "pizz99.avi",
-              "goto_scene": 2,
               "actions": [
                 "scene 18",
                 "playwav resto.wav 2l",
@@ -23663,7 +23430,6 @@
                 }
               },
               "video": "pise99.avi",
-              "goto_scene": 7,
               "actions": [
                 "scene 8",
                 "scene 7",
@@ -23773,8 +23539,7 @@
                 "x": 490,
                 "y": 110
               },
-              "layer": 0,
-              "goto_scene": 2
+              "layer": 0
             }
           ],
           "commands": [
@@ -23809,7 +23574,7 @@
                 "y": 157
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54f"
               ],
@@ -23857,7 +23622,6 @@
                 }
               },
               "video": "torche.avi",
-              "goto_scene": 13,
               "actions": [
                 "scene 13"
               ],
@@ -24581,7 +24345,6 @@
               },
               "layer": 0,
               "video": "italie.avi",
-              "goto_scene": 1,
               "actions": [
                 "dec_var euroland 1",
                 "dec_var angleterre 1",
@@ -24663,7 +24426,7 @@
                 "y": 303
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i",
                 "scene 35"
@@ -24746,8 +24509,7 @@
                 "x": 490,
                 "y": 410
               },
-              "layer": 0,
-              "goto_scene": 3
+              "layer": 0
             }
           ],
           "commands": []
@@ -24765,16 +24527,6 @@
           "audio": "vache.wav",
           "hotspots": [
             {
-              "id": 1,
-              "text": "Un moulin",
-              "text_position": {
-                "x": 320,
-                "y": 80
-              },
-              "layer": 0,
-              "goto_scene": 9
-            },
-            {
               "id": 2,
               "text": "Une vache",
               "text_position": {
@@ -24782,6 +24534,13 @@
                 "y": 120
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un moulin",
+                "position": {
+                  "x": 320,
+                  "y": 80
+                }
+              },
               "clickable_area": {
                 "type": "polygon",
                 "points": [
@@ -25415,16 +25174,6 @@
           "audio": "tram.wav",
           "hotspots": [
             {
-              "id": 7,
-              "text": "Une poissonnerie",
-              "text_position": {
-                "x": 340,
-                "y": 80
-              },
-              "layer": 0,
-              "goto_scene": 8
-            },
-            {
               "id": 8,
               "text": "Des rails",
               "text_position": {
@@ -25432,6 +25181,13 @@
                 "y": 80
               },
               "layer": 0,
+              "display_text": {
+                "text": "Une poissonnerie",
+                "position": {
+                  "x": 340,
+                  "y": 80
+                }
+              },
               "type_09_record": {
                 "count": 98,
                 "subtype": 97,
@@ -25562,7 +25318,7 @@
                   "y": 421
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "addbmp image2",
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
@@ -25760,7 +25516,7 @@
                   "y": 418
                 }
               },
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54i"
               ],
@@ -25783,7 +25539,8 @@
                 "x": 470,
                 "y": 400
               },
-              "layer": 0
+              "layer": 0,
+              "goto_scene": 10
             }
           ],
           "commands": []
@@ -25808,21 +25565,31 @@
           "audio": "clapotis.wav",
           "hotspots": [
             {
+              "id": 1,
+              "text": "Le libraire",
+              "text_position": {
+                "x": 460,
+                "y": 80
+              },
+              "layer": 0
+            },
+            {
+              "id": 2,
+              "text": "La fabrique de bougies",
+              "text_position": {
+                "x": 350,
+                "y": 70
+              },
+              "layer": 0
+            },
+            {
               "id": 3,
               "text": "La maison de l'inventeur",
               "text_position": {
                 "x": 197,
                 "y": 60
               },
-              "layer": 0,
-              "display_text": {
-                "text": "Le libraire\nLa fabrique de bougies",
-                "position": {
-                  "x": 350,
-                  "y": 70
-                }
-              },
-              "goto_scene": 3
+              "layer": 0
             }
           ],
           "commands": []
@@ -25895,7 +25662,7 @@
                 "y": 365
               },
               "layer": 0,
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -25912,7 +25679,6 @@
               },
               "layer": 0,
               "video": "librair1.avi",
-              "goto_scene": 196,
               "actions": [
                 "inc_var non 1"
               ],
@@ -26064,7 +25830,7 @@
               },
               "layer": 0,
               "video": "invent1.avi",
-              "goto_scene": 54,
+              "goto_scene": 10,
               "actions": [
                 "runprj ..\\couleurs1\\couleurs1.vnp 54h"
               ],
@@ -26174,7 +25940,6 @@
               },
               "layer": 0,
               "video": "invent2.avi",
-              "goto_scene": 130,
               "actions": [
                 "addbmp tourne",
                 "set_var tournevis 1",
@@ -26352,22 +26117,6 @@
           "audio": "clapotis.wav",
           "hotspots": [
             {
-              "id": 12,
-              "text": "Un génie de la mécanique.\nSa passion la construction de\nsous-marin de poche.",
-              "text_position": {
-                "x": 370,
-                "y": 55
-              },
-              "layer": 0,
-              "goto_scene": 54,
-              "actions": [
-                "runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ],
-              "conditions": [
-                "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54l"
-              ]
-            },
-            {
               "id": 15,
               "text": "Vers le village",
               "text_position": {
@@ -26375,8 +26124,14 @@
                 "y": 170
               },
               "layer": 0,
+              "display_text": {
+                "text": "Un génie de la mécanique.\nSa passion la construction de\nsous-marin de poche.",
+                "position": {
+                  "x": 370,
+                  "y": 55
+                }
+              },
               "video": "radar.avi",
-              "goto_scene": 139,
               "type_09_record": {
                 "count": 25,
                 "subtype": 0,
@@ -26536,7 +26291,7 @@
                 }
               },
               "video": "suede.avi",
-              "goto_scene": 1,
+              "goto_scene": 10,
               "actions": [
                 "addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400",
                 "addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400",
@@ -27483,7 +27238,6 @@
                 "y": 420
               },
               "layer": 0,
-              "goto_scene": 340,
               "conditions": [
                 "cmenu1 = 1 then playhtml recette\\r1.htm 0 200 20 630 340",
                 "cmenu1 = 2 then playhtml recette\\r2.htm 0 200 20 630 340",
@@ -28950,7 +28704,6 @@
                   "y": 407
                 }
               },
-              "goto_scene": 340,
               "conditions": [
                 "cmenu2 = 1 then playhtml recette\\r11.htm 0 200 20 630 340",
                 "cmenu2 = 2 then playhtml recette\\r12.htm 0 200 20 630 340",
@@ -28988,7 +28741,6 @@
                 "y": 420
               },
               "layer": 0,
-              "goto_scene": 340,
               "conditions": [
                 "cmenu3 = 1 then playhtml recette\\r22.htm 0 200 20 630 340",
                 "cmenu3 = 2 then playhtml recette\\r23.htm 0 200 20 630 340",
@@ -30035,8 +29787,7 @@
                 "x": 255,
                 "y": 420
               },
-              "layer": 0,
-              "goto_scene": 15
+              "layer": 0
             },
             {
               "id": 257,
@@ -32976,7 +32727,6 @@
                   "y": 428
                 }
               },
-              "goto_scene": 29,
               "type_09_record": {
                 "count": 109,
                 "subtype": 97,
@@ -33105,7 +32855,6 @@
                   "y": 405
                 }
               },
-              "goto_scene": 31,
               "type_09_record": {
                 "count": 109,
                 "subtype": 97,
@@ -35841,21 +35590,67 @@
           "audio": null,
           "hotspots": [
             {
+              "id": 526,
+              "text": "TARTIFLETTE",
+              "text_position": {
+                "x": 25,
+                "y": 140
+              },
+              "layer": 0
+            },
+            {
+              "id": 527,
+              "text": "*",
+              "text_position": {
+                "x": 70,
+                "y": 169
+              },
+              "layer": 0
+            },
+            {
+              "id": 528,
+              "text": "Recette pour\n\" 6 personnes\"",
+              "text_position": {
+                "x": 30,
+                "y": 200
+              },
+              "layer": 0
+            },
+            {
+              "id": 530,
+              "text": "*",
+              "text_position": {
+                "x": 70,
+                "y": 225
+              },
+              "layer": 0
+            },
+            {
+              "id": 531,
+              "text": "Préparation",
+              "text_position": {
+                "x": 35,
+                "y": 240
+              },
+              "layer": 0
+            },
+            {
+              "id": 532,
+              "text": "20 minutes",
+              "text_position": {
+                "x": 40,
+                "y": 260
+              },
+              "layer": 0
+            },
+            {
               "id": 533,
               "text": "*",
               "text_position": {
                 "x": 70,
                 "y": 285
               },
-              "layer": 0,
-              "display_text": {
-                "text": "TARTIFLETTE\n*\nRecette pour\n\" 6 personnes\"\n*\nPréparation\n20 minutes",
-                "position": {
-                  "x": 40,
-                  "y": 260
-                }
-              },
-              "goto_scene": 30
+              "layer": 0
             },
             {
               "id": 534,
@@ -35864,8 +35659,7 @@
                 "x": 45,
                 "y": 300
               },
-              "layer": 0,
-              "goto_scene": 30
+              "layer": 0
             },
             {
               "id": 535,
@@ -35874,8 +35668,7 @@
                 "x": 35,
                 "y": 320
               },
-              "layer": 0,
-              "goto_scene": 30
+              "layer": 0
             }
           ],
           "commands": []
