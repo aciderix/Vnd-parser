@@ -1,0 +1,11 @@
+[MAIN]
+LIMITS=65535
+PREFS=65535
+DATFILE=barre.vnd
+WAV=digit\
+MID=midi\
+PAL=palette\
+IMG8=images\
+IMG24=images\
+AVI=movie\
+TXT=html\
