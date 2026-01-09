@@ -1,0 +1,11 @@
+[MAIN]
+LIMITS=65535
+PREFS=65535
+DATFILE=start.vnd
+IMG8=img24\
+IMG24=img24\
+WAV=digit\
+MID=midi\
+AVI=movie\
+TXT=html\
+PAL=palette\

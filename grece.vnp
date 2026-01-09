@@ -1,0 +1,11 @@
+[MAIN]
+LIMITS=65535
+PREFS=65535
+DATFILE=grece.vnd
+WAV=digit\
+MID=midi\
+PAL=palette\
+IMG8=img24\
+IMG24=img24\
+AVI=movie\
+TXT=html\

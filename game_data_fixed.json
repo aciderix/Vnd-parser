@@ -1,0 +1,106 @@
+======================================================================
+PARSING VND FILES WITH SEQUENTIAL EXTRACTION
+======================================================================
+
+Euroland (couleurs1.vnd):
+  Scenes: 47
+  Hotspots: 64 (15 with polygons)
+  Actions: 201
+
+France (france.vnd):
+  Scenes: 37
+  Hotspots: 33 (2 with polygons)
+  Actions: 85
+
+Allemagne (allem.vnd):
+  Scenes: 37
+  Hotspots: 18 (2 with polygons)
+  Actions: 56
+
+Angleterre (angleterre.vnd):
+  Scenes: 118
+  Hotspots: 42 (16 with polygons)
+  Actions: 78
+
+Autriche (autr.vnd):
+  Scenes: 74
+  Hotspots: 24 (1 with polygons)
+  Actions: 53
+
+Belgique (belge.vnd):
+  Scenes: 158
+  Hotspots: 22 (4 with polygons)
+  Actions: 43
+
+Danemark (danem.vnd):
+  Scenes: 41
+  Hotspots: 15 (3 with polygons)
+  Actions: 23
+
+Écosse (ecosse.vnd):
+  Scenes: 121
+  Hotspots: 37 (6 with polygons)
+  Actions: 48
+
+Espagne (espa.vnd):
+  Scenes: 72
+  Hotspots: 7 (3 with polygons)
+  Actions: 48
+
+Finlande (finlan.vnd):
+  Scenes: 34
+  Hotspots: 0 (0 with polygons)
+  Actions: 0
+
+Grèce (grece.vnd):
+  Scenes: 86
+  Hotspots: 5 (0 with polygons)
+  Actions: 32
+
+Pays-Bas (holl.vnd):
+  Scenes: 112
+  Hotspots: 33 (2 with polygons)
+  Actions: 85
+
+Irlande (irland.vnd):
+  Scenes: 68
+  Hotspots: 3 (0 with polygons)
+  Actions: 30
+
+Italie (italie.vnd):
+  Scenes: 43
+  Hotspots: 47 (1 with polygons)
+  Actions: 38
+
+Portugal (portu.vnd):
+  Scenes: 65
+  Hotspots: 9 (4 with polygons)
+  Actions: 4
+
+Suède (suede.vnd):
+  Scenes: 32
+  Hotspots: 13 (1 with polygons)
+  Actions: 56
+
+Bibliothèque (biblio.vnd):
+  Scenes: 490
+  Hotspots: 443 (24 with polygons)
+  Actions: 66
+
+Barre outils (barre.vnd):
+  Scenes: 1
+  Hotspots: 0 (0 with polygons)
+  Actions: 0
+
+Démarrage (start.vnd):
+  Scenes: 6
+  Hotspots: 0 (0 with polygons)
+  Actions: 0
+
+======================================================================
+OUTPUT SAVED TO: /home/user/Vnd-parser/game_data_complete.json
+======================================================================
+
+Total countries: 19
+Total scenes: 1642
+Total hotspots: 815
